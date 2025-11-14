@@ -1,0 +1,14 @@
+{
+  "RoleName": "Cosmos DB Data and Schema Manager",
+  "Type": "CustomRole",
+  "AssignableScopes": ["/"],
+  "Permissions": [{
+    "DataActions": [
+      "Microsoft.DocumentDB/databaseAccounts/readMetadata",
+      "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/*",
+      "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/*",
+      "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/write",
+      "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/read"
+    ]
+  }]
+}

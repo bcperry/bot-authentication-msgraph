@@ -3,6 +3,10 @@ name = "bot-authentication-msgraph"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "agent-framework>=1.0.0b251028",
+    "azure-ai-agents>=1.2.0b5",
+    "azure-cosmos>=4.7.0",
+    "azure-identity>=1.18.0",
     "botbuilder-dialogs>=4.17.0",
     "botbuilder-integration-aiohttp>=4.17.0",
     "fastapi[standard]>=0.121.2",

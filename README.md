@@ -46,6 +46,34 @@ authenticates users to various identity providers such as Azure AD (Azure Active
 take steps towards an improved user experience by eliminating the magic code verification for some clients and channels.
 It is important to note that the user's token does not need to be stored in the bot. When the bot needs to use or verify the user has a valid token at any point the OAuth prompt may be sent. If the token is not valid they will be prompted to login.
 
+## Agent Framework + MCP integration
+
+This sample now uses the Agent Framework to satisfy free-form questions by calling an MCP server (for example, a Microsoft Graph MCP agent). The helper in `helpers/agent_service.py` wires up an `AzureOpenAIChatClient`, a `ChatAgent`, and an `MCPStreamableHTTPTool` and persists the agent thread inside the Bot Framework conversation state so each Teams conversation keeps its own history.
+
+Configure the agent layer via environment variables (typically in your `.env` file):
+
+| Variable | Description | Default |
+| --- | --- | --- |
+| `MCP_TOOL_URL` | The MCP server endpoint (HTTP/SSE). | `http://localhost:8000/mcp` |
+| `MCP_TOOL_NAME` | Friendly name that shows up inside the agent for the MCP tool. | `MS Graph` |
+| `MCP_APPROVAL_MODE` | Optional approval policy (`always_require` or `never_require`). | _unset_ |
+| `TEAMS_AGENT_NAME` | Name assigned to the Agent Framework `ChatAgent`. | `teams_agent` |
+| `TEAMS_AGENT_INSTRUCTIONS` | System instructions for the agent. | "You are a helpful Teams assistant…" |
+| `TEAMS_AGENT_TEMPERATURE` | Optional float to tweak creativity. | _unset_ |
+| `COSMOSDB_ENDPOINT` | Azure Cosmos DB account endpoint. | _required_ |
+| `COSMOSDB_KEY` | Primary key for the Cosmos DB account (or emulator). Leave unset to fall back to Entra ID. | _optional_ |
+| `COSMOSDB_DATABASE` | Cosmos DB database that stores agent threads. | `bot-data` |
+| `COSMOSDB_CONTAINER` | Container name for the persisted threads. | `agent-threads` |
+| `COSMOSDB_PARTITION_KEY_PATH` | Partition key path used for the container. | `/conversationKey` |
+| `COSMOSDB_CONTAINER_THROUGHPUT` | Optional manual throughput (RUs) when auto-scale is not used. | _unset_ |
+| `COSMOSDB_USE_DEFAULT_CREDENTIAL` | Set to `true` to force `DefaultAzureCredential` even when a key is present. | `false` |
+
+When no explicit thread exists for a conversation the agent starts a new one; otherwise the serialized thread is rehydrated so subsequent turns remain in context for that Teams chat. Threads are always persisted to both Bot Framework conversation state and Cosmos DB so history survives bot restarts and multi-instance deployments.
+
+### Using Entra ID (AAD) instead of keys
+
+If your Cosmos account disables local authentication, leave `COSMOSDB_KEY` empty and set `COSMOSDB_USE_DEFAULT_CREDENTIAL=true`. Make sure the hosting environment can obtain an Entra token (Managed Identity, Azure CLI login, Visual Studio Code sign-in, or service principal variables `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, `AZURE_CLIENT_SECRET`). Grant that identity the **Cosmos DB Built-in Data Contributor** role (or a custom role with read/write rights) on the Cosmos account so the bot can create the database/container and upsert thread items.
+
 ## Microsoft Graph API
 
 This sample demonstrates using Azure Active Directory v2 as the OAuth2 provider and utilizes the Microsoft Graph API.

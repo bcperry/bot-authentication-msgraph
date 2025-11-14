@@ -27,6 +27,8 @@ from bots import AuthBot
 # Create the loop and Flask app
 from config import DefaultConfig
 from dialogs import MainDialog
+from helpers.agent_service import AgentService
+from helpers.thread_store import AgentThreadStore
 
 
 # Configure logging
@@ -47,6 +49,8 @@ logging.getLogger("uvicorn.access").setLevel(logging.INFO)
 logging.getLogger("fastapi").setLevel(logging.INFO)
 
 CONFIG = DefaultConfig()
+AGENT_SERVICE = AgentService()
+THREAD_STORE = AgentThreadStore.from_env()
 
 # Create adapter.
 # See https://aka.ms/about-bot-adapter to learn more about how bots work.
@@ -88,15 +92,23 @@ ADAPTER.on_turn_error = on_error
 MEMORY = MemoryStorage()
 USER_STATE = UserState(MEMORY)
 CONVERSATION_STATE = ConversationState(MEMORY)
+AGENT_THREAD_ACCESSOR = CONVERSATION_STATE.create_property("AgentThreadState")
 
 # Create dialog
-DIALOG = MainDialog(CONFIG.CONNECTION_NAME)
+DIALOG = MainDialog(
+    CONFIG.CONNECTION_NAME, AGENT_SERVICE, AGENT_THREAD_ACCESSOR, THREAD_STORE
+)
 
 # Create Bot
 BOT = AuthBot(CONVERSATION_STATE, USER_STATE, DIALOG)
 
 
 app = FastAPI(title="Azure Bot Service")
+
+
+@app.on_event("shutdown")
+async def shutdown_event() -> None:
+    await THREAD_STORE.close()
 
 
 @app.post("/api/messages")
