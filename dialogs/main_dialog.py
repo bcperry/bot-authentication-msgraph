@@ -17,6 +17,7 @@ from requests.exceptions import HTTPError
 from dialogs import LogoutDialog
 from helpers.agent_service import AgentService
 from helpers.thread_store import AgentThreadStore
+from helpers.tools import create_tools_with_token
 from simple_graph_client import SimpleGraphClient
 
 import logging
@@ -175,7 +176,9 @@ class MainDialog(LogoutDialog):
                     f"Your token is {token_response.token}"
                 )
             else:
-                await self._run_agent_response(step_context, command)
+                await self._run_agent_response(
+                    step_context, command, token_response.token
+                )
 
         except HTTPError as error:
             status = error.response.status_code if error.response else None
@@ -205,7 +208,16 @@ class MainDialog(LogoutDialog):
         self,
         step_context: WaterfallStepContext,
         prompt: str,
+        token: str,
     ) -> None:
+        """
+        Run the agent with the given prompt and user token.
+
+        Args:
+            step_context: The current dialog step context
+            prompt: The user's message/question
+            token: The user's OAuth access token for Graph API calls
+        """
         conversation_key = self._conversation_key(step_context)
         thread_state = await self._agent_thread_accessor.get(
             step_context.context, lambda: None
@@ -242,10 +254,11 @@ class MainDialog(LogoutDialog):
         )
 
         try:
+            # Create tools with the user's token bound to them
+            tools_with_token = create_tools_with_token(token)
+
             response, serialized_thread = await self._agent_service.run(
-                prompt,
-                thread_state=thread_state,
-                user=user_id,
+                prompt, thread_state=thread_state, user=user_id, tools=tools_with_token
             )
             await self._agent_thread_accessor.set(
                 step_context.context, serialized_thread

@@ -1,0 +1,45 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "resourceBaseName": {
+        "value": "${AZURE_ENV_NAME}"
+      },
+      "environmentName": {
+        "value": "${AZURE_ENV_NAME}"
+      },
+      "useExistingOpenAIResources": {
+        "value": "${USE_EXISTING_OPENAI_RESOURCES=false}"
+      },
+      "location": {
+        "value": "${AZURE_LOCATION}"
+      },
+      "botAadAppClientId": {
+        "value": "${botAadAppClientId}"
+      },
+      "botAadAppClientSecret": {
+        "value": "${botAadAppClientSecret}"
+      },
+      "botAadAppTenantId": {
+        "value": "${botAadAppTenantId}"
+      },
+      "botDisplayName": {
+        "value": "General's Aide Bot"
+      },
+      "botServiceSku": {
+        "value": "${BOT_SERVICE_SKU=S1}"
+      },
+      "appServicePlanSku": {
+        "value": "${APP_SERVICE_PLAN_SKU=B1}"
+      },
+      "azureOpenAiApiKey": {
+        "value": "${AZURE_OPENAI_API_KEY=}"
+      },
+      "azureOpenAiEndpoint": {
+        "value": "${AZURE_OPENAI_ENDPOINT=}"
+      },
+      "azureOpenAiModel": {
+        "value": "${AZURE_OPENAI_MODEL=}"
+      }
+    }
+  }

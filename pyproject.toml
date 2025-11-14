@@ -10,6 +10,7 @@ dependencies = [
     "botbuilder-dialogs>=4.17.0",
     "botbuilder-integration-aiohttp>=4.17.0",
     "fastapi[standard]>=0.121.2",
+    "msgraph-sdk>=1.0.0",
     "python-dotenv>=1.2.1",
 ]
 

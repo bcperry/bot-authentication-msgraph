@@ -21,9 +21,13 @@ class AgentService:
     """Wraps Agent Framework primitives for reuse inside dialogs/bots."""
 
     def __init__(self) -> None:
-        self._tool = self._build_mcp_tool()
+        # self._tool = self._build_mcp_tool()
+        self._tools = self.get_tools()
         self._chat_client = self._build_chat_client()
         self._agent = self._build_agent()
+
+    def get_tools(self):
+        return []
 
     def _build_mcp_tool(self) -> MCPStreamableHTTPTool:
         tool_name = os.getenv("MCP_TOOL_NAME", "MS Graph")
@@ -76,7 +80,7 @@ class AgentService:
             chat_client=self._chat_client,
             name=agent_name,
             instructions=instructions,
-            tools=[self._tool],
+            tools=self._tools,
             chat_message_store_factory=ChatMessageStore,
             temperature=temperature,
         )
@@ -84,6 +88,7 @@ class AgentService:
     async def run(
         self,
         prompt: str,
+        tools: Optional[Any] = None,
         *,
         thread_state: Optional[Dict[str, Any]] = None,
         user: Optional[str] = None,
@@ -93,7 +98,8 @@ class AgentService:
         Returns the AgentRunResponse and the updated serialized thread state so callers
         can persist it alongside their conversation state.
         """
-
+        if tools is None:
+            tools = self._tools
         if not prompt:
             raise ValueError("Prompt cannot be empty when invoking the agent.")
 
@@ -114,6 +120,7 @@ class AgentService:
             prompt,
             thread=thread,
             user=user,
+            tools=tools,
         )
 
         serialized = await thread.serialize()

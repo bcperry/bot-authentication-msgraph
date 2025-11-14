@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: bot-authentication-msgraph
+metadata:
+    template: azd-init@1.21.2
+services:
+    bot-authentication-msgraph:
+        project: .
+        host: appservice
+        language: python
+infra:
+    provider: "bicep"
