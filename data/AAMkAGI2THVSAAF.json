@@ -1,0 +1,81 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('general.officer%40army.mil')/messages/$entity",
+  "@odata.etag": "W/\"CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD0\"",
+  "id": "AAMkAGI2THVSAAF=",
+  "createdDateTime": "2025-11-12T09:00:00Z",
+  "lastModifiedDateTime": "2025-11-12T09:00:00Z",
+  "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD0",
+  "categories": [],
+  "receivedDateTime": "2025-11-12T09:00:00Z",
+  "sentDateTime": "2025-11-12T08:55:00Z",
+  "hasAttachments": false,
+  "internetMessageId": "<SPAM003@phishing.xyz>",
+  "subject": "URGENT: Your Army Email Account Will Be Suspended",
+  "bodyPreview": "Dear Army.mil User, Our system has detected suspicious activity on your account. Your email will be suspended within 24 hours unless you verify your credentials immediately. Failure to verify will result in permanent loss of email access and all stored messages. Click here to verify your account now.",
+  "importance": "high",
+  "parentFolderId": "AAMkAGI2THVSAAA=",
+  "conversationId": "AAQkAGI2THVSAAF=",
+  "conversationIndex": "AQHaC8d=",
+  "isDeliveryReceiptRequested": false,
+  "isReadReceiptRequested": false,
+  "isRead": false,
+  "isDraft": false,
+  "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAF=",
+  "inferenceClassification": "other",
+  "from": {
+    "emailAddress": {
+      "name": "Army IT Support",
+      "address": "support@army-it-help.xyz"
+    }
+  },
+  "sender": {
+    "emailAddress": {
+      "name": "Army IT Support",
+      "address": "support@army-it-help.xyz"
+    }
+  },
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "name": "Gen. Officer",
+        "address": "general.officer@army.mil"
+      }
+    }
+  ],
+  "ccRecipients": [],
+  "bccRecipients": [],
+  "replyTo": [],
+  "body": {
+    "contentType": "html",
+    "content": "<html><head><style>body{font-family:Arial,sans-serif;}</style></head><body><div style='border:3px solid red;padding:15px;background:#fff3cd;margin-bottom:20px;'><h2 style='color:red;margin:0;text-align:center;'>⚠️ URGENT ACTION REQUIRED ⚠️</h2></div><div style='padding:20px;'><p><b>Dear Army.mil User,</b></p><p>Our system has detected <span style='color:red;font-weight:bold;'>SUSPICIOUS ACTIVITY</span> on your account:</p><div style='background:#f8f9fa;border-left:4px solid #dc3545;padding:15px;margin:20px 0;'><p style='margin:5px 0;'><b>Account:</b> general.officer@army.mil</p><p style='margin:5px 0;'><b>Last Login:</b> 12 NOV 2025 08:47 UTC</p><p style='margin:5px 0;'><b>Location:</b> Unknown (IP: 203.45.67.89 - China)</p><p style='margin:5px 0;'><b>Device:</b> Unrecognized Android device</p><p style='margin:5px 0;'><b>Status:</b> <span style='color:red;font-weight:bold;'>CRITICAL - Immediate Action Required</span></p></div><p style='font-size:16px;'><b>Your email will be <span style='color:red;'>SUSPENDED WITHIN 24 HOURS</span> unless you verify your credentials immediately.</b></p><h3 style='color:#dc3545;'>What This Means:</h3><ul><li>Unauthorized access attempt detected from foreign IP address</li><li>Multiple failed login attempts from unknown locations</li><li>Your account security has been compromised</li><li>Immediate verification required to prevent suspension</li></ul><h3 style='color:#dc3545;'>Actions You Must Take NOW:</h3><ol><li>Click the verification link below</li><li>Enter your current email password</li><li>Confirm your identity with security questions</li><li>Update your security settings</li></ol><div style='text-align:center;margin:30px 0;'><a href='http://fake-army-portal.xyz/verify?user=general.officer&token=abc123xyz' style='background:#dc3545;color:white;padding:15px 40px;text-decoration:none;font-size:18px;font-weight:bold;border-radius:5px;display:inline-block;'>VERIFY YOUR ACCOUNT NOW</a></div><div style='background:#ffc107;border:2px solid #ff6b6b;padding:15px;margin:20px 0;'><h4 style='margin:0 0 10px 0;color:#000;'>⏰ TIME SENSITIVE - ACT NOW!</h4><p style='margin:0;color:#000;'><b>Failure to verify within 24 hours will result in:</b></p><ul style='color:#000;'><li>Permanent suspension of your email account</li><li>Loss of all stored emails and contacts</li><li>Inability to access Army network resources</li><li>Required in-person verification at NETCOM headquarters (Fort Huachuca, AZ)</li></ul></div><h3>Why Is This Happening?</h3><p>As part of our ongoing security improvements and in response to increased cyber threats targeting military personnel, the Army Network Enterprise Technology Command (NETCOM) has implemented enhanced security protocols.</p><p>All accounts showing suspicious activity must be verified immediately to maintain access.</p><h3>Verification Process (Takes Only 2 Minutes):</h3><ol><li>Click the red verification button above</li><li>Enter your current Army.mil password</li><li>Answer 3 security questions</li><li>Set up two-factor authentication (optional but recommended)</li><li>Receive confirmation email</li></ol><div style='background:#e9ecef;padding:15px;margin:20px 0;border-radius:5px;'><h4 style='margin:0 0 10px 0;'>🔒 Security Reminder:</h4><p style='margin:0;'><small>Never share your password with anyone. This is an official Army IT security verification. Your information will be transmitted securely via encrypted connection. If you did not request this verification, your account may have been compromised and immediate action is required.</small></p></div><p><b>Need Help?</b></p><p>If you have questions or need assistance with the verification process, contact Army IT Support immediately:</p><ul><li>Email: <a href='mailto:urgent-support@army-it-help.xyz'>urgent-support@army-it-help.xyz</a></li><li>Phone: 1-800-XXX-XXXX (24/7 Support)</li><li>Live Chat: <a href='http://fake-army-portal.xyz/chat'>Click here for instant support</a></li></ul><div style='border-top:2px solid #dc3545;margin-top:30px;padding-top:15px;'><p style='font-size:18px;font-weight:bold;color:#dc3545;text-align:center;'>⚠️ THIS IS YOUR FINAL NOTICE ⚠️</p><p style='text-align:center;'>Verify your account now to prevent suspension and loss of access.</p><div style='text-align:center;margin:20px 0;'><a href='http://fake-army-portal.xyz/verify?user=general.officer&token=abc123xyz' style='color:#dc3545;font-size:16px;font-weight:bold;text-decoration:underline;'>CLICK HERE TO VERIFY - DON'T WAIT!</a></div></div><hr style='margin:30px 0;'/><div style='font-size:10px;color:#666;text-align:center;'><p>Army Network Enterprise Technology Command (NETCOM)<br/>Fort Huachuca, Arizona 85613<br/>Official Army IT Security Notification</p><p style='margin-top:10px;'><b>Reference Number:</b> AIT-SEC-2025-11-12-0847<br/><b>Ticket ID:</b> NETCOM-URG-458392<br/><b>Expiration:</b> 13 NOV 2025 08:55 UTC</p><p style='margin-top:10px;font-size:9px;'>This is an automated security notification from Army IT systems. Do not reply to this email. For assistance, use the contact methods provided above.</p></div></div></body></html>"
+  },
+  "uniqueBody": {
+    "contentType": "html",
+    "content": "<html><head><style>body{font-family:Arial,sans-serif;}</style></head><body><div style='border:3px solid red;padding:15px;background:#fff3cd;margin-bottom:20px;'><h2 style='color:red;margin:0;text-align:center;'>⚠️ URGENT ACTION REQUIRED ⚠️</h2></div><div style='padding:20px;'><p><b>Dear Army.mil User,</b></p><p>Our system has detected <span style='color:red;font-weight:bold;'>SUSPICIOUS ACTIVITY</span> on your account:</p><div style='background:#f8f9fa;border-left:4px solid #dc3545;padding:15px;margin:20px 0;'><p style='margin:5px 0;'><b>Account:</b> general.officer@army.mil</p><p style='margin:5px 0;'><b>Last Login:</b> 12 NOV 2025 08:47 UTC</p><p style='margin:5px 0;'><b>Location:</b> Unknown (IP: 203.45.67.89 - China)</p><p style='margin:5px 0;'><b>Device:</b> Unrecognized Android device</p><p style='margin:5px 0;'><b>Status:</b> <span style='color:red;font-weight:bold;'>CRITICAL - Immediate Action Required</span></p></div><p style='font-size:16px;'><b>Your email will be <span style='color:red;'>SUSPENDED WITHIN 24 HOURS</span> unless you verify your credentials immediately.</b></p><h3 style='color:#dc3545;'>What This Means:</h3><ul><li>Unauthorized access attempt detected from foreign IP address</li><li>Multiple failed login attempts from unknown locations</li><li>Your account security has been compromised</li><li>Immediate verification required to prevent suspension</li></ul><h3 style='color:#dc3545;'>Actions You Must Take NOW:</h3><ol><li>Click the verification link below</li><li>Enter your current email password</li><li>Confirm your identity with security questions</li><li>Update your security settings</li></ol><div style='text-align:center;margin:30px 0;'><a href='http://fake-army-portal.xyz/verify?user=general.officer&token=abc123xyz' style='background:#dc3545;color:white;padding:15px 40px;text-decoration:none;font-size:18px;font-weight:bold;border-radius:5px;display:inline-block;'>VERIFY YOUR ACCOUNT NOW</a></div><div style='background:#ffc107;border:2px solid #ff6b6b;padding:15px;margin:20px 0;'><h4 style='margin:0 0 10px 0;color:#000;'>⏰ TIME SENSITIVE - ACT NOW!</h4><p style='margin:0;color:#000;'><b>Failure to verify within 24 hours will result in:</b></p><ul style='color:#000;'><li>Permanent suspension of your email account</li><li>Loss of all stored emails and contacts</li><li>Inability to access Army network resources</li><li>Required in-person verification at NETCOM headquarters (Fort Huachuca, AZ)</li></ul></div><h3>Why Is This Happening?</h3><p>As part of our ongoing security improvements and in response to increased cyber threats targeting military personnel, the Army Network Enterprise Technology Command (NETCOM) has implemented enhanced security protocols.</p><p>All accounts showing suspicious activity must be verified immediately to maintain access.</p><h3>Verification Process (Takes Only 2 Minutes):</h3><ol><li>Click the red verification button above</li><li>Enter your current Army.mil password</li><li>Answer 3 security questions</li><li>Set up two-factor authentication (optional but recommended)</li><li>Receive confirmation email</li></ol><div style='background:#e9ecef;padding:15px;margin:20px 0;border-radius:5px;'><h4 style='margin:0 0 10px 0;'>🔒 Security Reminder:</h4><p style='margin:0;'><small>Never share your password with anyone. This is an official Army IT security verification. Your information will be transmitted securely via encrypted connection. If you did not request this verification, your account may have been compromised and immediate action is required.</small></p></div><p><b>Need Help?</b></p><p>If you have questions or need assistance with the verification process, contact Army IT Support immediately:</p><ul><li>Email: <a href='mailto:urgent-support@army-it-help.xyz'>urgent-support@army-it-help.xyz</a></li><li>Phone: 1-800-XXX-XXXX (24/7 Support)</li><li>Live Chat: <a href='http://fake-army-portal.xyz/chat'>Click here for instant support</a></li></ul><div style='border-top:2px solid #dc3545;margin-top:30px;padding-top:15px;'><p style='font-size:18px;font-weight:bold;color:#dc3545;text-align:center;'>⚠️ THIS IS YOUR FINAL NOTICE ⚠️</p><p style='text-align:center;'>Verify your account now to prevent suspension and loss of access.</p><div style='text-align:center;margin:20px 0;'><a href='http://fake-army-portal.xyz/verify?user=general.officer&token=abc123xyz' style='color:#dc3545;font-size:16px;font-weight:bold;text-decoration:underline;'>CLICK HERE TO VERIFY - DON'T WAIT!</a></div></div><hr style='margin:30px 0;'/><div style='font-size:10px;color:#666;text-align:center;'><p>Army Network Enterprise Technology Command (NETCOM)<br/>Fort Huachuca, Arizona 85613<br/>Official Army IT Security Notification</p><p style='margin-top:10px;'><b>Reference Number:</b> AIT-SEC-2025-11-12-0847<br/><b>Ticket ID:</b> NETCOM-URG-458392<br/><b>Expiration:</b> 13 NOV 2025 08:55 UTC</p><p style='margin-top:10px;font-size:9px;'>This is an automated security notification from Army IT systems. Do not reply to this email. For assistance, use the contact methods provided above.</p></div></div></body></html>"
+  },
+  "flag": {
+    "flagStatus": "notFlagged"
+  },
+  "internetMessageHeaders": [
+    {
+      "name": "Received",
+      "value": "from phishing-server.xyz by army.mil with ESMTP"
+    },
+    {
+      "name": "X-Originating-IP",
+      "value": "[45.142.212.61]"
+    },
+    {
+      "name": "X-Spam-Score",
+      "value": "9.8"
+    },
+    {
+      "name": "X-Spam-Flag",
+      "value": "YES"
+    },
+    {
+      "name": "X-Phishing-Score",
+      "value": "HIGH"
+    }
+  ]
+}

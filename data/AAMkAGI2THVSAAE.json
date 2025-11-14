@@ -1,0 +1,80 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('general.officer%40army.mil')/messages/$entity",
+  "@odata.etag": "W/\"CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC9\"",
+  "id": "AAMkAGI2THVSAAE=",
+  "createdDateTime": "2025-11-12T11:30:00Z",
+  "lastModifiedDateTime": "2025-11-12T11:30:00Z",
+  "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC9",
+  "categories": ["Operations"],
+  "receivedDateTime": "2025-11-12T11:30:00Z",
+  "sentDateTime": "2025-11-12T11:25:00Z",
+  "hasAttachments": true,
+  "internetMessageId": "<MSG003@centcom.mil>",
+  "subject": "SITREP: Middle East Operations Update - Week 46",
+  "bodyPreview": "CLASSIFICATION: SECRET//NOFORN. Sir, attached is the weekly situation report covering operations in your AOR for Week 46 (6-12 NOV 2025). Key highlights include successful completion of joint training exercise with partner nation forces, increased ISR activity in southern sector with 3 high-value targets identified, force protection posture elevated to FPCON Bravo due to recent intelligence, and equipment maintenance at 94% readiness exceeding command standard.",
+  "importance": "high",
+  "parentFolderId": "AAMkAGI2THVSAAA=",
+  "conversationId": "AAQkAGI2THVSAAE=",
+  "conversationIndex": "AQHaC8c=",
+  "isDeliveryReceiptRequested": false,
+  "isReadReceiptRequested": true,
+  "isRead": false,
+  "isDraft": false,
+  "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAE=",
+  "inferenceClassification": "focused",
+  "from": {
+    "emailAddress": {
+      "name": "BG Robert Chen",
+      "address": "robert.chen@centcom.mil"
+    }
+  },
+  "sender": {
+    "emailAddress": {
+      "name": "BG Robert Chen",
+      "address": "robert.chen@centcom.mil"
+    }
+  },
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "name": "Gen. Officer",
+        "address": "general.officer@army.mil"
+      }
+    }
+  ],
+  "ccRecipients": [
+    {
+      "emailAddress": {
+        "name": "J3 Operations",
+        "address": "j3.operations@centcom.mil"
+      }
+    }
+  ],
+  "bccRecipients": [],
+  "replyTo": [],
+  "body": {
+    "contentType": "html",
+    "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><style>body{font-family:Arial,sans-serif;font-size:11pt;} .header{background:#000;color:#fff;padding:10px;text-align:center;font-weight:bold;} .section{margin:20px 0;} .subsection{margin-left:20px;}</style></head><body><div class=\"header\">CLASSIFICATION: SECRET//NOFORN</div><p>Sir,</p><p>Attached is the weekly situation report covering operations in your AOR for <b>Week 46 (6-12 NOV 2025)</b>.</p><div class=\"section\"><h3>EXECUTIVE SUMMARY</h3><p>Operations continue at a steady operational tempo with no significant incidents during the reporting period. Overall force readiness remains high at 94%. Intelligence indicators suggest increased threat activity in southern sectors, prompting elevation of force protection measures.</p></div><div class=\"section\"><h3>KEY HIGHLIGHTS</h3><ul><li><b>Joint Training Exercise (Operation DESERT PARTNERSHIP):</b> Successfully completed 10-day combined arms exercise with partner nation forces (Jordan Armed Forces). Exercise involved 2,500 US personnel and 1,800 partner nation troops. All training objectives met; AAR scheduled for 15 NOV.</li><li><b>ISR Operations:</b> Increased ISR activity in southern sector (Grid Square 38S MB) resulted in identification of 3 high-value targets (HVTs). Intelligence fusion cell coordinating with national-level assets for pattern-of-life analysis. Recommend maintain current ISR posture for next 14 days.</li><li><b>Force Protection:</b> FPCON elevated from Alpha to Bravo on 10 NOV based on CENTCOM intelligence assessment indicating credible threat to US forces in region. All installations implementing enhanced security measures. No incidents reported.</li><li><b>Equipment Readiness:</b> Maintenance operations achieving 94% equipment readiness rate, exceeding command standard of 90%. Ground vehicle fleet at 96%, aircraft at 93%, communications systems at 92%.</li></ul></div><div class=\"section\"><h3>PERSONNEL STATUS</h3><ul><li>Current strength: 8,456 assigned / 8,234 present for duty (97.4%)</li><li>Medical: 156 personnel in limited duty status (1.8%)</li><li>R&R: 66 personnel on leave (0.8%)</li><li>Morale: High - recent command climate survey shows 89% positive rating</li><li>Disciplinary: 2 Article 15s, 0 courts-martial during reporting period</li></ul></div><div class=\"section\"><h3>OPERATIONS</h3><div class=\"subsection\"><h4>OPERATION INHERENT RESOLVE</h4><ul><li>Conducted 14 partnered patrols with Iraqi Security Forces</li><li>Provided advisory support to 2 partner nation battalion-level operations</li><li>No hostile engagements; 1 IED emplacement disrupted during route clearance</li><li>Training: Conducted vehicle recovery training for partner force mechanics</li></ul></div><div class=\"subsection\"><h4>SECURITY COOPERATION</h4><ul><li>Hosted delegation from UAE Armed Forces (7-9 NOV) - discussed future training opportunities</li><li>Border security coordination meeting with Jordan (8 NOV) - agreed to expand information sharing</li><li>Planning underway for Q1 2026 Bright Star exercise in Egypt</li></ul></div></div><div class=\"section\"><h3>INTELLIGENCE ASSESSMENT</h3><ul><li><b>Threat Level:</b> MODERATE (unchanged from previous week)</li><li><b>Key Developments:</b> <ul><li>Increase in social media chatter regarding potential attacks on US interests</li><li>Iranian-backed militia movement detected in western Iraq - no immediate threat to US forces</li><li>3 HVTs identified in southern AOR through signals intelligence (SIGINT) collection</li><li>Local tribal leader reported potential weapon cache location - ground reconnaissance planned</li></ul></li><li><b>Recommendations:</b> Maintain current FPCON Bravo posture through 26 NOV pending intelligence review</li></ul></div><div class=\"section\"><h3>LOGISTICS AND SUSTAINMENT</h3><ul><li>Supply: All Class I-IX supplies at adequate levels; no shortages reported</li><li>Fuel: JP-8 at 87% capacity, MOGAS at 92% capacity</li><li>Ammunition: Within acceptable range for all types</li><li>Maintenance: 94% OR rate (as noted above)</li><li>Transportation: Successfully completed 23 convoy missions - no incidents</li></ul></div><div class=\"section\"><h3>ISSUES REQUIRING COMMAND ATTENTION</h3><ol><li><b>Patrol Schedule Adjustment (Grid 38S MB):</b> Based on increased ISR activity and HVT identification in southern sector, J3 recommends adjusting patrol schedules to increase presence in Grid Square 38S MB. Proposed changes would shift 2 patrol teams from northern to southern sector for 14-day period. <b>REQUEST YOUR GUIDANCE on this proposed adjustment.</b></li><li><b>Equipment Modernization:</b> 15 MRAP vehicles scheduled for reset/upgrade in Q1 2026. Recommend accelerating timeline to December 2025 to maintain readiness during anticipated increase in operational tempo.</li><li><b>Partner Nation Training Request:</b> Saudi Arabian National Guard has requested US advisory support for battalion-level exercise in January 2026. Would require TDY of 12 personnel for 3 weeks. Recommend approval - aligns with security cooperation objectives.</li></ol></div><div class=\"section\"><h3>UPCOMING EVENTS</h3><ul><li>15 NOV: After-action review for Operation DESERT PARTNERSHIP</li><li>18 NOV: CENTCOM J3 site visit to forward operating sites</li><li>22 NOV: Change of command ceremony - 3rd Brigade Combat Team</li><li>25-27 NOV: Thanksgiving stand-down for US personnel (reduced operations)</li><li>1 DEC: Quarterly security cooperation planning conference (virtual)</li></ul></div><div class=\"section\"><h3>ATTACHMENTS</h3><p>Full detailed SITREP with maps, intelligence annexes, and statistical data attached as separate document (classification: SECRET//NOFORN).</p><p>Document includes:</p><ul><li>Annex A: Detailed Operations Summary</li><li>Annex B: Intelligence Assessment (SIGINT/HUMINT reports)</li><li>Annex C: Logistics Status Report</li><li>Annex D: Personnel Roster and Status</li><li>Annex E: Equipment Readiness Data</li><li>Annex F: Map Products (operational graphics)</li></ul></div><p>Request your guidance on proposed patrol schedule adjustments in Grid Square 38S MB. Recommend decision NLT 15 NOV to allow adequate planning time.</p><p>If you require additional information or would like to discuss any aspect of this SITREP, please contact me directly via SIPR or secure phone.</p><p>Respectfully,</p><p><b>BG Robert Chen</b><br/>J3, US Central Command<br/>DSN: 318-529-XXXX<br/>SIPR: <a href=\"mailto:robert.chen@centcom.smil.mil\">robert.chen@centcom.smil.mil</a></p><div class=\"header\">CLASSIFICATION: SECRET//NOFORN</div></body></html>"
+  },
+  "uniqueBody": {
+    "contentType": "html",
+    "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><style>body{font-family:Arial,sans-serif;font-size:11pt;} .header{background:#000;color:#fff;padding:10px;text-align:center;font-weight:bold;} .section{margin:20px 0;} .subsection{margin-left:20px;}</style></head><body><div class=\"header\">CLASSIFICATION: SECRET//NOFORN</div><p>Sir,</p><p>Attached is the weekly situation report covering operations in your AOR for <b>Week 46 (6-12 NOV 2025)</b>.</p><div class=\"section\"><h3>EXECUTIVE SUMMARY</h3><p>Operations continue at a steady operational tempo with no significant incidents during the reporting period. Overall force readiness remains high at 94%. Intelligence indicators suggest increased threat activity in southern sectors, prompting elevation of force protection measures.</p></div><div class=\"section\"><h3>KEY HIGHLIGHTS</h3><ul><li><b>Joint Training Exercise (Operation DESERT PARTNERSHIP):</b> Successfully completed 10-day combined arms exercise with partner nation forces (Jordan Armed Forces). Exercise involved 2,500 US personnel and 1,800 partner nation troops. All training objectives met; AAR scheduled for 15 NOV.</li><li><b>ISR Operations:</b> Increased ISR activity in southern sector (Grid Square 38S MB) resulted in identification of 3 high-value targets (HVTs). Intelligence fusion cell coordinating with national-level assets for pattern-of-life analysis. Recommend maintain current ISR posture for next 14 days.</li><li><b>Force Protection:</b> FPCON elevated from Alpha to Bravo on 10 NOV based on CENTCOM intelligence assessment indicating credible threat to US forces in region. All installations implementing enhanced security measures. No incidents reported.</li><li><b>Equipment Readiness:</b> Maintenance operations achieving 94% equipment readiness rate, exceeding command standard of 90%. Ground vehicle fleet at 96%, aircraft at 93%, communications systems at 92%.</li></ul></div><div class=\"section\"><h3>PERSONNEL STATUS</h3><ul><li>Current strength: 8,456 assigned / 8,234 present for duty (97.4%)</li><li>Medical: 156 personnel in limited duty status (1.8%)</li><li>R&R: 66 personnel on leave (0.8%)</li><li>Morale: High - recent command climate survey shows 89% positive rating</li><li>Disciplinary: 2 Article 15s, 0 courts-martial during reporting period</li></ul></div><div class=\"section\"><h3>OPERATIONS</h3><div class=\"subsection\"><h4>OPERATION INHERENT RESOLVE</h4><ul><li>Conducted 14 partnered patrols with Iraqi Security Forces</li><li>Provided advisory support to 2 partner nation battalion-level operations</li><li>No hostile engagements; 1 IED emplacement disrupted during route clearance</li><li>Training: Conducted vehicle recovery training for partner force mechanics</li></ul></div><div class=\"subsection\"><h4>SECURITY COOPERATION</h4><ul><li>Hosted delegation from UAE Armed Forces (7-9 NOV) - discussed future training opportunities</li><li>Border security coordination meeting with Jordan (8 NOV) - agreed to expand information sharing</li><li>Planning underway for Q1 2026 Bright Star exercise in Egypt</li></ul></div></div><div class=\"section\"><h3>INTELLIGENCE ASSESSMENT</h3><ul><li><b>Threat Level:</b> MODERATE (unchanged from previous week)</li><li><b>Key Developments:</b> <ul><li>Increase in social media chatter regarding potential attacks on US interests</li><li>Iranian-backed militia movement detected in western Iraq - no immediate threat to US forces</li><li>3 HVTs identified in southern AOR through signals intelligence (SIGINT) collection</li><li>Local tribal leader reported potential weapon cache location - ground reconnaissance planned</li></ul></li><li><b>Recommendations:</b> Maintain current FPCON Bravo posture through 26 NOV pending intelligence review</li></ul></div><div class=\"section\"><h3>LOGISTICS AND SUSTAINMENT</h3><ul><li>Supply: All Class I-IX supplies at adequate levels; no shortages reported</li><li>Fuel: JP-8 at 87% capacity, MOGAS at 92% capacity</li><li>Ammunition: Within acceptable range for all types</li><li>Maintenance: 94% OR rate (as noted above)</li><li>Transportation: Successfully completed 23 convoy missions - no incidents</li></ul></div><div class=\"section\"><h3>ISSUES REQUIRING COMMAND ATTENTION</h3><ol><li><b>Patrol Schedule Adjustment (Grid 38S MB):</b> Based on increased ISR activity and HVT identification in southern sector, J3 recommends adjusting patrol schedules to increase presence in Grid Square 38S MB. Proposed changes would shift 2 patrol teams from northern to southern sector for 14-day period. <b>REQUEST YOUR GUIDANCE on this proposed adjustment.</b></li><li><b>Equipment Modernization:</b> 15 MRAP vehicles scheduled for reset/upgrade in Q1 2026. Recommend accelerating timeline to December 2025 to maintain readiness during anticipated increase in operational tempo.</li><li><b>Partner Nation Training Request:</b> Saudi Arabian National Guard has requested US advisory support for battalion-level exercise in January 2026. Would require TDY of 12 personnel for 3 weeks. Recommend approval - aligns with security cooperation objectives.</li></ol></div><div class=\"section\"><h3>UPCOMING EVENTS</h3><ul><li>15 NOV: After-action review for Operation DESERT PARTNERSHIP</li><li>18 NOV: CENTCOM J3 site visit to forward operating sites</li><li>22 NOV: Change of command ceremony - 3rd Brigade Combat Team</li><li>25-27 NOV: Thanksgiving stand-down for US personnel (reduced operations)</li><li>1 DEC: Quarterly security cooperation planning conference (virtual)</li></ul></div><div class=\"section\"><h3>ATTACHMENTS</h3><p>Full detailed SITREP with maps, intelligence annexes, and statistical data attached as separate document (classification: SECRET//NOFORN).</p><p>Document includes:</p><ul><li>Annex A: Detailed Operations Summary</li><li>Annex B: Intelligence Assessment (SIGINT/HUMINT reports)</li><li>Annex C: Logistics Status Report</li><li>Annex D: Personnel Roster and Status</li><li>Annex E: Equipment Readiness Data</li><li>Annex F: Map Products (operational graphics)</li></ul></div><p>Request your guidance on proposed patrol schedule adjustments in Grid Square 38S MB. Recommend decision NLT 15 NOV to allow adequate planning time.</p><p>If you require additional information or would like to discuss any aspect of this SITREP, please contact me directly via SIPR or secure phone.</p><p>Respectfully,</p><p><b>BG Robert Chen</b><br/>J3, US Central Command<br/>DSN: 318-529-XXXX<br/>SIPR: <a href=\"mailto:robert.chen@centcom.smil.mil\">robert.chen@centcom.smil.mil</a></p><div class=\"header\">CLASSIFICATION: SECRET//NOFORN</div></body></html>"
+  },
+  "flag": {
+    "flagStatus": "flagged"
+  },
+  "internetMessageHeaders": [
+    {
+      "name": "Received",
+      "value": "from centcom-mail.mil by army.mil with ESMTP"
+    },
+    {
+      "name": "X-MS-Exchange-Organization-AuthAs",
+      "value": "Internal"
+    },
+    {
+      "name": "X-Classification",
+      "value": "SECRET//NOFORN"
+    }
+  ]
+}

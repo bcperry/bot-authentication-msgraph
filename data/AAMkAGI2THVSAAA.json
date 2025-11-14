@@ -1,0 +1,97 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('general.officer%40army.mil')/messages/$entity",
+  "@odata.etag": "W/\"CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC5\"",
+  "id": "AAMkAGI2THVSAAA=",
+  "createdDateTime": "2025-11-13T08:30:00Z",
+  "lastModifiedDateTime": "2025-11-13T08:30:00Z",
+  "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC5",
+  "categories": [],
+  "receivedDateTime": "2025-11-13T08:30:00Z",
+  "sentDateTime": "2025-11-13T08:25:00Z",
+  "hasAttachments": true,
+  "internetMessageId": "<MSG001@pentagon.army.mil>",
+  "subject": "URGENT: Joint Chiefs Meeting - Budget Briefing Required",
+  "bodyPreview": "General, you are requested to attend the Joint Chiefs meeting on 15 NOV at 0900. Please prepare a 20-minute briefing on Q1 budget allocations for your command. This briefing is critical as it will inform fiscal planning for the next two quarters and impact force modernization decisions across the service. The Chairman specifically requested your input on personnel costs and equipment readiness funding requirements.",
+  "importance": "high",
+  "parentFolderId": "AAMkAGI2THVSAAA=",
+  "conversationId": "AAQkAGI2THVSAAA=",
+  "conversationIndex": "AQHaC8Y=",
+  "isDeliveryReceiptRequested": false,
+  "isReadReceiptRequested": true,
+  "isRead": false,
+  "isDraft": false,
+  "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAA=",
+  "inferenceClassification": "focused",
+  "from": {
+    "emailAddress": {
+      "name": "Gen. Michael Thompson",
+      "address": "michael.thompson@jcs.army.mil"
+    }
+  },
+  "sender": {
+    "emailAddress": {
+      "name": "Gen. Michael Thompson",
+      "address": "michael.thompson@jcs.army.mil"
+    }
+  },
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "name": "Gen. Officer",
+        "address": "general.officer@army.mil"
+      }
+    }
+  ],
+  "ccRecipients": [
+    {
+      "emailAddress": {
+        "name": "Col. Sarah Martinez",
+        "address": "sarah.martinez@pentagon.army.mil"
+      }
+    }
+  ],
+  "bccRecipients": [],
+  "replyTo": [],
+  "body": {
+    "contentType": "html",
+    "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div style=\"font-family: Calibri, Arial, sans-serif; font-size: 11pt;\"><p>General,</p><p>You are requested to attend the Joint Chiefs meeting on <b>15 NOV at 0900</b> in the Pentagon, Room 2E924 (Joint Chiefs Conference Room).</p><p>Please prepare a 20-minute briefing covering the following topics:</p><ul><li><b>Q1 FY2026 budget allocations</b> for your command with comparison to FY2025 actuals</li><li><b>Projected personnel needs</b> for FY2026, including any critical MOS shortfalls</li><li><b>Equipment modernization priorities</b> - specifically addressing the Next Generation Combat Vehicle program and associated infrastructure requirements</li><li><b>Training readiness funding</b> - current status and anticipated needs for joint exercises</li><li><b>Installation sustainment</b> - deferred maintenance backlog and critical infrastructure needs</li></ul><p>This briefing is critical as it will inform fiscal planning decisions for the next two quarters and directly impact force modernization initiatives across the service. The Chairman has specifically requested your input on personnel cost projections and equipment readiness funding requirements, as your command represents a significant portion of total Army end strength.</p><p><b>Key Participants:</b></p><ul><li>Chairman and Vice Chairman, Joint Chiefs of Staff</li><li>Service Chiefs (Army, Navy, Air Force, Marines, Space Force)</li><li>USD (Comptroller)</li><li>Assistant Secretary of the Army (Financial Management & Comptroller)</li></ul><p><b>Deliverables:</b></p><ul><li>PowerPoint briefing slides (classified UNCLASS, releasable to participants)</li><li>Executive summary (1-page) with key budget requests and justifications</li><li>Supporting budget documentation (detailed spreadsheets with assumptions)</li></ul><p>Briefing materials are due to my office <b>NLT 14 NOV at 1700</b> for review and coordination. Please send via SIPR to <a href=\"mailto:vcs.briefings@jcs.smil.mil\">vcs.briefings@jcs.smil.mil</a> with INFO copy to COL Martinez.</p><p>I understand this is short notice, but the Secretary has compressed the timeline due to upcoming congressional hearings on the defense appropriations bill. Your staff should coordinate with COL Martinez regarding any clarifying questions or additional data requirements.</p><p>If you have any scheduling conflicts or concerns about meeting this timeline, please contact my office immediately.</p><p>Respectfully,</p><p><b>Gen. Michael Thompson</b><br/>Vice Chairman, Joint Chiefs of Staff<br/>The Pentagon, Room 2E871<br/>(703) 697-9121 (DSN: 227-9121)<br/><a href=\"mailto:michael.thompson@jcs.army.mil\">michael.thompson@jcs.army.mil</a></p><hr/><p style=\"font-size: 9pt; color: #666;\"><b>CLASSIFICATION:</b> UNCLASSIFIED<br/><b>Distribution:</b> Authorized for official use only</p></div></body></html>"
+  },
+  "uniqueBody": {
+    "contentType": "html",
+    "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div style=\"font-family: Calibri, Arial, sans-serif; font-size: 11pt;\"><p>General,</p><p>You are requested to attend the Joint Chiefs meeting on <b>15 NOV at 0900</b> in the Pentagon, Room 2E924 (Joint Chiefs Conference Room).</p><p>Please prepare a 20-minute briefing covering the following topics:</p><ul><li><b>Q1 FY2026 budget allocations</b> for your command with comparison to FY2025 actuals</li><li><b>Projected personnel needs</b> for FY2026, including any critical MOS shortfalls</li><li><b>Equipment modernization priorities</b> - specifically addressing the Next Generation Combat Vehicle program and associated infrastructure requirements</li><li><b>Training readiness funding</b> - current status and anticipated needs for joint exercises</li><li><b>Installation sustainment</b> - deferred maintenance backlog and critical infrastructure needs</li></ul><p>This briefing is critical as it will inform fiscal planning decisions for the next two quarters and directly impact force modernization initiatives across the service. The Chairman has specifically requested your input on personnel cost projections and equipment readiness funding requirements, as your command represents a significant portion of total Army end strength.</p><p><b>Key Participants:</b></p><ul><li>Chairman and Vice Chairman, Joint Chiefs of Staff</li><li>Service Chiefs (Army, Navy, Air Force, Marines, Space Force)</li><li>USD (Comptroller)</li><li>Assistant Secretary of the Army (Financial Management & Comptroller)</li></ul><p><b>Deliverables:</b></p><ul><li>PowerPoint briefing slides (classified UNCLASS, releasable to participants)</li><li>Executive summary (1-page) with key budget requests and justifications</li><li>Supporting budget documentation (detailed spreadsheets with assumptions)</li></ul><p>Briefing materials are due to my office <b>NLT 14 NOV at 1700</b> for review and coordination. Please send via SIPR to <a href=\"mailto:vcs.briefings@jcs.smil.mil\">vcs.briefings@jcs.smil.mil</a> with INFO copy to COL Martinez.</p><p>I understand this is short notice, but the Secretary has compressed the timeline due to upcoming congressional hearings on the defense appropriations bill. Your staff should coordinate with COL Martinez regarding any clarifying questions or additional data requirements.</p><p>If you have any scheduling conflicts or concerns about meeting this timeline, please contact my office immediately.</p><p>Respectfully,</p><p><b>Gen. Michael Thompson</b><br/>Vice Chairman, Joint Chiefs of Staff<br/>The Pentagon, Room 2E871<br/>(703) 697-9121 (DSN: 227-9121)<br/><a href=\"mailto:michael.thompson@jcs.army.mil\">michael.thompson@jcs.army.mil</a></p><hr/><p style=\"font-size: 9pt; color: #666;\"><b>CLASSIFICATION:</b> UNCLASSIFIED<br/><b>Distribution:</b> Authorized for official use only</p></div></body></html>"
+  },
+  "flag": {
+    "flagStatus": "flagged",
+    "startDateTime": {
+      "dateTime": "2025-11-13T00:00:00Z",
+      "timeZone": "UTC"
+    },
+    "dueDateTime": {
+      "dateTime": "2025-11-14T17:00:00Z",
+      "timeZone": "UTC"
+    },
+    "completedDateTime": null
+  },
+  "internetMessageHeaders": [
+    {
+      "name": "Received",
+      "value": "from pentagon-mail.army.mil by army.mil with ESMTP id ABC123"
+    },
+    {
+      "name": "Return-Path",
+      "value": "<michael.thompson@jcs.army.mil>"
+    },
+    {
+      "name": "X-MS-Exchange-Organization-AuthAs",
+      "value": "Internal"
+    },
+    {
+      "name": "X-MS-Exchange-Organization-AuthSource",
+      "value": "pentagon-mail.army.mil"
+    },
+    {
+      "name": "X-Originating-IP",
+      "value": "[192.168.100.50]"
+    }
+  ]
+}

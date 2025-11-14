@@ -1,0 +1,76 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('general.officer%40army.mil')/messages/$entity",
+  "@odata.etag": "W/\"CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD1\"",
+  "id": "AAMkAGI2THVSAAG=",
+  "createdDateTime": "2025-11-11T15:30:00Z",
+  "lastModifiedDateTime": "2025-11-11T15:30:00Z",
+  "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD1",
+  "categories": ["Training"],
+  "receivedDateTime": "2025-11-11T15:30:00Z",
+  "sentDateTime": "2025-11-11T15:25:00Z",
+  "hasAttachments": false,
+  "internetMessageId": "<MSG004@tradoc.army.mil>",
+  "subject": "FYI: New Cyber Warfare Training Module - Leadership Endorsement Needed",
+  "bodyPreview": "General, I wanted to bring to your attention a new cyber warfare training module being rolled out across the force in Q1 2026. This mandatory training addresses emerging threats in the cyber domain and aligns with the Chief of Staff's modernization priorities. The 8-hour computer-based training module is required for all personnel O-6 and above with a completion deadline of 31 March 2026.",
+  "importance": "normal",
+  "parentFolderId": "AAMkAGI2THVSAAA=",
+  "conversationId": "AAQkAGI2THVSAAG=",
+  "conversationIndex": "AQHaC8e=",
+  "isDeliveryReceiptRequested": false,
+  "isReadReceiptRequested": false,
+  "isRead": false,
+  "isDraft": false,
+  "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAG=",
+  "inferenceClassification": "focused",
+  "from": {
+    "emailAddress": {
+      "name": "Col. Patricia Wong",
+      "address": "patricia.wong@tradoc.army.mil"
+    }
+  },
+  "sender": {
+    "emailAddress": {
+      "name": "Col. Patricia Wong",
+      "address": "patricia.wong@tradoc.army.mil"
+    }
+  },
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "name": "Gen. Officer",
+        "address": "general.officer@army.mil"
+      }
+    }
+  ],
+  "ccRecipients": [
+    {
+      "emailAddress": {
+        "name": "G3 Training",
+        "address": "g3.training@tradoc.army.mil"
+      }
+    }
+  ],
+  "bccRecipients": [],
+  "replyTo": [],
+  "body": {
+    "contentType": "html",
+    "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div style=\"font-family: Calibri, Arial, sans-serif; font-size: 11pt;\"><p>General,</p><p>I wanted to bring to your attention a new cyber warfare training module being rolled out across the force in Q1 2026.</p><p>This mandatory training addresses emerging threats in the cyber domain and aligns with the Chief of Staff's modernization priorities as outlined in the Army's Multi-Domain Operations concept.</p><p><b>Training Overview:</b></p><ul><li><b>Title:</b> Advanced Cyber Warfare for Senior Leaders (ACWSL)</li><li><b>Format:</b> 8-hour computer-based training (CBT) module with interactive scenarios</li><li><b>Audience:</b> Required for all personnel O-6 and above</li><li><b>Completion Deadline:</b> 31 March 2026</li><li><b>Classification:</b> UNCLASSIFIED (with classified supplement available)</li><li><b>Platform:</b> Army Learning Management System (ALMS)</li></ul><p><b>Course Content:</b></p><ol><li>Evolution of Cyber Threats (90 minutes)<ul><li>Nation-state actors and capabilities</li><li>Advanced persistent threats (APTs)</li><li>Supply chain vulnerabilities</li><li>Social engineering and spear-phishing</li></ul></li><li>Cyber Kill Chain and Defense Strategies (120 minutes)<ul><li>Understanding attack vectors</li><li>Defensive cyber operations</li><li>Incident response protocols</li><li>Command responsibilities during cyber incidents</li></ul></li><li>Multi-Domain Operations and Cyber Integration (90 minutes)<ul><li>Cyber in combined arms operations</li><li>Electronic warfare and spectrum management</li><li>Integrating cyber effects with kinetic operations</li><li>Cross-domain synergy</li></ul></li><li>Leadership in the Cyber Domain (60 minutes)<ul><li>Command and control of cyber assets</li><li>Legal and policy considerations</li><li>Rules of engagement in cyberspace</li><li>Organizational cyber hygiene</li></ul></li><li>Practical Scenarios and Case Studies (90 minutes)<ul><li>Interactive decision-making exercises</li><li>Analysis of recent cyber incidents</li><li>Tabletop exercises</li><li>Final assessment</li></ul></li></ol><p><b>Why This Training Matters:</b></p><p>Recent intelligence assessments indicate that near-peer adversaries have significantly enhanced their cyber capabilities targeting US military infrastructure. This training ensures our senior leaders understand:</p><ul><li>The strategic implications of cyber operations</li><li>How to integrate cyber capabilities into operational planning</li><li>Command responsibilities and decision-making authorities</li><li>Protection of critical Army networks and systems</li></ul><p><b>Leadership Endorsement Request:</b></p><p>To maximize engagement and emphasize the importance of this training across the force, we are requesting leadership endorsement videos from General Officers.</p><p><b>What We're Asking:</b></p><ul><li>10-minute recording session (we bring equipment to your location)</li><li>Discuss importance of cyber awareness for senior leaders</li><li>Share your perspective on cyber threats in modern warfare</li><li>Encourage completion of the training</li></ul><p><b>Recording Details:</b></p><ul><li>Duration: 10-15 minutes total (includes setup and breakdown)</li><li>Format: Professional video with Army branding</li><li>Location: Your office or preferred location</li><li>Our team handles all technical aspects</li><li>Review and approval before distribution</li></ul><p><b>Proposed Timeline:</b></p><ul><li><b>Week of 2-6 December:</b> Available for recording sessions</li><li><b>9-13 December:</b> Post-production and review</li><li><b>16 December:</b> Deliver final video for your approval</li><li><b>Early January 2026:</b> Training module goes live with leadership videos</li></ul><p><b>Additional Context:</b></p><p>Your endorsement would significantly boost engagement across the command. In previous training initiatives where General Officers provided introductory messages, we saw:</p><ul><li>42% higher on-time completion rates</li><li>Enhanced perception of training importance</li><li>Increased quality of student engagement with material</li><li>Positive feedback from subordinate leaders</li></ul><p><b>Sample Script Points</b> (we can customize based on your preferences):</p><ul><li>Personal experience with cyber threats or incidents</li><li>Importance of cyber security in your command</li><li>How cyber integrates with traditional military operations</li><li>Expectations for leaders completing the training</li><li>Connection to Army modernization priorities</li></ul><p><b>Support Materials:</b></p><p>If you'd like to review the training content before recording, I can provide:</p><ul><li>Course syllabus and learning objectives</li><li>Sample lesson screenshots</li><li>Assessment questions</li><li>Suggested talking points for endorsement</li></ul><p><b>Next Steps:</b></p><p>If you're available and willing to participate, please let me know your preferred date/time during the week of 2-6 December. My team will coordinate all logistics and come to your location.</p><p>Alternatively, if December doesn't work, we have flexibility in early January, though that would delay the training rollout slightly.</p><p>If you have any questions about the training content, recording process, or would like to discuss this further, I'm happy to schedule a brief call at your convenience.</p><p>Thank you for considering this request. Your leadership and support for Army training initiatives is greatly appreciated.</p><p>Respectfully,</p><p><b>COL Patricia Wong</b><br/>Director, Cyber Training Division<br/>US Army Training and Doctrine Command (TRADOC)<br/>Fort Eustis, VA<br/>Office: (757) 878-XXXX<br/>Mobile: (757) 555-XXXX<br/><a href=\"mailto:patricia.wong@tradoc.army.mil\">patricia.wong@tradoc.army.mil</a></p><hr/><p style=\"font-size: 9pt; color: #666;\"><b>Note:</b> This training is part of the Army's broader cyber readiness initiative mandated by the FY2026 NDAA. Completion tracking will be monitored at DA level.</p></div></body></html>"
+  },
+  "uniqueBody": {
+    "contentType": "html",
+    "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div style=\"font-family: Calibri, Arial, sans-serif; font-size: 11pt;\"><p>General,</p><p>I wanted to bring to your attention a new cyber warfare training module being rolled out across the force in Q1 2026.</p><p>This mandatory training addresses emerging threats in the cyber domain and aligns with the Chief of Staff's modernization priorities as outlined in the Army's Multi-Domain Operations concept.</p><p><b>Training Overview:</b></p><ul><li><b>Title:</b> Advanced Cyber Warfare for Senior Leaders (ACWSL)</li><li><b>Format:</b> 8-hour computer-based training (CBT) module with interactive scenarios</li><li><b>Audience:</b> Required for all personnel O-6 and above</li><li><b>Completion Deadline:</b> 31 March 2026</li><li><b>Classification:</b> UNCLASSIFIED (with classified supplement available)</li><li><b>Platform:</b> Army Learning Management System (ALMS)</li></ul><p><b>Course Content:</b></p><ol><li>Evolution of Cyber Threats (90 minutes)<ul><li>Nation-state actors and capabilities</li><li>Advanced persistent threats (APTs)</li><li>Supply chain vulnerabilities</li><li>Social engineering and spear-phishing</li></ul></li><li>Cyber Kill Chain and Defense Strategies (120 minutes)<ul><li>Understanding attack vectors</li><li>Defensive cyber operations</li><li>Incident response protocols</li><li>Command responsibilities during cyber incidents</li></ul></li><li>Multi-Domain Operations and Cyber Integration (90 minutes)<ul><li>Cyber in combined arms operations</li><li>Electronic warfare and spectrum management</li><li>Integrating cyber effects with kinetic operations</li><li>Cross-domain synergy</li></ul></li><li>Leadership in the Cyber Domain (60 minutes)<ul><li>Command and control of cyber assets</li><li>Legal and policy considerations</li><li>Rules of engagement in cyberspace</li><li>Organizational cyber hygiene</li></ul></li><li>Practical Scenarios and Case Studies (90 minutes)<ul><li>Interactive decision-making exercises</li><li>Analysis of recent cyber incidents</li><li>Tabletop exercises</li><li>Final assessment</li></ul></li></ol><p><b>Why This Training Matters:</b></p><p>Recent intelligence assessments indicate that near-peer adversaries have significantly enhanced their cyber capabilities targeting US military infrastructure. This training ensures our senior leaders understand:</p><ul><li>The strategic implications of cyber operations</li><li>How to integrate cyber capabilities into operational planning</li><li>Command responsibilities and decision-making authorities</li><li>Protection of critical Army networks and systems</li></ul><p><b>Leadership Endorsement Request:</b></p><p>To maximize engagement and emphasize the importance of this training across the force, we are requesting leadership endorsement videos from General Officers.</p><p><b>What We're Asking:</b></p><ul><li>10-minute recording session (we bring equipment to your location)</li><li>Discuss importance of cyber awareness for senior leaders</li><li>Share your perspective on cyber threats in modern warfare</li><li>Encourage completion of the training</li></ul><p><b>Recording Details:</b></p><ul><li>Duration: 10-15 minutes total (includes setup and breakdown)</li><li>Format: Professional video with Army branding</li><li>Location: Your office or preferred location</li><li>Our team handles all technical aspects</li><li>Review and approval before distribution</li></ul><p><b>Proposed Timeline:</b></p><ul><li><b>Week of 2-6 December:</b> Available for recording sessions</li><li><b>9-13 December:</b> Post-production and review</li><li><b>16 December:</b> Deliver final video for your approval</li><li><b>Early January 2026:</b> Training module goes live with leadership videos</li></ul><p><b>Additional Context:</b></p><p>Your endorsement would significantly boost engagement across the command. In previous training initiatives where General Officers provided introductory messages, we saw:</p><ul><li>42% higher on-time completion rates</li><li>Enhanced perception of training importance</li><li>Increased quality of student engagement with material</li><li>Positive feedback from subordinate leaders</li></ul><p><b>Sample Script Points</b> (we can customize based on your preferences):</p><ul><li>Personal experience with cyber threats or incidents</li><li>Importance of cyber security in your command</li><li>How cyber integrates with traditional military operations</li><li>Expectations for leaders completing the training</li><li>Connection to Army modernization priorities</li></ul><p><b>Support Materials:</b></p><p>If you'd like to review the training content before recording, I can provide:</p><ul><li>Course syllabus and learning objectives</li><li>Sample lesson screenshots</li><li>Assessment questions</li><li>Suggested talking points for endorsement</li></ul><p><b>Next Steps:</b></p><p>If you're available and willing to participate, please let me know your preferred date/time during the week of 2-6 December. My team will coordinate all logistics and come to your location.</p><p>Alternatively, if December doesn't work, we have flexibility in early January, though that would delay the training rollout slightly.</p><p>If you have any questions about the training content, recording process, or would like to discuss this further, I'm happy to schedule a brief call at your convenience.</p><p>Thank you for considering this request. Your leadership and support for Army training initiatives is greatly appreciated.</p><p>Respectfully,</p><p><b>COL Patricia Wong</b><br/>Director, Cyber Training Division<br/>US Army Training and Doctrine Command (TRADOC)<br/>Fort Eustis, VA<br/>Office: (757) 878-XXXX<br/>Mobile: (757) 555-XXXX<br/><a href=\"mailto:patricia.wong@tradoc.army.mil\">patricia.wong@tradoc.army.mil</a></p><hr/><p style=\"font-size: 9pt; color: #666;\"><b>Note:</b> This training is part of the Army's broader cyber readiness initiative mandated by the FY2026 NDAA. Completion tracking will be monitored at DA level.</p></div></body></html>"
+  },
+  "flag": {
+    "flagStatus": "notFlagged"
+  },
+  "internetMessageHeaders": [
+    {
+      "name": "Received",
+      "value": "from tradoc-mail.army.mil by army.mil with ESMTP"
+    },
+    {
+      "name": "X-MS-Exchange-Organization-AuthAs",
+      "value": "Internal"
+    }
+  ]
+}

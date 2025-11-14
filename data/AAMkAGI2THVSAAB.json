@@ -1,0 +1,73 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('general.officer%40army.mil')/messages/$entity",
+  "@odata.etag": "W/\"CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC6\"",
+  "id": "AAMkAGI2THVSAAB=",
+  "createdDateTime": "2025-11-13T07:15:00Z",
+  "lastModifiedDateTime": "2025-11-13T07:15:00Z",
+  "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC6",
+  "categories": [],
+  "receivedDateTime": "2025-11-13T07:15:00Z",
+  "sentDateTime": "2025-11-13T07:10:00Z",
+  "hasAttachments": false,
+  "internetMessageId": "<SPAM001@marketingpro.com>",
+  "subject": "⭐ Exclusive Military Discount - Luxury Watches Up to 90% Off! ⭐",
+  "bodyPreview": "Dear Valued Military Professional, As a token of our appreciation for your service, we're offering an EXCLUSIVE 90% discount on luxury timepieces from the world's most prestigious brands! Rolex, Omega, Breitling, Patek Philippe, and more - all at unbelievable prices. This is a limited-time offer available ONLY to select military personnel. Don't miss out on this once-in-a-lifetime opportunity to own the watch of your dreams!",
+  "importance": "normal",
+  "parentFolderId": "AAMkAGI2THVSAAA=",
+  "conversationId": "AAQkAGI2THVSAAB=",
+  "conversationIndex": "AQHaC8Z=",
+  "isDeliveryReceiptRequested": false,
+  "isReadReceiptRequested": false,
+  "isRead": false,
+  "isDraft": false,
+  "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAB=",
+  "inferenceClassification": "other",
+  "from": {
+    "emailAddress": {
+      "name": "Military Deals Today",
+      "address": "deals@marketingpro.com"
+    }
+  },
+  "sender": {
+    "emailAddress": {
+      "name": "Military Deals Today",
+      "address": "deals@marketingpro.com"
+    }
+  },
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "name": "Gen. Officer",
+        "address": "general.officer@army.mil"
+      }
+    }
+  ],
+  "ccRecipients": [],
+  "bccRecipients": [],
+  "replyTo": [],
+  "body": {
+    "contentType": "html",
+    "content": "<html><head><style>body{font-family:Arial,sans-serif;}</style></head><body><div style='background:#ff0000;color:#fff;padding:20px;text-align:center;'><h1 style='margin:0;font-size:32px;'>⭐ EXCLUSIVE MILITARY DISCOUNT ⭐</h1><h2 style='margin:10px 0;'>90% OFF LUXURY TIMEPIECES!</h2></div><div style='padding:20px;background:#f5f5f5;'><p style='font-size:16px;'><b>Dear Valued Military Professional,</b></p><p>As a token of our appreciation for your service to our nation, we're offering an <span style='color:#ff0000;font-size:20px;font-weight:bold;'>EXCLUSIVE 90% DISCOUNT</span> on luxury timepieces from the world's most prestigious brands!</p><div style='background:#fff;padding:15px;margin:20px 0;border:3px solid #ff0000;'><h3 style='color:#ff0000;text-align:center;'>BRANDS INCLUDED:</h3><ul style='font-size:18px;line-height:2;'><li>⌚ Rolex Submariner - <s>$8,500</s> NOW ONLY $850!</li><li>⌚ Omega Seamaster - <s>$5,200</s> NOW ONLY $520!</li><li>⌚ Breitling Navitimer - <s>$7,800</s> NOW ONLY $780!</li><li>⌚ Patek Philippe Calatrava - <s>$25,000</s> NOW ONLY $2,500!</li><li>⌚ Tag Heuer Carrera - <s>$4,500</s> NOW ONLY $450!</li></ul></div><p style='font-size:18px;font-weight:bold;color:#ff0000;text-align:center;'>⏰ LIMITED TIME OFFER - EXPIRES IN 24 HOURS! ⏰</p><div style='text-align:center;margin:30px 0;'><a href='http://suspicious-link.biz/offer?ref=mil_gen_2025' style='background:#ff0000;color:#fff;padding:20px 40px;text-decoration:none;font-size:24px;font-weight:bold;border-radius:5px;display:inline-block;'>CLICK HERE TO CLAIM YOUR DISCOUNT NOW!</a></div><p>Why pay full price when you can get authentic luxury watches at a fraction of the cost? Our military appreciation program has already helped over 50,000 service members acquire their dream timepieces!</p><div style='background:#fffacd;padding:15px;margin:20px 0;border-left:5px solid #ffa500;'><p style='margin:0;'><b>⚠️ IMPORTANT:</b> This offer is available ONLY to active and retired military personnel. You must verify your military email address to qualify. Supplies are limited!</p></div><h3>What Our Customers Say:</h3><blockquote style='border-left:3px solid #ccc;padding-left:15px;font-style:italic;'>"I couldn't believe the price! Got my Rolex for under $1000. Amazing deal!" - Col. J. Smith</blockquote><blockquote style='border-left:3px solid #ccc;padding-left:15px;font-style:italic;'>"Fast shipping and genuine product. Best military discount ever!" - Maj. T. Johnson</blockquote><p style='font-size:14px;text-align:center;margin-top:40px;'>Act now before this exclusive offer expires! Click the button above to secure your luxury timepiece today!</p><div style='text-align:center;margin:20px 0;'><a href='http://suspicious-link.biz/offer?ref=mil_gen_2025' style='color:#ff0000;font-size:18px;font-weight:bold;text-decoration:underline;'>🔗 CLAIM YOUR 90% DISCOUNT HERE 🔗</a></div></div><div style='background:#333;color:#fff;padding:20px;text-align:center;font-size:10px;'><p>Military Deals Today | 123 Commerce St, Suite 999 | Some City, XX 00000</p><p>You are receiving this email because you are a military professional.</p><p><a href='http://suspicious-link.biz/unsubscribe' style='color:#fff;'>Unsubscribe</a> | <a href='http://suspicious-link.biz/privacy' style='color:#fff;'>Privacy Policy</a></p></div></body></html>"
+  },
+  "uniqueBody": {
+    "contentType": "html",
+    "content": "<html><head><style>body{font-family:Arial,sans-serif;}</style></head><body><div style='background:#ff0000;color:#fff;padding:20px;text-align:center;'><h1 style='margin:0;font-size:32px;'>⭐ EXCLUSIVE MILITARY DISCOUNT ⭐</h1><h2 style='margin:10px 0;'>90% OFF LUXURY TIMEPIECES!</h2></div><div style='padding:20px;background:#f5f5f5;'><p style='font-size:16px;'><b>Dear Valued Military Professional,</b></p><p>As a token of our appreciation for your service to our nation, we're offering an <span style='color:#ff0000;font-size:20px;font-weight:bold;'>EXCLUSIVE 90% DISCOUNT</span> on luxury timepieces from the world's most prestigious brands!</p><div style='background:#fff;padding:15px;margin:20px 0;border:3px solid #ff0000;'><h3 style='color:#ff0000;text-align:center;'>BRANDS INCLUDED:</h3><ul style='font-size:18px;line-height:2;'><li>⌚ Rolex Submariner - <s>$8,500</s> NOW ONLY $850!</li><li>⌚ Omega Seamaster - <s>$5,200</s> NOW ONLY $520!</li><li>⌚ Breitling Navitimer - <s>$7,800</s> NOW ONLY $780!</li><li>⌚ Patek Philippe Calatrava - <s>$25,000</s> NOW ONLY $2,500!</li><li>⌚ Tag Heuer Carrera - <s>$4,500</s> NOW ONLY $450!</li></ul></div><p style='font-size:18px;font-weight:bold;color:#ff0000;text-align:center;'>⏰ LIMITED TIME OFFER - EXPIRES IN 24 HOURS! ⏰</p><div style='text-align:center;margin:30px 0;'><a href='http://suspicious-link.biz/offer?ref=mil_gen_2025' style='background:#ff0000;color:#fff;padding:20px 40px;text-decoration:none;font-size:24px;font-weight:bold;border-radius:5px;display:inline-block;'>CLICK HERE TO CLAIM YOUR DISCOUNT NOW!</a></div><p>Why pay full price when you can get authentic luxury watches at a fraction of the cost? Our military appreciation program has already helped over 50,000 service members acquire their dream timepieces!</p><div style='background:#fffacd;padding:15px;margin:20px 0;border-left:5px solid #ffa500;'><p style='margin:0;'><b>⚠️ IMPORTANT:</b> This offer is available ONLY to active and retired military personnel. You must verify your military email address to qualify. Supplies are limited!</p></div><h3>What Our Customers Say:</h3><blockquote style='border-left:3px solid #ccc;padding-left:15px;font-style:italic;'>"I couldn't believe the price! Got my Rolex for under $1000. Amazing deal!" - Col. J. Smith</blockquote><blockquote style='border-left:3px solid #ccc;padding-left:15px;font-style:italic;'>"Fast shipping and genuine product. Best military discount ever!" - Maj. T. Johnson</blockquote><p style='font-size:14px;text-align:center;margin-top:40px;'>Act now before this exclusive offer expires! Click the button above to secure your luxury timepiece today!</p><div style='text-align:center;margin:20px 0;'><a href='http://suspicious-link.biz/offer?ref=mil_gen_2025' style='color:#ff0000;font-size:18px;font-weight:bold;text-decoration:underline;'>🔗 CLAIM YOUR 90% DISCOUNT HERE 🔗</a></div></div><div style='background:#333;color:#fff;padding:20px;text-align:center;font-size:10px;'><p>Military Deals Today | 123 Commerce St, Suite 999 | Some City, XX 00000</p><p>You are receiving this email because you are a military professional.</p><p><a href='http://suspicious-link.biz/unsubscribe' style='color:#fff;'>Unsubscribe</a> | <a href='http://suspicious-link.biz/privacy' style='color:#fff;'>Privacy Policy</a></p></div></body></html>"
+  },
+  "flag": {
+    "flagStatus": "notFlagged"
+  },
+  "internetMessageHeaders": [
+    {
+      "name": "Received",
+      "value": "from mail-sender.marketingpro.com by army.mil with ESMTP"
+    },
+    {
+      "name": "X-Spam-Score",
+      "value": "8.5"
+    },
+    {
+      "name": "X-Spam-Flag",
+      "value": "YES"
+    }
+  ]
+}

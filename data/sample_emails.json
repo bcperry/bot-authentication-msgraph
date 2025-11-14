@@ -1,0 +1,879 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('general.officer%40army.mil')/messages",
+  "value": [
+    {
+      "id": "AAMkAGI2THVSAAA=",
+      "createdDateTime": "2025-11-13T08:30:00Z",
+      "lastModifiedDateTime": "2025-11-13T08:30:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC5",
+      "categories": [],
+      "receivedDateTime": "2025-11-13T08:30:00Z",
+      "sentDateTime": "2025-11-13T08:25:00Z",
+      "hasAttachments": true,
+      "internetMessageId": "<MSG001@pentagon.army.mil>",
+      "subject": "URGENT: Joint Chiefs Meeting - Budget Briefing Required",
+      "bodyPreview": "General, you are requested to attend the Joint Chiefs meeting on 15 NOV at 0900. Please prepare a 20-minute briefing on Q1 budget allocations for your command...",
+      "importance": "high",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAA=",
+      "conversationIndex": "AQHaC8Y=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": true,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAA=",
+      "inferenceClassification": "focused",
+      "from": {
+        "emailAddress": {
+          "name": "Gen. Michael Thompson",
+          "address": "michael.thompson@jcs.army.mil"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Gen. Michael Thompson",
+          "address": "michael.thompson@jcs.army.mil"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "Col. Sarah Martinez",
+            "address": "sarah.martinez@pentagon.army.mil"
+          }
+        }
+      ],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><p>General,</p><p>You are requested to attend the Joint Chiefs meeting on <b>15 NOV at 0900</b> in the Pentagon, Room 2E924.</p><p>Please prepare a 20-minute briefing covering:</p><ul><li>Q1 budget allocations for your command</li><li>Projected personnel needs for FY2026</li><li>Equipment modernization priorities</li></ul><p>Briefing materials are due to my office NLT 14 NOV 1700.</p><p>Respectfully,<br/>Gen. Michael Thompson<br/>Vice Chairman, Joint Chiefs of Staff</p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "flagged",
+        "startDateTime": {
+          "dateTime": "2025-11-13T00:00:00Z",
+          "timeZone": "UTC"
+        },
+        "dueDateTime": {
+          "dateTime": "2025-11-14T17:00:00Z",
+          "timeZone": "UTC"
+        }
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAB=",
+      "createdDateTime": "2025-11-13T07:15:00Z",
+      "lastModifiedDateTime": "2025-11-13T07:15:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC6",
+      "categories": [],
+      "receivedDateTime": "2025-11-13T07:15:00Z",
+      "sentDateTime": "2025-11-13T07:10:00Z",
+      "hasAttachments": false,
+      "internetMessageId": "<SPAM001@marketingpro.com>",
+      "subject": "⭐ Exclusive Military Discount - Luxury Watches Up to 90% Off! ⭐",
+      "bodyPreview": "Dear Valued Military Professional, As a token of our appreciation for your service, we're offering an EXCLUSIVE 90% discount on luxury timepieces...",
+      "importance": "normal",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAB=",
+      "conversationIndex": "AQHaC8Z=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": false,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAB=",
+      "inferenceClassification": "other",
+      "from": {
+        "emailAddress": {
+          "name": "Military Deals Today",
+          "address": "deals@marketingpro.com"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Military Deals Today",
+          "address": "deals@marketingpro.com"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><div style='background:#ff0000;color:#fff;padding:20px;'><h1>⭐ EXCLUSIVE MILITARY DISCOUNT ⭐</h1></div><p>Dear Valued Military Professional,</p><p>As a token of our appreciation for your service, we're offering an <b>EXCLUSIVE 90% discount</b> on luxury timepieces from brands like Rolex, Omega, and Breitling!</p><p><a href='http://suspicious-link.biz/offer'>CLICK HERE NOW - LIMITED TIME OFFER!</a></p><p>Act now before this offer expires!</p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAC=",
+      "createdDateTime": "2025-11-12T16:45:00Z",
+      "lastModifiedDateTime": "2025-11-13T09:00:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC7",
+      "categories": ["Personnel"],
+      "receivedDateTime": "2025-11-12T16:45:00Z",
+      "sentDateTime": "2025-11-12T16:40:00Z",
+      "hasAttachments": true,
+      "internetMessageId": "<MSG002@hqda.army.mil>",
+      "subject": "ACTION REQUIRED: Commander's Evaluation Report - Maj. Johnson",
+      "bodyPreview": "Sir, the Commander's Evaluation Report for MAJ David Johnson is due for your review and signature by COB 15 NOV. MAJ Johnson has served as your Executive Officer...",
+      "importance": "high",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAC=",
+      "conversationIndex": "AQHaC8a=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": true,
+      "isRead": true,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAC=",
+      "inferenceClassification": "focused",
+      "from": {
+        "emailAddress": {
+          "name": "Col. James Mitchell",
+          "address": "james.mitchell@hqda.army.mil"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Col. James Mitchell",
+          "address": "james.mitchell@hqda.army.mil"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><p>Sir,</p><p>The Commander's Evaluation Report for MAJ David Johnson is due for your review and signature by <b>COB 15 NOV</b>.</p><p>MAJ Johnson has served as your Executive Officer for the past 18 months and has consistently demonstrated exceptional leadership and professionalism.</p><p>The draft OER is attached for your review. Please provide any edits or approve for final signature.</p><p>Respectfully,<br/>COL James Mitchell<br/>Chief of Staff</p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "flagged",
+        "dueDateTime": {
+          "dateTime": "2025-11-15T17:00:00Z",
+          "timeZone": "UTC"
+        }
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAD=",
+      "createdDateTime": "2025-11-12T14:20:00Z",
+      "lastModifiedDateTime": "2025-11-12T14:20:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC8",
+      "categories": [],
+      "receivedDateTime": "2025-11-12T14:20:00Z",
+      "sentDateTime": "2025-11-12T14:15:00Z",
+      "hasAttachments": false,
+      "internetMessageId": "<SPAM002@crypto-invest.ru>",
+      "subject": "RE: Secure Investment Opportunity - Cryptocurrency Portfolio",
+      "bodyPreview": "General Officer, I hope this email finds you well. My name is Viktor Petrov and I represent a prestigious investment firm based in Switzerland...",
+      "importance": "normal",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAD=",
+      "conversationIndex": "AQHaC8b=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": false,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAD=",
+      "inferenceClassification": "other",
+      "from": {
+        "emailAddress": {
+          "name": "Viktor Petrov",
+          "address": "v.petrov@crypto-invest.ru"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Viktor Petrov",
+          "address": "v.petrov@crypto-invest.ru"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "text",
+        "content": "General Officer,\n\nI hope this email finds you well. My name is Viktor Petrov and I represent a prestigious investment firm based in Switzerland.\n\nWe have identified you as a high-value individual who could benefit from our exclusive cryptocurrency investment portfolio. We guarantee 300% returns within 6 months.\n\nTo proceed, we simply need you to:\n1. Provide your banking information\n2. Make an initial investment of $50,000\n3. Refer 3 colleagues\n\nThis is a limited-time opportunity available only to select military leaders.\n\nPlease respond quickly to secure your position.\n\nViktor Petrov\nSenior Investment Advisor"
+      },
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAE=",
+      "createdDateTime": "2025-11-12T11:30:00Z",
+      "lastModifiedDateTime": "2025-11-12T11:30:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC9",
+      "categories": ["Operations"],
+      "receivedDateTime": "2025-11-12T11:30:00Z",
+      "sentDateTime": "2025-11-12T11:25:00Z",
+      "hasAttachments": true,
+      "internetMessageId": "<MSG003@centcom.mil>",
+      "subject": "SITREP: Middle East Operations Update - Week 46",
+      "bodyPreview": "CLASSIFICATION: SECRET//NOFORN. Sir, attached is the weekly situation report covering operations in your AOR. Key highlights include...",
+      "importance": "high",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAE=",
+      "conversationIndex": "AQHaC8c=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": true,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAE=",
+      "inferenceClassification": "focused",
+      "from": {
+        "emailAddress": {
+          "name": "BG Robert Chen",
+          "address": "robert.chen@centcom.mil"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "BG Robert Chen",
+          "address": "robert.chen@centcom.mil"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "J3 Operations",
+            "address": "j3.operations@centcom.mil"
+          }
+        }
+      ],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><p><b>CLASSIFICATION: SECRET//NOFORN</b></p><p>Sir,</p><p>Attached is the weekly situation report covering operations in your AOR.</p><p><b>Key highlights include:</b></p><ul><li>Successful completion of joint training exercise with partner nation forces</li><li>Increased ISR activity in southern sector - 3 high-value targets identified</li><li>Force protection posture elevated to FPCON Bravo due to recent intelligence</li><li>Equipment maintenance at 94% readiness - exceeds command standard</li></ul><p>Request your guidance on proposed adjustments to patrol schedules in grid square 38S MB.</p><p>Full report attached (classification: SECRET//NOFORN).</p><p>Respectfully,<br/>BG Robert Chen<br/>J3, CENTCOM</p><p><b>CLASSIFICATION: SECRET//NOFORN</b></p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "flagged"
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAF=",
+      "createdDateTime": "2025-11-12T09:00:00Z",
+      "lastModifiedDateTime": "2025-11-12T09:00:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD0",
+      "categories": [],
+      "receivedDateTime": "2025-11-12T09:00:00Z",
+      "sentDateTime": "2025-11-12T08:55:00Z",
+      "hasAttachments": false,
+      "internetMessageId": "<SPAM003@phishing.xyz>",
+      "subject": "URGENT: Your Army Email Account Will Be Suspended",
+      "bodyPreview": "Dear Army.mil User, Our system has detected suspicious activity on your account. Your email will be suspended within 24 hours unless you verify your credentials...",
+      "importance": "high",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAF=",
+      "conversationIndex": "AQHaC8d=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": false,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAF=",
+      "inferenceClassification": "other",
+      "from": {
+        "emailAddress": {
+          "name": "Army IT Support",
+          "address": "support@army-it-help.xyz"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Army IT Support",
+          "address": "support@army-it-help.xyz"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><div style='border:2px solid red;padding:10px;background:#fff3cd;'><h2 style='color:red;'>⚠️ URGENT ACTION REQUIRED ⚠️</h2></div><p>Dear Army.mil User,</p><p>Our system has detected <b>suspicious activity</b> on your account. Your email will be <span style='color:red;font-weight:bold;'>SUSPENDED WITHIN 24 HOURS</span> unless you verify your credentials immediately.</p><p><a href='http://fake-army-portal.xyz/verify' style='background:red;color:white;padding:10px;text-decoration:none;'>CLICK HERE TO VERIFY YOUR ACCOUNT</a></p><p>Failure to verify will result in permanent loss of email access and all stored messages.</p><p>Army IT Support Team<br/>Do Not Reply</p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAG=",
+      "createdDateTime": "2025-11-11T15:30:00Z",
+      "lastModifiedDateTime": "2025-11-11T15:30:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD1",
+      "categories": ["Training"],
+      "receivedDateTime": "2025-11-11T15:30:00Z",
+      "sentDateTime": "2025-11-11T15:25:00Z",
+      "hasAttachments": false,
+      "internetMessageId": "<MSG004@tradoc.army.mil>",
+      "subject": "FYI: New Cyber Warfare Training Module - Leadership Endorsement Needed",
+      "bodyPreview": "General, I wanted to bring to your attention a new cyber warfare training module being rolled out across the force in Q1 2026...",
+      "importance": "normal",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAG=",
+      "conversationIndex": "AQHaC8e=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": false,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAG=",
+      "inferenceClassification": "focused",
+      "from": {
+        "emailAddress": {
+          "name": "Col. Patricia Wong",
+          "address": "patricia.wong@tradoc.army.mil"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Col. Patricia Wong",
+          "address": "patricia.wong@tradoc.army.mil"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "G3 Training",
+            "address": "g3.training@tradoc.army.mil"
+          }
+        }
+      ],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><p>General,</p><p>I wanted to bring to your attention a new cyber warfare training module being rolled out across the force in Q1 2026.</p><p>This mandatory training addresses emerging threats in the cyber domain and aligns with the Chief of Staff's modernization priorities.</p><p><b>Key Details:</b></p><ul><li>8-hour computer-based training (CBT) module</li><li>Required for all personnel O-6 and above</li><li>Completion deadline: 31 March 2026</li><li>Leadership endorsement video requested from General Officers</li></ul><p>Would you be available for a 10-minute recording session during the week of 2-6 December? Your endorsement would significantly boost engagement across the command.</p><p>Respectfully,<br/>COL Patricia Wong<br/>Director, Cyber Training Division<br/>TRADOC</p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAH=",
+      "createdDateTime": "2025-11-11T13:15:00Z",
+      "lastModifiedDateTime": "2025-11-11T13:15:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD2",
+      "categories": ["Logistics"],
+      "receivedDateTime": "2025-11-11T13:15:00Z",
+      "sentDateTime": "2025-11-11T13:10:00Z",
+      "hasAttachments": true,
+      "internetMessageId": "<MSG005@amc.army.mil>",
+      "subject": "ACTION: Approve LOGCAP Contract Extension - $47M",
+      "bodyPreview": "Sir, the LOGCAP V contract for theater logistics support is set to expire on 31 December. We require your approval to execute a 6-month extension valued at $47M...",
+      "importance": "high",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAH=",
+      "conversationIndex": "AQHaC8f=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": true,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAH=",
+      "inferenceClassification": "focused",
+      "from": {
+        "emailAddress": {
+          "name": "BG Amanda Foster",
+          "address": "amanda.foster@amc.army.mil"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "BG Amanda Foster",
+          "address": "amanda.foster@amc.army.mil"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "Contracting Officer",
+            "address": "contracting@amc.army.mil"
+          }
+        }
+      ],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><p>Sir,</p><p>The LOGCAP V contract for theater logistics support is set to expire on 31 December. We require your approval to execute a 6-month extension valued at <b>$47 million</b>.</p><p><b>Justification:</b></p><ul><li>Critical support for ongoing operations in theater</li><li>No alternative vendors available in current environment</li><li>Extension allows time for proper competitive rebid process</li><li>Pricing remains consistent with current contract terms</li></ul><p><b>Timeline:</b></p><ul><li>Decision required NLT 20 NOV to process paperwork</li><li>Failure to extend will result in service disruption 1 JAN</li></ul><p>Attached documents:</p><ul><li>Contract extension justification memo</li><li>Price analysis</li><li>Legal review</li></ul><p>Request your approval to proceed.</p><p>Respectfully,<br/>BG Amanda Foster<br/>Deputy Commander for Contracting<br/>Army Materiel Command</p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "flagged",
+        "dueDateTime": {
+          "dateTime": "2025-11-20T17:00:00Z",
+          "timeZone": "UTC"
+        }
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAI=",
+      "createdDateTime": "2025-11-11T10:45:00Z",
+      "lastModifiedDateTime": "2025-11-11T10:45:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD3",
+      "categories": [],
+      "receivedDateTime": "2025-11-11T10:45:00Z",
+      "sentDateTime": "2025-11-11T10:40:00Z",
+      "hasAttachments": false,
+      "internetMessageId": "<SPAM004@supplements.biz>",
+      "subject": "Boost Your Energy and Performance - Military Grade Supplements",
+      "bodyPreview": "Hello Warrior, Feeling tired? Low energy during PT? Our MILITARY GRADE supplements are specially formulated for active duty personnel...",
+      "importance": "normal",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAI=",
+      "conversationIndex": "AQHaC8g=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": false,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAI=",
+      "inferenceClassification": "other",
+      "from": {
+        "emailAddress": {
+          "name": "TacticalFit Nutrition",
+          "address": "sales@supplements.biz"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "TacticalFit Nutrition",
+          "address": "sales@supplements.biz"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><h1>🔥 MILITARY GRADE SUPPLEMENTS 🔥</h1><p>Hello Warrior,</p><p>Feeling tired? Low energy during PT?</p><p>Our <b>MILITARY GRADE</b> supplements are specially formulated for active duty personnel like you!</p><ul><li>✓ Increase energy by 300%</li><li>✓ Build muscle FAST</li><li>✓ Burn fat while you sleep</li><li>✓ Improve focus and concentration</li></ul><p><b>SPECIAL MILITARY DISCOUNT: 50% OFF</b></p><p><a href='http://shady-supplements.biz/buy'>ORDER NOW - FREE SHIPPING</a></p><p><small>*These statements have not been evaluated by the FDA. Not approved for military use.</small></p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAJ=",
+      "createdDateTime": "2025-11-10T16:00:00Z",
+      "lastModifiedDateTime": "2025-11-10T16:00:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD4",
+      "categories": ["Congressional"],
+      "receivedDateTime": "2025-11-10T16:00:00Z",
+      "sentDateTime": "2025-11-10T15:55:00Z",
+      "hasAttachments": true,
+      "internetMessageId": "<MSG006@hqda.army.mil>",
+      "subject": "URGENT: Congressional Inquiry Response Due 18 NOV",
+      "bodyPreview": "General, we have received a congressional inquiry from Senator Williams' office regarding recruitment and retention statistics in your command. A response is required by 18 NOV...",
+      "importance": "high",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAJ=",
+      "conversationIndex": "AQHaC8h=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": true,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAJ=",
+      "inferenceClassification": "focused",
+      "from": {
+        "emailAddress": {
+          "name": "Ms. Jennifer Parker",
+          "address": "jennifer.parker@hqda.army.mil"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Ms. Jennifer Parker",
+          "address": "jennifer.parker@hqda.army.mil"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "Legislative Liaison",
+            "address": "legislative.liaison@hqda.army.mil"
+          }
+        }
+      ],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><p>General,</p><p>We have received a congressional inquiry from <b>Senator Williams' office</b> regarding recruitment and retention statistics in your command.</p><p><b>Information Requested:</b></p><ol><li>Recruitment numbers for FY2025 (by MOS)</li><li>Retention rates for first-term and career soldiers</li><li>Specific challenges affecting recruitment in your region</li><li>Programs/initiatives implemented to improve retention</li><li>Projected personnel needs for FY2026</li></ol><p><b>Timeline:</b></p><ul><li>Response required: <span style='color:red;font-weight:bold;'>18 NOV 2025, 1200 EST</span></li><li>Must be reviewed by HQDA G-1 before submission</li></ul><p>Please coordinate with your G-1 to compile the required data. A draft template is attached.</p><p>Let me know if you have any questions.</p><p>Respectfully,<br/>Jennifer Parker<br/>Congressional Affairs Specialist<br/>HQDA Legislative Liaison</p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "flagged",
+        "dueDateTime": {
+          "dateTime": "2025-11-18T12:00:00Z",
+          "timeZone": "EST"
+        }
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAK=",
+      "createdDateTime": "2025-11-10T14:30:00Z",
+      "lastModifiedDateTime": "2025-11-10T14:30:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD5",
+      "categories": ["Awards"],
+      "receivedDateTime": "2025-11-10T14:30:00Z",
+      "sentDateTime": "2025-11-10T14:25:00Z",
+      "hasAttachments": true,
+      "internetMessageId": "<MSG007@perscom.army.mil>",
+      "subject": "INFO: Legion of Merit Award Ceremony - 1 December",
+      "bodyPreview": "Sir, this is to inform you that the Legion of Merit award ceremony for CSM Rodriguez will take place on 1 December at 1400 in the headquarters auditorium...",
+      "importance": "normal",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAK=",
+      "conversationIndex": "AQHaC8i=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": false,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAK=",
+      "inferenceClassification": "focused",
+      "from": {
+        "emailAddress": {
+          "name": "Maj. Lisa Anderson",
+          "address": "lisa.anderson@perscom.army.mil"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Maj. Lisa Anderson",
+          "address": "lisa.anderson@perscom.army.mil"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "Command Sergeant Major Rodriguez",
+            "address": "csm.rodriguez@army.mil"
+          }
+        }
+      ],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><p>Sir,</p><p>This is to inform you that the <b>Legion of Merit award ceremony</b> for CSM Rodriguez will take place on <b>1 December at 1400</b> in the headquarters auditorium.</p><p>CSM Rodriguez is retiring after 32 years of distinguished service, and your presence as the presenting officer would be greatly appreciated.</p><p><b>Event Details:</b></p><ul><li>Date: 1 December 2025</li><li>Time: 1400-1500</li><li>Location: HQ Auditorium, Building 4</li><li>Attendees: ~150 (battalion staff, family, friends)</li><li>Dress: Class A uniform</li></ul><p>A draft award citation is attached for your review. Please let me know if any changes are needed.</p><p>Also, would you be able to provide a few remarks (3-5 minutes) during the ceremony?</p><p>Respectfully,<br/>MAJ Lisa Anderson<br/>Awards and Decorations<br/>G-1 Personnel</p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAL=",
+      "createdDateTime": "2025-11-10T11:00:00Z",
+      "lastModifiedDateTime": "2025-11-10T11:00:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD6",
+      "categories": [],
+      "receivedDateTime": "2025-11-10T11:00:00Z",
+      "sentDateTime": "2025-11-10T10:55:00Z",
+      "hasAttachments": false,
+      "internetMessageId": "<SPAM005@nigerian-prince.ng>",
+      "subject": "Urgent Assistance Required - Confidential Matter",
+      "bodyPreview": "Dear Esteemed General, I hope this message reaches you in good health. I am writing to you regarding a highly confidential and time-sensitive matter...",
+      "importance": "high",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAL=",
+      "conversationIndex": "AQHaC8j=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": false,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAL=",
+      "inferenceClassification": "other",
+      "from": {
+        "emailAddress": {
+          "name": "Dr. Emmanuel Okonkwo",
+          "address": "e.okonkwo@nigerian-prince.ng"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Dr. Emmanuel Okonkwo",
+          "address": "e.okonkwo@nigerian-prince.ng"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "text",
+        "content": "Dear Esteemed General,\n\nI hope this message reaches you in good health. I am writing to you regarding a highly confidential and time-sensitive matter.\n\nI am Dr. Emmanuel Okonkwo, a banker in Lagos, Nigeria. I have been managing the account of a deceased American military officer who served in Africa and left behind $25.5 million USD with no next of kin.\n\nGiven your distinguished military rank, I believe you are the perfect person to help me transfer these funds. As a fellow military professional, you will receive 40% of the total amount ($10.2 million) for your assistance.\n\nThis transaction is 100% legal and safe. I only require:\n1. Your full name and rank\n2. Your personal bank account details\n3. A copy of your military ID\n4. Your phone number for urgent communication\n\nTime is of the essence. Please respond within 48 hours to secure this opportunity.\n\nYours faithfully,\nDr. Emmanuel Okonkwo\nFirst Bank of Nigeria"
+      },
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAM=",
+      "createdDateTime": "2025-11-09T15:20:00Z",
+      "lastModifiedDateTime": "2025-11-09T15:20:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD7",
+      "categories": ["Medical"],
+      "receivedDateTime": "2025-11-09T15:20:00Z",
+      "sentDateTime": "2025-11-09T15:15:00Z",
+      "hasAttachments": false,
+      "internetMessageId": "<MSG008@medcom.army.mil>",
+      "subject": "ACTION: Annual Medical Readiness Review - Physical Exam Overdue",
+      "bodyPreview": "Sir, our records indicate that your annual physical examination is overdue. IAW AR 40-501, all general officers must complete annual medical readiness requirements...",
+      "importance": "normal",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAM=",
+      "conversationIndex": "AQHaC8k=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": false,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAM=",
+      "inferenceClassification": "focused",
+      "from": {
+        "emailAddress": {
+          "name": "Col. David Harper, MD",
+          "address": "david.harper@medcom.army.mil"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Col. David Harper, MD",
+          "address": "david.harper@medcom.army.mil"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><p>Sir,</p><p>Our records indicate that your annual physical examination is overdue.</p><p>IAW AR 40-501, all general officers must complete annual medical readiness requirements, including:</p><ul><li>Complete physical examination</li><li>Laboratory work (blood panel, urinalysis)</li><li>Dental examination</li><li>Vision screening</li><li>Immunization review</li></ul><p>Your last physical was completed on <b>15 September 2024</b>, making you overdue for your 2025 annual exam.</p><p>Please contact my office at your earliest convenience to schedule an appointment. We have availability during the following weeks:</p><ul><li>Week of 2 December</li><li>Week of 9 December</li><li>Week of 16 December</li></ul><p>The exam typically takes 2-3 hours. We can accommodate early morning appointments if preferred.</p><p>Please reply with your preferred date and time.</p><p>Respectfully,<br/>COL David Harper, MD<br/>Chief, General Officer Medical Services<br/>MEDCOM</p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "flagged"
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAN=",
+      "createdDateTime": "2025-11-09T12:45:00Z",
+      "lastModifiedDateTime": "2025-11-09T12:45:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD8",
+      "categories": ["Family Programs"],
+      "receivedDateTime": "2025-11-09T12:45:00Z",
+      "sentDateTime": "2025-11-09T12:40:00Z",
+      "hasAttachments": false,
+      "internetMessageId": "<MSG009@fmwr.army.mil>",
+      "subject": "INFO: Holiday Party for Command Families - 15 December",
+      "bodyPreview": "Sir, the annual holiday party for command families is scheduled for 15 December from 1700-2000 at the Officers' Club. We hope you and Mrs. Officer can attend...",
+      "importance": "normal",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAN=",
+      "conversationIndex": "AQHaC8l=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": false,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAN=",
+      "inferenceClassification": "focused",
+      "from": {
+        "emailAddress": {
+          "name": "Mrs. Carol Stevens",
+          "address": "carol.stevens@fmwr.army.mil"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Mrs. Carol Stevens",
+          "address": "carol.stevens@fmwr.army.mil"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><p>Sir,</p><p>The annual holiday party for command families is scheduled for <b>15 December from 1700-2000</b> at the Officers' Club.</p><p>We hope you and Mrs. Officer can attend! This is always a highlight of the holiday season for our military families.</p><p><b>Event Details:</b></p><ul><li>Date: 15 December 2025</li><li>Time: 1700-2000</li><li>Location: Officers' Club, Building 1</li><li>Dress: Business casual / festive attire</li><li>Dinner buffet will be served</li><li>Visit from Santa for the children (1800-1900)</li><li>Live music and dancing</li></ul><p>We're expecting approximately 200 attendees (command staff and families). Your presence would mean a lot to everyone.</p><p>Please RSVP by 1 December so we can finalize catering numbers.</p><p>If you're able to say a few words to kick off the evening, that would be wonderful!</p><p>Warmest regards,<br/>Carol Stevens<br/>Family Programs Director<br/>FMWR</p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "notFlagged"
+      }
+    },
+    {
+      "id": "AAMkAGI2THVSAAO=",
+      "createdDateTime": "2025-11-09T09:30:00Z",
+      "lastModifiedDateTime": "2025-11-09T09:30:00Z",
+      "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD9",
+      "categories": ["Intelligence"],
+      "receivedDateTime": "2025-11-09T09:30:00Z",
+      "sentDateTime": "2025-11-09T09:25:00Z",
+      "hasAttachments": true,
+      "internetMessageId": "<MSG010@inscom.army.mil>",
+      "subject": "CRITICAL: Threat Assessment Update - Cyber Intrusion Attempt",
+      "bodyPreview": "CLASSIFICATION: SECRET//NOFORN. Sir, we have detected a sophisticated cyber intrusion attempt targeting command networks within the past 48 hours...",
+      "importance": "high",
+      "parentFolderId": "AAMkAGI2THVSAAA=",
+      "conversationId": "AAQkAGI2THVSAAO=",
+      "conversationIndex": "AQHaC8m=",
+      "isDeliveryReceiptRequested": false,
+      "isReadReceiptRequested": true,
+      "isRead": false,
+      "isDraft": false,
+      "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAO=",
+      "inferenceClassification": "focused",
+      "from": {
+        "emailAddress": {
+          "name": "Col. Rebecca Stone",
+          "address": "rebecca.stone@inscom.army.mil"
+        }
+      },
+      "sender": {
+        "emailAddress": {
+          "name": "Col. Rebecca Stone",
+          "address": "rebecca.stone@inscom.army.mil"
+        }
+      },
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "name": "Gen. Officer",
+            "address": "general.officer@army.mil"
+          }
+        }
+      ],
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "J2 Intelligence",
+            "address": "j2.intel@inscom.army.mil"
+          }
+        },
+        {
+          "emailAddress": {
+            "name": "Cybersecurity",
+            "address": "cyber.ops@arcyber.army.mil"
+          }
+        }
+      ],
+      "bccRecipients": [],
+      "replyTo": [],
+      "body": {
+        "contentType": "html",
+        "content": "<html><body><p><b>CLASSIFICATION: SECRET//NOFORN</b></p><p>Sir,</p><p>We have detected a <b>sophisticated cyber intrusion attempt</b> targeting command networks within the past 48 hours.</p><p><b>Key Details:</b></p><ul><li>Attack Vector: Spear-phishing emails targeting senior leadership</li><li>Attribution: High confidence - Advanced Persistent Threat (APT) associated with nation-state actor</li><li>Target: Email accounts and classified network access credentials</li><li>Status: Attack successfully blocked by defensive measures</li></ul><p><b>Immediate Actions Required:</b></p><ol><li>All personnel should be briefed on increased threat level</li><li>Mandatory password resets for all SIPR accounts by COB 10 NOV</li><li>Review and update email security protocols</li><li>Limit external email access for 72 hours (critical only)</li></ol><p>A detailed threat assessment briefing is scheduled for <b>10 NOV at 0800</b> in the SCIF.</p><p>Detailed technical analysis attached (classification: SECRET//NOFORN).</p><p>Respectfully,<br/>COL Rebecca Stone<br/>Deputy Commander, Cyber Operations<br/>INSCOM</p><p><b>CLASSIFICATION: SECRET//NOFORN</b></p></body></html>"
+      },
+      "flag": {
+        "flagStatus": "flagged",
+        "dueDateTime": {
+          "dateTime": "2025-11-10T17:00:00Z",
+          "timeZone": "UTC"
+        }
+      }
+    }
+  ]
+}

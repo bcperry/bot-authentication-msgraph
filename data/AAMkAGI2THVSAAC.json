@@ -1,0 +1,74 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('general.officer%40army.mil')/messages/$entity",
+  "@odata.etag": "W/\"CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC7\"",
+  "id": "AAMkAGI2THVSAAC=",
+  "createdDateTime": "2025-11-12T16:45:00Z",
+  "lastModifiedDateTime": "2025-11-13T09:00:00Z",
+  "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC7",
+  "categories": ["Personnel"],
+  "receivedDateTime": "2025-11-12T16:45:00Z",
+  "sentDateTime": "2025-11-12T16:40:00Z",
+  "hasAttachments": true,
+  "internetMessageId": "<MSG002@hqda.army.mil>",
+  "subject": "ACTION REQUIRED: Commander's Evaluation Report - Maj. Johnson",
+  "bodyPreview": "Sir, the Commander's Evaluation Report for MAJ David Johnson is due for your review and signature by COB 15 NOV. MAJ Johnson has served as your Executive Officer for the past 18 months and has consistently demonstrated exceptional leadership and professionalism. His performance has been exemplary across all evaluation criteria. The draft OER has been coordinated with G-1 and is ready for your final review.",
+  "importance": "high",
+  "parentFolderId": "AAMkAGI2THVSAAA=",
+  "conversationId": "AAQkAGI2THVSAAC=",
+  "conversationIndex": "AQHaC8a=",
+  "isDeliveryReceiptRequested": false,
+  "isReadReceiptRequested": true,
+  "isRead": true,
+  "isDraft": false,
+  "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAC=",
+  "inferenceClassification": "focused",
+  "from": {
+    "emailAddress": {
+      "name": "Col. James Mitchell",
+      "address": "james.mitchell@hqda.army.mil"
+    }
+  },
+  "sender": {
+    "emailAddress": {
+      "name": "Col. James Mitchell",
+      "address": "james.mitchell@hqda.army.mil"
+    }
+  },
+  "toRecipients": [
+    {
+      "emailAddress": {
+        "name": "Gen. Officer",
+        "address": "general.officer@army.mil"
+      }
+    }
+  ],
+  "ccRecipients": [],
+  "bccRecipients": [],
+  "replyTo": [],
+  "body": {
+    "contentType": "html",
+    "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div style=\"font-family: Calibri, Arial, sans-serif; font-size: 11pt;\"><p>Sir,</p><p>The Commander's Evaluation Report (OER) for <b>MAJ David Johnson</b> is due for your review and signature by <b>COB 15 NOV 2025</b>.</p><p>MAJ Johnson has served as your Executive Officer for the past 18 months (May 2024 - November 2025) and has consistently demonstrated exceptional leadership, professionalism, and technical competence throughout his tenure.</p><p><b>Rating Period:</b> 1 May 2024 - 30 November 2025</p><p><b>Key Performance Highlights:</b></p><ul><li>Successfully coordinated 15 high-level staff visits, including SECDEF, SECARMY, and multiple Congressional delegations</li><li>Managed daily battle rhythm for 50+ personnel headquarters staff</li><li>Led transition team for change of command (Aug 2024) - flawless execution</li><li>Developed and implemented new staff synchronization process that improved efficiency by 30%</li><li>Served as primary advisor on personnel matters affecting 12,000+ soldiers in the command</li><li>Coordinated complex logistics for joint training exercise involving 3 partner nations</li><li>Consistently maintained 100% accountability of classified materials</li><li>Mentored 5 junior officers - 3 selected for KD positions, 2 for advanced education</li></ul><p><b>Recommended Ratings:</b></p><ul><li>Character: Excels</li><li>Presence: Excels</li><li>Intellect: Excels</li><li>Leads: Excels</li><li>Develops: Excels</li><li>Achieves: Excels</li></ul><p><b>Overall Performance: TOP 10%</b></p><p>The draft OER has been coordinated with:</p><ul><li>G-1 Personnel (COL Anderson)</li><li>Staff Judge Advocate (legal review complete)</li><li>Senior Rater (MG Roberts - concurs with rating)</li></ul><p><b>Narrative Comments:</b> I have drafted narrative comments highlighting MAJ Johnson's exceptional performance, his potential for battalion command, and strong recommendation for selection to ILE in-residence followed by broadening assignment. Please review and modify as you see fit.</p><p><b>Next Assignment:</b> MAJ Johnson has been selected for battalion command (effective Jan 2026) and will assume command of 2-75th Infantry Battalion, Fort Bragg, NC. This OER will be critical for his file as he competes for future promotions and senior leadership positions.</p><p><b>Action Required:</b></p><ol><li>Review attached draft OER (DA Form 67-10-1)</li><li>Modify narrative comments if desired</li><li>Digitally sign via myEval system NLT 15 NOV 1700</li><li>Coordinate with me if you need any changes or have questions</li></ol><p>The draft OER is attached in PDF format. Access to the myEval system for digital signature: <a href=\"https://myeval.army.mil\">https://myeval.army.mil</a></p><p>MAJ Johnson is an exceptional officer who has greatly contributed to the success of this command. His performance warrants the strongest possible recommendation.</p><p>Please let me know if you need any additional information or would like to discuss the rating.</p><p>Respectfully,</p><p><b>COL James Mitchell</b><br/>Chief of Staff<br/>Office: (703) 555-0142<br/>Mobile: (703) 555-0198<br/><a href=\"mailto:james.mitchell@hqda.army.mil\">james.mitchell@hqda.army.mil</a></p><hr/><p style=\"font-size: 9pt; color: #666;\"><b>Attachment:</b> MAJ_Johnson_David_OER_Draft_2024-2025.pdf (1.2 MB)</p></div></body></html>"
+  },
+  "uniqueBody": {
+    "contentType": "html",
+    "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div style=\"font-family: Calibri, Arial, sans-serif; font-size: 11pt;\"><p>Sir,</p><p>The Commander's Evaluation Report (OER) for <b>MAJ David Johnson</b> is due for your review and signature by <b>COB 15 NOV 2025</b>.</p><p>MAJ Johnson has served as your Executive Officer for the past 18 months (May 2024 - November 2025) and has consistently demonstrated exceptional leadership, professionalism, and technical competence throughout his tenure.</p><p><b>Rating Period:</b> 1 May 2024 - 30 November 2025</p><p><b>Key Performance Highlights:</b></p><ul><li>Successfully coordinated 15 high-level staff visits, including SECDEF, SECARMY, and multiple Congressional delegations</li><li>Managed daily battle rhythm for 50+ personnel headquarters staff</li><li>Led transition team for change of command (Aug 2024) - flawless execution</li><li>Developed and implemented new staff synchronization process that improved efficiency by 30%</li><li>Served as primary advisor on personnel matters affecting 12,000+ soldiers in the command</li><li>Coordinated complex logistics for joint training exercise involving 3 partner nations</li><li>Consistently maintained 100% accountability of classified materials</li><li>Mentored 5 junior officers - 3 selected for KD positions, 2 for advanced education</li></ul><p><b>Recommended Ratings:</b></p><ul><li>Character: Excels</li><li>Presence: Excels</li><li>Intellect: Excels</li><li>Leads: Excels</li><li>Develops: Excels</li><li>Achieves: Excels</li></ul><p><b>Overall Performance: TOP 10%</b></p><p>The draft OER has been coordinated with:</p><ul><li>G-1 Personnel (COL Anderson)</li><li>Staff Judge Advocate (legal review complete)</li><li>Senior Rater (MG Roberts - concurs with rating)</li></ul><p><b>Narrative Comments:</b> I have drafted narrative comments highlighting MAJ Johnson's exceptional performance, his potential for battalion command, and strong recommendation for selection to ILE in-residence followed by broadening assignment. Please review and modify as you see fit.</p><p><b>Next Assignment:</b> MAJ Johnson has been selected for battalion command (effective Jan 2026) and will assume command of 2-75th Infantry Battalion, Fort Bragg, NC. This OER will be critical for his file as he competes for future promotions and senior leadership positions.</p><p><b>Action Required:</b></p><ol><li>Review attached draft OER (DA Form 67-10-1)</li><li>Modify narrative comments if desired</li><li>Digitally sign via myEval system NLT 15 NOV 1700</li><li>Coordinate with me if you need any changes or have questions</li></ol><p>The draft OER is attached in PDF format. Access to the myEval system for digital signature: <a href=\"https://myeval.army.mil\">https://myeval.army.mil</a></p><p>MAJ Johnson is an exceptional officer who has greatly contributed to the success of this command. His performance warrants the strongest possible recommendation.</p><p>Please let me know if you need any additional information or would like to discuss the rating.</p><p>Respectfully,</p><p><b>COL James Mitchell</b><br/>Chief of Staff<br/>Office: (703) 555-0142<br/>Mobile: (703) 555-0198<br/><a href=\"mailto:james.mitchell@hqda.army.mil\">james.mitchell@hqda.army.mil</a></p><hr/><p style=\"font-size: 9pt; color: #666;\"><b>Attachment:</b> MAJ_Johnson_David_OER_Draft_2024-2025.pdf (1.2 MB)</p></div></body></html>"
+  },
+  "flag": {
+    "flagStatus": "flagged",
+    "dueDateTime": {
+      "dateTime": "2025-11-15T17:00:00Z",
+      "timeZone": "UTC"
+    },
+    "completedDateTime": null
+  },
+  "internetMessageHeaders": [
+    {
+      "name": "Received",
+      "value": "from hqda-mail.army.mil by army.mil with ESMTP"
+    },
+    {
+      "name": "X-MS-Exchange-Organization-AuthAs",
+      "value": "Internal"
+    }
+  ]
+}
