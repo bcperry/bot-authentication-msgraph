@@ -2,24 +2,6 @@ targetScope = 'subscription'
 
 @maxLength(20)
 @minLength(4)
-@description('Used to generate names for all resources in this file')
-param resourceBaseName string
-
-@description('Required when create Azure Bot service')
-param botAadAppClientId string
-
-@secure()
-@description('Required when create Azure Bot service')
-param botAadAppClientSecret string
-
-@minLength(36)
-@maxLength(36)
-@description('Tenant that owns the Bot AAD app')
-param botAadAppTenantId string
-
-@maxLength(42)
-param botDisplayName string
-
 @description('Azure Developer environment name.')
 param environmentName string
 
@@ -30,6 +12,21 @@ param environmentName string
   }
 })
 param location string
+
+@description('AKA: Application (client) ID.  Required when create Azure Bot service')
+param botAadAppClientId string
+
+@minLength(36)
+@maxLength(36)
+@description('AKA: Directory (tenant) ID. Tenant that owns the Bot AAD app')
+param botAadAppTenantId string
+
+@secure()
+@description('AKA: Client Secret. Required when create Azure Bot service')
+param botAadAppClientSecret string
+
+@maxLength(42)
+param botDisplayName string = 'teams-bot-${environmentName}'
 
 param botServiceSku string = 'F0'
 
@@ -61,13 +58,13 @@ var randomSuffix = uniqueString(subscription().subscriptionId, environmentName)
 var resourceGroupName = 'rg-${environmentName}'
 var appServicePlanName = 'plan-${environmentName}'
 var appServiceName = 'app-${environmentName}-${randomSuffix}'
-var botServiceName = '${resourceBaseName}-${randomSuffix}'
+var botServiceName = '${environmentName}-${randomSuffix}'
 var appServiceDomainSuffix = environment().suffixes.storage == 'core.usgovcloudapi.net' ? 'azurewebsites.us' : 'azurewebsites.net'
 var botAppDomain = '${appServiceName}.${appServiceDomainSuffix}'
 
 // Resource Group
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2022-09-01' = {
-  name: resourceGroupName
+  name: 'rg-${environmentName}'
   location: location
   tags: {
     'azd-env-name': environmentName
@@ -81,7 +78,7 @@ module aiServices 'ai_services/resources.bicep' = if (!useExistingOpenAIResource
   params: {
     location: location
     resourceToken: toLower(uniqueString(resourceGroup.id))
-    resourcePrefix: resourceBaseName
+    resourcePrefix: environmentName
     tags: {
       'azd-env-name': environmentName
     }
@@ -91,12 +88,26 @@ module aiServices 'ai_services/resources.bicep' = if (!useExistingOpenAIResource
   }
 }
 
+// Deploy Cosmos DB
+module cosmosDb 'cosmosdb/resources.bicep' = {
+  name: 'cosmosdb-deployment'
+  scope: resourceGroup
+  params: {
+    location: location
+    resourceBaseName: environmentName
+    tags: {
+      'azd-env-name': environmentName
+    }
+    databaseName: 'botdb'
+  }
+}
+
 module app_services 'app_services/resources.bicep' = {
   name: 'app-services-deployment'
   scope: resourceGroup
   params: {
     location: location
-    resourceBaseName: resourceBaseName
+    resourceBaseName: environmentName
     appServicePlanName: appServicePlanName
     appServicePlanSku: appServicePlanSku
     appServiceName: appServiceName
@@ -107,7 +118,9 @@ module app_services 'app_services/resources.bicep' = {
     botAadAppTenantId: botAadAppTenantId
     botAadAppClientSecret: botAadAppClientSecret
     cloudLocation: cloudLocation
-
+    cosmosEndpoint: cosmosDb.outputs.cosmosEndpoint
+    cosmosDatabaseName: cosmosDb.outputs.cosmosDatabaseName
+    cosmosAccountName: cosmosDb.outputs.cosmosAccountName
   }
 }
 
@@ -125,7 +138,7 @@ module resources 'bot_services/resources.bicep' = {
   }
 }
 
-// Outputs
+// // Outputs
 output AZURE_LOCATION string = location
 output AZURE_RESOURCE_GROUP string = resourceGroupName
 output APP_SERVICE_NAME string = appServiceName
@@ -136,3 +149,6 @@ output MicrosoftAppType string = 'SingleTenant'
 output graphUserScopes string = 'User.Read'
 output MicrosoftAppTenantId string = botAadAppTenantId
 output MicrosoftAppPassword string = botAadAppClientSecret
+output COSMOS_ENDPOINT string = cosmosDb.outputs.cosmosEndpoint
+output COSMOS_DATABASE_NAME string = cosmosDb.outputs.cosmosDatabaseName
+output COSMOS_ACCOUNT_NAME string = cosmosDb.outputs.cosmosAccountName

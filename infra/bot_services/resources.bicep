@@ -42,6 +42,18 @@ resource botService 'Microsoft.BotService/botServices@2022-09-15' = {
   }
 }
 
-
+// Add Microsoft Teams channel
+resource teamsChannel 'Microsoft.BotService/botServices/channels@2022-09-15' = {
+  parent: botService
+  name: 'MsTeamsChannel'
+  location: 'global'
+  properties: {
+    channelName: 'MsTeamsChannel'
+    properties: {
+      enableCalling: false
+      isEnabled: true
+    }
+  }
+}
 
 output botServiceId string = botService.id

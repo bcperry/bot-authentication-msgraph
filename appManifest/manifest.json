@@ -1,0 +1,65 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.19",
+  "version": "1.0.5",
+
+  "id": "${{AAD_APP_CLIENT_ID}}",
+
+  "developer": {
+    "name": "Microsoft Army Team",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.microsoft.com/privacy",
+    "termsOfUseUrl": "https://www.microsoft.com/terms"
+  },
+
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+
+  "name": {
+    "short": "General's Aide",
+    "full": "Teams Conversation Bot For Army Leaders"
+  },
+
+  "description": {
+    "short": "A Teams bot demonstrating tool use and adaptive card interactions.",
+    "full": "This Teams bot showcases comprehensive conversation event handling including read receipts, message updates, adaptive cards, and immersive reader support. It can reach out to relevant tools and use them to inform user interaction."
+  },
+
+  "accentColor": "#FFFFFF",
+
+  "bots": [
+    {
+      "botId": "${{AAD_APP_CLIENT_ID}}",
+      "scopes": ["personal", "groupChat", "team"],
+      "isNotificationOnly": false,
+      "supportsCalling": false,
+      "supportsVideo": false,
+      "supportsFiles": false,
+      "commandLists": [
+        {
+          "scopes": ["personal", "groupChat", "team"],
+          "commands": [
+            {
+              "title": "Get Card",
+              "description": "Retrieve an adaptive card with canned options for the Agent to take on your behalf."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "permissions": ["identity", "messageTeamMembers"],
+
+  "validDomains": [
+    "app-bot-v2.azurewebsites.us",
+    "*.botframework.azure.us",
+    "*.botframework.com"
+  ],
+
+  "localizationInfo": {
+    "defaultLanguageTag": "en-us"
+  }
+}

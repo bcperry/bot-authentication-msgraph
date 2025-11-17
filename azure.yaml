@@ -4,7 +4,7 @@ name: bot-authentication-msgraph
 metadata:
     template: azd-init@1.21.2
 services:
-    bot-authentication-msgraph:
+    api:
         project: .
         host: appservice
         language: python

@@ -38,6 +38,15 @@ param azureOpenAiEndpoint string
 @description('Azure OpenAI Model Deployment Name')
 param azureOpenAiModel string
 
+@description('Cosmos DB Endpoint')
+param cosmosEndpoint string = ''
+
+@description('Cosmos DB Database Name')
+param cosmosDatabaseName string = ''
+
+@description('Cosmos DB Account Name')
+param cosmosAccountName string = ''
+
 var normalizedPlanSku = toUpper(appServicePlanSku)
 var standardPlanSkus = [
   'S1'
@@ -163,6 +172,18 @@ resource appService 'Microsoft.Web/sites@2022-03-01' = {
         {
           name: 'AZURE_OPENAI_MODEL'
           value: azureOpenAiModel
+        }
+        {
+          name: 'COSMOS_ENDPOINT'
+          value: cosmosEndpoint
+        }
+        {
+          name: 'COSMOS_DATABASE_NAME'
+          value: cosmosDatabaseName
+        }
+        {
+          name: 'COSMOS_ACCOUNT_NAME'
+          value: cosmosAccountName
         }
       ]
     }

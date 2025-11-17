@@ -1,0 +1,66 @@
+# yaml-language-server: $schema=https://aka.ms/teams-toolkit/v1.7/yaml.schema.json
+# Visit https://aka.ms/teamsfx-v5.0-guide for details on this file
+# Visit https://aka.ms/teamsfx-actions for details on actions
+version: v1.7
+
+environmentFolderPath: ./env
+
+projectId: 05777fac-c8a4-48d1-a0dd-bb0b1c0b8893
+
+provision:
+  - uses: aadApp/create
+    with:
+      name: bot-authentication-msgraph-${{TEAMSFX_ENV}}
+      generateClientSecret: true
+      signInAudience: AzureADMyOrg
+    writeToEnvironmentFile:
+      clientId: AAD_APP_CLIENT_ID
+      clientSecret: SECRET_AAD_APP_CLIENT_SECRET
+      objectId: AAD_APP_OBJECT_ID
+      tenantId: AAD_APP_TENANT_ID
+      authority: AAD_APP_OAUTH_AUTHORITY
+      authorityHost: AAD_APP_OAUTH_AUTHORITY_HOST
+
+  - uses: botFramework/create
+    with:
+      botId: ${{AAD_APP_CLIENT_ID}}
+      name: bot-authentication-msgraph
+      messagingEndpoint: ${{BOT_ENDPOINT}}/api/messages
+      description: "Teams Conversation Bot For Army Leaders"
+      channels:
+        - name: msteams
+
+  - uses: teamsApp/validateManifest
+    with:
+      manifestPath: ./appManifest/manifest.json
+
+  - uses: teamsApp/zipAppPackage
+    with:
+      manifestPath: ./appManifest/manifest.json
+      outputZipPath: ./appManifest/build/appPackage.${{TEAMSFX_ENV}}.zip
+      outputFolder: ./appManifest/build
+
+  - uses: teamsApp/validateAppPackage
+    with:
+      appPackagePath: ./appManifest/build/appPackage.${{TEAMSFX_ENV}}.zip
+
+  - uses: teamsApp/update
+    with:
+      appPackagePath: ./appManifest/build/appPackage.${{TEAMSFX_ENV}}.zip
+
+deploy:
+  - uses: devTool/install
+    with:
+      devCert:
+        trust: true
+    writeToEnvironmentFile:
+      sslCertFile: SSL_CRT_FILE
+      sslKeyFile: SSL_KEY_FILE
+
+  - uses: file/createOrUpdateEnvironmentFile
+    with:
+      target: ./.env
+      envs:
+        BOT_ID: ${{AAD_APP_CLIENT_ID}}
+        BOT_PASSWORD: ${{SECRET_AAD_APP_CLIENT_SECRET}}
+        BOT_TENANT_ID: ${{AAD_APP_TENANT_ID}}

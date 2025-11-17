@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://aka.ms/teams-toolkit/v1.7/yaml.schema.json
+# Visit https://aka.ms/teamsfx-v5.0-guide for details on this file
+# Visit https://aka.ms/teamsfx-actions for details on actions
+version: v1.7
+
+provision:
+  - uses: teamsApp/validateManifest
+    with:
+      manifestPath: ./appManifest/manifest.json
+
+  - uses: teamsApp/zipAppPackage
+    with:
+      manifestPath: ./appManifest/manifest.json
+      outputZipPath: ./appManifest/build/appPackage.local.zip
+      outputFolder: ./appManifest/build
+
+  - uses: teamsApp/validateAppPackage
+    with:
+      appPackagePath: ./appManifest/build/appPackage.local.zip
+
+  - uses: teamsApp/update
+    with:
+      appPackagePath: ./appManifest/build/appPackage.local.zip
+
+deploy:
+  - uses: devTool/install
+    with:
+      devCert:
+        trust: true
+    writeToEnvironmentFile:
+      sslCertFile: SSL_CRT_FILE
+      sslKeyFile: SSL_KEY_FILE
+
+  - uses: file/createOrUpdateEnvironmentFile
+    with:
+      target: ./.env
+      envs:
+        BOT_ID: ${{AAD_APP_CLIENT_ID}}
+        BOT_PASSWORD: ${{SECRET_AAD_APP_CLIENT_SECRET}}
+        BOT_TENANT_ID: ${{AAD_APP_TENANT_ID}}
+        BOT_ENDPOINT: https://localhost:3978
