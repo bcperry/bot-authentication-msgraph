@@ -142,6 +142,16 @@ module resources 'bot_services/resources.bicep' = {
   }
 }
 
+// Grant App Service Managed Identity access to Cosmos DB
+module cosmosDbRoleAssignment 'cosmosdb/role_assignment.bicep' = {
+  name: 'cosmosdb-role-assignment'
+  scope: resourceGroup
+  params: {
+    cosmosAccountName: cosmosDb.outputs.cosmosAccountName
+    appServicePrincipalId: app_services.outputs.appServicePrincipalId
+  }
+}
+
 // // Outputs
 output AZURE_LOCATION string = location
 output AZURE_RESOURCE_GROUP string = resourceGroupName

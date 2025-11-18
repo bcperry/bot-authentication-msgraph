@@ -88,6 +88,9 @@ resource appService 'Microsoft.Web/sites@2022-03-01' = {
   tags: {
     'azd-service-name': 'api'
   }
+  identity: {
+    type: 'SystemAssigned'
+  }
   properties: {
     serverFarmId: appServicePlan.id
     httpsOnly: true
@@ -192,6 +195,10 @@ resource appService 'Microsoft.Web/sites@2022-03-01' = {
           name: 'COSMOS_ACCOUNT_NAME'
           value: cosmosAccountName
         }
+        {
+          name: 'COSMOS_USE_DEFAULT_CREDENTIAL'
+          value: 'true'
+        }
       ]
     }
   }
@@ -221,3 +228,4 @@ output appServicePlanId string = appServicePlan.id
 output appServiceId string = appService.id
 output appServiceName string = appService.name
 output appServiceHostName string = appService.properties.defaultHostName
+output appServicePrincipalId string = appService.identity.principalId
