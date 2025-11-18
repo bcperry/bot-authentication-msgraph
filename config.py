@@ -3,9 +3,20 @@
 # Licensed under the MIT License.
 
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
+# Try to load .env from .azure/*/.env first, then fall back to root .env
+azure_dir = Path(__file__).parent / ".azure"
+if azure_dir.exists():
+    # Find the first .env file in any subdirectory of .azure
+    env_files = list(azure_dir.glob("*/.env"))
+    if env_files:
+        load_dotenv(env_files[0])
+    else:
+        load_dotenv()
+else:
+    load_dotenv()
 
 """ Bot Configuration """
 

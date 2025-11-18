@@ -54,12 +54,12 @@ class AgentThreadStore:
 
     @classmethod
     def from_env(cls) -> "AgentThreadStore":
-        endpoint = os.getenv("COSMOSDB_ENDPOINT", "").strip()
-        key = os.getenv("COSMOSDB_KEY")
+        endpoint = os.getenv("COSMOS_ENDPOINT", "").strip()
+        key = os.getenv("COSMOS_KEY")
         if key is not None:
             key = key.strip()
         use_default_credential = os.getenv(
-            "COSMOSDB_USE_DEFAULT_CREDENTIAL", "false"
+            "COSMOS_USE_DEFAULT_CREDENTIAL", "false"
         ).lower() in {
             "1",
             "true",
@@ -68,12 +68,13 @@ class AgentThreadStore:
         }
         if not key:
             use_default_credential = True
-        database = os.getenv("COSMOSDB_DATABASE", "bot-data").strip() or "bot-data"
+        database = os.getenv("COSMOS_DATABASE_NAME", "bot-data").strip() or "bot-data"
         container = (
-            os.getenv("COSMOSDB_CONTAINER", "agent-threads").strip() or "agent-threads"
+            os.getenv("COSMOS_CONTAINER_NAME", "agent-threads").strip()
+            or "agent-threads"
         )
-        partition_key = os.getenv("COSMOSDB_PARTITION_KEY_PATH", "/threadId")
-        throughput_raw = os.getenv("COSMOSDB_CONTAINER_THROUGHPUT")
+        partition_key = os.getenv("COSMOS_PARTITION_KEY_PATH", "/threadId")
+        throughput_raw = os.getenv("COSMOS_CONTAINER_THROUGHPUT")
         throughput = int(throughput_raw) if throughput_raw else None
 
         return cls(
