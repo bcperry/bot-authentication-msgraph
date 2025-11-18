@@ -47,6 +47,9 @@ param cosmosDatabaseName string = ''
 @description('Cosmos DB Account Name')
 param cosmosAccountName string = ''
 
+@description('OAuth Connection Name')
+param oauthConnectionName string = 'graph-connection'
+
 var normalizedPlanSku = toUpper(appServicePlanSku)
 var standardPlanSkus = [
   'S1'
@@ -113,6 +116,10 @@ resource appService 'Microsoft.Web/sites@2022-03-01' = {
         {
           name: 'MicrosoftAppTenantId'
           value: botAadAppTenantId
+        }
+        {
+          name: 'ConnectionName'
+          value: oauthConnectionName
         }
         {
           name: 'SCM_DO_BUILD_DURING_DEPLOYMENT'

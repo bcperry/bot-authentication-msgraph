@@ -3,11 +3,35 @@
 # so it can read/write data in the Cosmos DB account without using account keys.
 
 param(
-    [string]$ResourceGroup = "rg-commercial",
-    [string]$AccountName = "bot-demo",
+    [string]$ResourceGroup,
+    [string]$AccountName,
     [string]$PrincipalId = "85848966-c836-49bc-b39c-495fbe1730ff",
     [string]$Scope = "/"
 )
+
+# Load environment variables from .azure/auth-bot/.env
+$envFile = Join-Path $PSScriptRoot ".azure" "auth-bot" ".env"
+if (Test-Path $envFile) {
+    Get-Content $envFile | ForEach-Object {
+        if ($_ -match '^\s*([^#][^=]*)\s*=\s*"?([^"]*)"?\s*$') {
+            $key = $matches[1].Trim()
+            $value = $matches[2].Trim()
+            Set-Variable -Name $key -Value $value -Scope Script
+        }
+    }
+    Write-Host "Loaded environment from: $envFile" -ForegroundColor Gray
+} else {
+    Write-Error "Environment file not found: $envFile"
+    exit 1
+}
+
+# Use environment variables if parameters not provided
+if (-not $ResourceGroup) {
+    $ResourceGroup = $AZURE_RESOURCE_GROUP
+}
+if (-not $AccountName) {
+    $AccountName = $COSMOS_ACCOUNT_NAME
+}
 
 Write-Host "Granting Cosmos DB data plane access..." -ForegroundColor Cyan
 Write-Host "  Account: $AccountName" -ForegroundColor Gray
@@ -16,24 +40,41 @@ Write-Host "  Principal ID: $PrincipalId" -ForegroundColor Gray
 Write-Host "  Scope: $Scope" -ForegroundColor Gray
 Write-Host ""
 
-# Step 1: Get the built-in Data Contributor role definition ID
-Write-Host "[1/3] Fetching role definition for 'Cosmos DB Built-in Data Contributor'..." -ForegroundColor Yellow
+# Step 1: Get or create the custom role definition
+Write-Host "[1/4] Checking for custom role 'Cosmos DB Data and Schema Manager'..." -ForegroundColor Yellow
 $roleDefId = az cosmosdb sql role definition list `
     --account-name $AccountName `
     --resource-group $ResourceGroup `
-    --query "[?roleName=='Cosmos DB Built-in Data Contributor'].id" `
+    --query "[?roleName=='Cosmos DB Data and Schema Manager'].id" `
     --output tsv
 
 if (-not $roleDefId) {
-    Write-Error "Failed to find 'Cosmos DB Built-in Data Contributor' role definition."
-    exit 1
+    Write-Host "  Custom role not found. Creating from cosmosdb-role.json..." -ForegroundColor Yellow
+    
+    # Create the custom role definition
+    $roleDef = az cosmosdb sql role definition create `
+        --account-name $AccountName `
+        --resource-group $ResourceGroup `
+        --body @cosmosdb-role.json `
+        --output json | ConvertFrom-Json
+    
+    $roleDefId = $roleDef.id
+    
+    if (-not $roleDefId) {
+        Write-Error "Failed to create custom role definition."
+        exit 1
+    }
+    
+    Write-Host "  ✓ Custom role created: $roleDefId" -ForegroundColor Green
+} else {
+    Write-Host "  ✓ Custom role found" -ForegroundColor Green
 }
 
 Write-Host "  Role Definition ID: $roleDefId" -ForegroundColor Green
 Write-Host ""
 
 # Step 2: Create the role assignment
-Write-Host "[2/3] Creating role assignment..." -ForegroundColor Yellow
+Write-Host "[2/4] Creating role assignment..." -ForegroundColor Yellow
 $assignment = az cosmosdb sql role assignment create `
     --account-name $AccountName `
     --resource-group $ResourceGroup `
@@ -56,7 +97,7 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host ""
 
 # Step 3: Verify the assignment
-Write-Host "[3/3] Verifying role assignment..." -ForegroundColor Yellow
+Write-Host "[3/4] Verifying role assignment..." -ForegroundColor Yellow
 $verify = az cosmosdb sql role assignment list `
     --account-name $AccountName `
     --resource-group $ResourceGroup `
@@ -70,6 +111,27 @@ if ($verify) {
     }
 } else {
     Write-Warning "Could not verify role assignment. Check manually with 'az cosmosdb sql role assignment list'."
+}
+
+Write-Host ""
+
+# Step 4: List all current permissions for verification
+Write-Host "[4/4] Listing all role assignments for this principal..." -ForegroundColor Yellow
+$allAssignments = az cosmosdb sql role assignment list `
+    --account-name $AccountName `
+    --resource-group $ResourceGroup `
+    --query "[?principalId=='$PrincipalId']" `
+    --output json | ConvertFrom-Json
+
+if ($allAssignments) {
+    Write-Host "  ✓ Principal has $($allAssignments.Count) role assignment(s):" -ForegroundColor Green
+    $allAssignments | ForEach-Object {
+        $roleName = (az cosmosdb sql role definition show --account-name $AccountName --resource-group $ResourceGroup --id $_.roleDefinitionId --query "roleName" --output tsv)
+        Write-Host "    - Role: $roleName" -ForegroundColor Gray
+        Write-Host "      Scope: $($_.scope)" -ForegroundColor Gray
+    }
+} else {
+    Write-Warning "No role assignments found. This is unexpected."
 }
 
 Write-Host ""

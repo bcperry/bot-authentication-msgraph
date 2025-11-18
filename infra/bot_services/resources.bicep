@@ -19,6 +19,17 @@ param botAadAppClientId string
 @minLength(36)
 @maxLength(36)
 param botAadAppTenantId string
+
+@secure()
+@description('bot Azure AD App Client Secret')
+param botAadAppClientSecret string
+
+@description('OAuth Connection Name')
+param oauthConnectionName string = 'graph-connection'
+
+@description('Microsoft Graph Scopes')
+param graphScopes string = 'User.Read'
+
 // Register your web service as a bot with the Bot Framework
 // NOTE: Bot Service creation may fail in Azure Government cloud
 // If deployment fails, create the Bot Service manually in the portal
@@ -56,4 +67,25 @@ resource teamsChannel 'Microsoft.BotService/botServices/channels@2022-09-15' = {
   }
 }
 
+// Add OAuth connection for Microsoft Graph
+resource oauthConnection 'Microsoft.BotService/botServices/connections@2022-09-15' = {
+  parent: botService
+  name: oauthConnectionName
+  location: 'global'
+  properties: {
+    serviceProviderDisplayName: 'Azure Active Directory v2'
+    serviceProviderId: '30dd229c-58e3-4a48-bdfd-91ec48eb906c'
+    clientId: botAadAppClientId
+    clientSecret: botAadAppClientSecret
+    scopes: graphScopes
+    parameters: [
+      {
+        key: 'tenantID'
+        value: botAadAppTenantId
+      }
+    ]
+  }
+}
+
 output botServiceId string = botService.id
+output oauthConnectionName string = oauthConnection.name

@@ -111,9 +111,9 @@ module app_services 'app_services/resources.bicep' = {
     appServicePlanName: appServicePlanName
     appServicePlanSku: appServicePlanSku
     appServiceName: appServiceName
-    azureOpenAiApiKey: aiServices.outputs.azureOpenAiApiKey != '' ? aiServices.outputs.azureOpenAiApiKey : azureOpenAiApiKey
-    azureOpenAiEndpoint: aiServices.outputs.azureOpenAiEndpoint != '' ? aiServices.outputs.azureOpenAiEndpoint : azureOpenAiEndpoint
-    azureOpenAiModel: aiServices.outputs.azureOpenAiModel != '' ? aiServices.outputs.azureOpenAiModel :  azureOpenAiModel
+    azureOpenAiApiKey: useExistingOpenAIResources ? azureOpenAiApiKey : aiServices!.outputs.azureOpenAiApiKey
+    azureOpenAiEndpoint: useExistingOpenAIResources ? azureOpenAiEndpoint : aiServices!.outputs.azureOpenAiEndpoint
+    azureOpenAiModel: useExistingOpenAIResources ? azureOpenAiModel : aiServices!.outputs.azureOpenAiModel
     botAadAppClientId: botAadAppClientId
     botAadAppTenantId: botAadAppTenantId
     botAadAppClientSecret: botAadAppClientSecret
@@ -121,6 +121,7 @@ module app_services 'app_services/resources.bicep' = {
     cosmosEndpoint: cosmosDb.outputs.cosmosEndpoint
     cosmosDatabaseName: cosmosDb.outputs.cosmosDatabaseName
     cosmosAccountName: cosmosDb.outputs.cosmosAccountName
+    oauthConnectionName: 'graph-connection'
   }
 }
 
@@ -131,10 +132,13 @@ module resources 'bot_services/resources.bicep' = {
   params: {
     botAadAppClientId: botAadAppClientId
     botAadAppTenantId: botAadAppTenantId
+    botAadAppClientSecret: botAadAppClientSecret
     botServiceName: botServiceName
     botServiceSku: botServiceSku
     botDisplayName: botDisplayName
     botAppDomain: botAppDomain
+    oauthConnectionName: 'graph-connection'
+    graphScopes: 'User.Read'
   }
 }
 
@@ -148,7 +152,11 @@ output MicrosoftAppId string = botAadAppClientId
 output MicrosoftAppType string = 'SingleTenant'
 output graphUserScopes string = 'User.Read'
 output MicrosoftAppTenantId string = botAadAppTenantId
-output MicrosoftAppPassword string = botAadAppClientSecret
+output ConnectionName string = resources.outputs.oauthConnectionName
 output COSMOS_ENDPOINT string = cosmosDb.outputs.cosmosEndpoint
 output COSMOS_DATABASE_NAME string = cosmosDb.outputs.cosmosDatabaseName
 output COSMOS_ACCOUNT_NAME string = cosmosDb.outputs.cosmosAccountName
+output AZURE_OPENAI_CHAT_DEPLOYMENT_NAME string = useExistingOpenAIResources ? azureOpenAiModel : aiServices!.outputs.azureOpenAiModel
+output AZURE_OPENAI_ENDPOINT string = useExistingOpenAIResources ? azureOpenAiEndpoint : aiServices!.outputs.azureOpenAiEndpoint
+output AZURE_OPENAI_API_KEY string = useExistingOpenAIResources ? azureOpenAiApiKey : aiServices!.outputs.azureOpenAiApiKey
+output AZURE_OPENAI_MODEL string = useExistingOpenAIResources ? azureOpenAiModel : aiServices!.outputs.azureOpenAiModel
