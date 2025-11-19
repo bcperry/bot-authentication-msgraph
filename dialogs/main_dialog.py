@@ -271,8 +271,49 @@ class MainDialog(LogoutDialog):
                 await step_context.context.send_activity("Analyzing your email...")
                 await self._run_agent_response(
                     step_context,
-                    "Analyze my email and provide a summary. Be sure to reference specific emails where relevant, identify high priority items, \
-                    and suggest any actions I should take.",
+                    """Analyze my emails and provide a concise, actionable summary.
+
+REQUIREMENTS:
+- Report the total number of emails reviewed
+- Focus only on emails directly related to my work and responsibilities
+- Ignore newsletters, promotions, and automated notifications (count them but don't summarize)
+- Identify high-priority items requiring action
+- Provide specific, actionable next steps
+
+OUTPUT FORMAT:
+- No preamble or filler text
+- Use clean markdown formatting
+- Reference specific emails with: sender name, date, and subject line
+- Make suggestions concrete and actionable
+
+GOOD EXAMPLE:
+**Reviewed 150 emails**
+
+### Key Actions:
+1. **Budget Briefing Follow-up** - John Doe (March 3rd)
+   *Subject: Q2 Financial Review Meeting*
+   
+   → Schedule follow-up meeting to discuss Q2 budget projections
+   
+   → Need Date: [Insert Date Here]
+
+2. **Cybersecurity Meeting** - Jane Smith (March 5th)
+   *Subject: Urgent: Threat Assessment Review Required*
+   
+   → Meet with cybersecurity team this week to address identified threats
+   
+   → Need Date: [Insert Date Here]
+
+3. **Congressional Inquiry Response** - Rep. Johnson (March 7th)
+   *Subject: Information Request RE: Department Operations*
+   
+   → Draft comprehensive response addressing operational oversight questions
+   
+   → Need Date: [Insert Date Here]   
+
+BAD EXAMPLE (too vague):
+"Prioritize tasks related to high-level meetings. Engage with cybersecurity experts. Prepare response to inquiry."
+""",
                     token_response.token,
                 )
             else:
