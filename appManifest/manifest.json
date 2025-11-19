@@ -6,25 +6,25 @@
   "id": "${{AAD_APP_CLIENT_ID}}",
 
   "developer": {
-    "name": "Microsoft Army Team",
-    "websiteUrl": "https://www.microsoft.com",
-    "privacyUrl": "https://www.microsoft.com/privacy",
-    "termsOfUseUrl": "https://www.microsoft.com/terms"
+    "name": "U.S. Army Materiel Command",
+    "websiteUrl": "https://www.amc.army.mil",
+    "privacyUrl": "https://www.army.mil/privacy",
+    "termsOfUseUrl": "https://www.army.mil/terms"
   },
 
   "icons": {
     "outline": "outline.png",
-    "color": "MSArmyLogo.png"
+    "color": "AMC-Logo.png"
   },
 
   "name": {
-    "short": "General's Aide",
-    "full": "Teams Conversation Bot For Army Leaders"
+    "short": "AMC Command Assistant",
+    "full": "Army Materiel Command AI Assistant"
   },
 
   "description": {
-    "short": "A Teams bot demonstrating tool use and adaptive card interactions.",
-    "full": "This Teams bot showcases comprehensive conversation event handling including read receipts, message updates, adaptive cards, and immersive reader support. It can reach out to relevant tools and use them to inform user interaction."
+    "short": "AI assistant for AMC sustainment and materiel readiness operations.",
+    "full": "Army Materiel Command AI Assistant helps leaders manage global supply chain operations, logistics coordination, equipment readiness, and sustainment activities. Provides intelligent email management and decision support for AMC's mission to deliver precision sustainment and materiel readiness to expeditionary forces worldwide."
   },
 
   "accentColor": "#FFFFFF",

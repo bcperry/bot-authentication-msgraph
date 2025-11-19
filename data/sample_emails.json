@@ -1,18 +1,18 @@
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('general.officer%40army.mil')/messages",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('amc.commander%40army.mil')/messages",
   "value": [
     {
       "id": "AAMkAGI2THVSAAA=",
-      "createdDateTime": "2025-11-13T08:30:00Z",
-      "lastModifiedDateTime": "2025-11-13T08:30:00Z",
+      "createdDateTime": "2025-11-17T08:30:00Z",
+      "lastModifiedDateTime": "2025-11-17T08:30:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC5",
-      "categories": [],
-      "receivedDateTime": "2025-11-13T08:30:00Z",
-      "sentDateTime": "2025-11-13T08:25:00Z",
+      "categories": ["Supply Chain"],
+      "receivedDateTime": "2025-11-17T08:30:00Z",
+      "sentDateTime": "2025-11-17T08:25:00Z",
       "hasAttachments": true,
-      "internetMessageId": "<MSG001@pentagon.army.mil>",
-      "subject": "URGENT: Joint Chiefs Meeting - Budget Briefing Required",
-      "bodyPreview": "General, you are requested to attend the Joint Chiefs meeting on 15 NOV at 0900. Please prepare a 20-minute briefing on Q1 budget allocations for your command...",
+      "internetMessageId": "<MSG001@redstone.army.mil>",
+      "subject": "URGENT: Critical Parts Shortage - M1 Abrams Tank Fleet Readiness",
+      "bodyPreview": "Sir, we have identified a critical shortage of transmission components for the M1A2 Abrams fleet affecting 23% of operational vehicles across FORSCOM units...",
       "importance": "high",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAA=",
@@ -25,29 +25,29 @@
       "inferenceClassification": "focused",
       "from": {
         "emailAddress": {
-          "name": "Gen. Michael Thompson",
-          "address": "michael.thompson@jcs.army.mil"
+          "name": "BG Marcus Williams",
+          "address": "marcus.williams@tacom.army.mil"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Gen. Michael Thompson",
-          "address": "michael.thompson@jcs.army.mil"
+          "name": "BG Marcus Williams",
+          "address": "marcus.williams@tacom.army.mil"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
       "ccRecipients": [
         {
           "emailAddress": {
-            "name": "Col. Sarah Martinez",
-            "address": "sarah.martinez@pentagon.army.mil"
+            "name": "AMC G4 Logistics",
+            "address": "g4.logistics@amc.army.mil"
           }
         }
       ],
@@ -55,32 +55,32 @@
       "replyTo": [],
       "body": {
         "contentType": "html",
-        "content": "<html><body><p>General,</p><p>You are requested to attend the Joint Chiefs meeting on <b>15 NOV at 0900</b> in the Pentagon, Room 2E924.</p><p>Please prepare a 20-minute briefing covering:</p><ul><li>Q1 budget allocations for your command</li><li>Projected personnel needs for FY2026</li><li>Equipment modernization priorities</li></ul><p>Briefing materials are due to my office NLT 14 NOV 1700.</p><p>Respectfully,<br/>Gen. Michael Thompson<br/>Vice Chairman, Joint Chiefs of Staff</p></body></html>"
+        "content": "<html><body><p>Sir,</p><p>We have identified a <b>critical shortage of transmission components</b> for the M1A2 Abrams fleet affecting 23% of operational vehicles across FORSCOM units.</p><p><b>Current Situation:</b></p><ul><li>168 tanks deadlined for X1100-3B transmission assemblies</li><li>Current supply on hand: 42 units (12-week backorder from contractor)</li><li>Impacts 3rd Armored Brigade Combat Team readiness below 80%</li><li>Projected to affect an additional 94 vehicles within 45 days</li></ul><p><b>Immediate Actions Required:</b></p><ul><li>Authorize emergency procurement authority for expedited production run</li><li>Coordinate with Anniston Army Depot for priority rebuild capacity</li><li>Brief FORSCOM G4 on timeline and mitigation strategy</li></ul><p>Detailed supply analysis and recommended COA attached. Request decision by <b>20 NOV</b> to maintain Q1 readiness targets.</p><p>Respectfully,<br/>BG Marcus Williams<br/>Deputy Commander for Logistics<br/>TACOM Life Cycle Management Command</p></body></html>"
       },
       "flag": {
         "flagStatus": "flagged",
         "startDateTime": {
-          "dateTime": "2025-11-13T00:00:00Z",
+          "dateTime": "2025-11-17T00:00:00Z",
           "timeZone": "UTC"
         },
         "dueDateTime": {
-          "dateTime": "2025-11-14T17:00:00Z",
+          "dateTime": "2025-11-20T17:00:00Z",
           "timeZone": "UTC"
         }
       }
     },
     {
       "id": "AAMkAGI2THVSAAB=",
-      "createdDateTime": "2025-11-13T07:15:00Z",
-      "lastModifiedDateTime": "2025-11-13T07:15:00Z",
+      "createdDateTime": "2025-11-17T07:15:00Z",
+      "lastModifiedDateTime": "2025-11-17T07:15:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC6",
       "categories": [],
-      "receivedDateTime": "2025-11-13T07:15:00Z",
-      "sentDateTime": "2025-11-13T07:10:00Z",
+      "receivedDateTime": "2025-11-17T07:15:00Z",
+      "sentDateTime": "2025-11-17T07:10:00Z",
       "hasAttachments": false,
-      "internetMessageId": "<SPAM001@marketingpro.com>",
-      "subject": "⭐ Exclusive Military Discount - Luxury Watches Up to 90% Off! ⭐",
-      "bodyPreview": "Dear Valued Military Professional, As a token of our appreciation for your service, we're offering an EXCLUSIVE 90% discount on luxury timepieces...",
+      "internetMessageId": "<SPAM001@defense-contracts.biz>",
+      "subject": "🎯 Exclusive Defense Contract Opportunity - Pre-Qualified Vendors Needed",
+      "bodyPreview": "Dear Procurement Officer, We specialize in rapid fulfillment of military equipment and parts. Our company has connections with overseas manufacturers...",
       "importance": "normal",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAB=",
@@ -93,21 +93,21 @@
       "inferenceClassification": "other",
       "from": {
         "emailAddress": {
-          "name": "Military Deals Today",
-          "address": "deals@marketingpro.com"
+          "name": "Global Defense Solutions",
+          "address": "contracts@defense-contracts.biz"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Military Deals Today",
-          "address": "deals@marketingpro.com"
+          "name": "Global Defense Solutions",
+          "address": "contracts@defense-contracts.biz"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
@@ -116,7 +116,7 @@
       "replyTo": [],
       "body": {
         "contentType": "html",
-        "content": "<html><body><div style='background:#ff0000;color:#fff;padding:20px;'><h1>⭐ EXCLUSIVE MILITARY DISCOUNT ⭐</h1></div><p>Dear Valued Military Professional,</p><p>As a token of our appreciation for your service, we're offering an <b>EXCLUSIVE 90% discount</b> on luxury timepieces from brands like Rolex, Omega, and Breitling!</p><p><a href='http://suspicious-link.biz/offer'>CLICK HERE NOW - LIMITED TIME OFFER!</a></p><p>Act now before this offer expires!</p></body></html>"
+        "content": "<html><body><div style='background:#003366;color:#fff;padding:20px;'><h1>🎯 EXCLUSIVE DEFENSE CONTRACT OPPORTUNITY</h1></div><p>Dear Procurement Officer,</p><p>We specialize in <b>rapid fulfillment</b> of military equipment and parts. Our company has connections with overseas manufacturers who can deliver critical components at 40% below current contract prices!</p><p><b>What we offer:</b></p><ul><li>No competitive bidding delays</li><li>Direct shipment from manufacturer</li><li>Bypass standard procurement procedures</li><li>Immediate availability of hard-to-find parts</li></ul><p><a href='http://suspicious-vendor.xyz/catalog'>VIEW OUR CATALOG - PLACE ORDER TODAY!</a></p><p><small>*Not an approved DoD contractor. Foreign-sourced components.</small></p></body></html>"
       },
       "flag": {
         "flagStatus": "notFlagged"
@@ -124,16 +124,16 @@
     },
     {
       "id": "AAMkAGI2THVSAAC=",
-      "createdDateTime": "2025-11-12T16:45:00Z",
-      "lastModifiedDateTime": "2025-11-13T09:00:00Z",
+      "createdDateTime": "2025-11-16T16:45:00Z",
+      "lastModifiedDateTime": "2025-11-17T09:00:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC7",
-      "categories": ["Personnel"],
-      "receivedDateTime": "2025-11-12T16:45:00Z",
-      "sentDateTime": "2025-11-12T16:40:00Z",
+      "categories": ["Depot Operations"],
+      "receivedDateTime": "2025-11-16T16:45:00Z",
+      "sentDateTime": "2025-11-16T16:40:00Z",
       "hasAttachments": true,
-      "internetMessageId": "<MSG002@hqda.army.mil>",
-      "subject": "ACTION REQUIRED: Commander's Evaluation Report - Maj. Johnson",
-      "bodyPreview": "Sir, the Commander's Evaluation Report for MAJ David Johnson is due for your review and signature by COB 15 NOV. MAJ Johnson has served as your Executive Officer...",
+      "internetMessageId": "<MSG002@tobyhanna.army.mil>",
+      "subject": "ACTION: Approve FY26 Depot Modernization Plan - $127M Investment",
+      "bodyPreview": "Sir, the FY26 Depot Modernization Plan for Tobyhanna Army Depot requires your approval. This $127M investment will upgrade critical communications equipment repair capabilities...",
       "importance": "high",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAC=",
@@ -146,51 +146,58 @@
       "inferenceClassification": "focused",
       "from": {
         "emailAddress": {
-          "name": "Col. James Mitchell",
-          "address": "james.mitchell@hqda.army.mil"
+          "name": "Ms. Patricia Richardson",
+          "address": "patricia.richardson@tobyhanna.army.mil"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Col. James Mitchell",
-          "address": "james.mitchell@hqda.army.mil"
+          "name": "Ms. Patricia Richardson",
+          "address": "patricia.richardson@tobyhanna.army.mil"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
-      "ccRecipients": [],
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "name": "AMC Resource Management",
+            "address": "resource.mgmt@amc.army.mil"
+          }
+        }
+      ],
       "bccRecipients": [],
       "replyTo": [],
       "body": {
         "contentType": "html",
-        "content": "<html><body><p>Sir,</p><p>The Commander's Evaluation Report for MAJ David Johnson is due for your review and signature by <b>COB 15 NOV</b>.</p><p>MAJ Johnson has served as your Executive Officer for the past 18 months and has consistently demonstrated exceptional leadership and professionalism.</p><p>The draft OER is attached for your review. Please provide any edits or approve for final signature.</p><p>Respectfully,<br/>COL James Mitchell<br/>Chief of Staff</p></body></html>"
+        "content": "<html><body><p>Sir,</p><p>The FY26 Depot Modernization Plan for Tobyhanna Army Depot requires your approval. This <b>$127M investment</b> will upgrade critical communications equipment repair capabilities to support emerging multi-domain operations requirements.</p><p><b>Investment Breakdown:</b></p><ul><li>$48M - Advanced electronic test equipment for next-gen tactical radios</li><li>$35M - Facility upgrades for classified communications systems</li><li>$27M - Automated repair line for SINCGARS and satellite terminals</li><li>$17M - Workforce training and certification programs</li></ul><p><b>Expected Outcomes:</b></p><ul><li>Increase repair throughput by 35%</li><li>Reduce average turnaround time from 47 to 28 days</li><li>Enable organic repair of 12 new equipment types</li><li>Create 85 new civilian positions</li></ul><p>Approval required by <b>COB 22 NOV</b> to meet congressional notification timeline. Full business case analysis attached.</p><p>Respectfully,<br/>Patricia Richardson<br/>Commander<br/>Tobyhanna Army Depot</p></body></html>"
       },
       "flag": {
         "flagStatus": "flagged",
         "dueDateTime": {
-          "dateTime": "2025-11-15T17:00:00Z",
+          "dateTime": "2025-11-22T17:00:00Z",
           "timeZone": "UTC"
         }
       }
     },
     {
       "id": "AAMkAGI2THVSAAD=",
-      "createdDateTime": "2025-11-12T14:20:00Z",
-      "lastModifiedDateTime": "2025-11-12T14:20:00Z",
+      "createdDateTime": "2025-11-16T14:20:00Z",
+      "lastModifiedDateTime": "2025-11-16T14:20:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC8",
       "categories": [],
-      "receivedDateTime": "2025-11-12T14:20:00Z",
-      "sentDateTime": "2025-11-12T14:15:00Z",
+      "receivedDateTime": "2025-11-16T14:20:00Z",
+      "sentDateTime": "2025-11-16T14:15:00Z",
       "hasAttachments": false,
-      "internetMessageId": "<SPAM002@crypto-invest.ru>",
-      "subject": "RE: Secure Investment Opportunity - Cryptocurrency Portfolio",
-      "bodyPreview": "General Officer, I hope this email finds you well. My name is Viktor Petrov and I represent a prestigious investment firm based in Switzerland...",
+      "internetMessageId": "<SPAM002@government-grants.ru>",
+      "subject": "RE: Unclaimed Federal Grant Funds - Army Materiel Command Eligible",
+      "bodyPreview": "Dear Command Leadership, Our records indicate that Army Materiel Command has $8.5 million in unclaimed federal modernization grants from previous fiscal years...",
       "importance": "normal",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAD=",
@@ -203,21 +210,21 @@
       "inferenceClassification": "other",
       "from": {
         "emailAddress": {
-          "name": "Viktor Petrov",
-          "address": "v.petrov@crypto-invest.ru"
+          "name": "Federal Grants Office",
+          "address": "grants@government-grants.ru"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Viktor Petrov",
-          "address": "v.petrov@crypto-invest.ru"
+          "name": "Federal Grants Office",
+          "address": "grants@government-grants.ru"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
@@ -226,7 +233,7 @@
       "replyTo": [],
       "body": {
         "contentType": "text",
-        "content": "General Officer,\n\nI hope this email finds you well. My name is Viktor Petrov and I represent a prestigious investment firm based in Switzerland.\n\nWe have identified you as a high-value individual who could benefit from our exclusive cryptocurrency investment portfolio. We guarantee 300% returns within 6 months.\n\nTo proceed, we simply need you to:\n1. Provide your banking information\n2. Make an initial investment of $50,000\n3. Refer 3 colleagues\n\nThis is a limited-time opportunity available only to select military leaders.\n\nPlease respond quickly to secure your position.\n\nViktor Petrov\nSenior Investment Advisor"
+        "content": "Dear Command Leadership,\n\nOur records indicate that Army Materiel Command has $8.5 million in unclaimed federal modernization grants from previous fiscal years that will expire on 31 December 2025.\n\nTo claim these funds immediately, we require:\n1. Wire transfer routing information for your finance office\n2. Digital signature authorization from commanding officer\n3. Processing fee of $25,000 (refundable from grant funds)\n4. Expedited handling to meet year-end deadline\n\nThis is a limited-time opportunity. Funds must be claimed within 72 hours or they will be redistributed to other agencies.\n\nClick here to begin the claim process: [SUSPICIOUS LINK]\n\nSincerely,\nDr. Alexander Kozlov\nFederal Grants Recovery Division"
       },
       "flag": {
         "flagStatus": "notFlagged"
@@ -234,62 +241,55 @@
     },
     {
       "id": "AAMkAGI2THVSAAE=",
-      "createdDateTime": "2025-11-12T11:30:00Z",
-      "lastModifiedDateTime": "2025-11-12T11:30:00Z",
+      "createdDateTime": "2025-11-10T09:15:00Z",
+      "lastModifiedDateTime": "2025-11-10T09:15:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABC9",
-      "categories": ["Operations"],
-      "receivedDateTime": "2025-11-12T11:30:00Z",
-      "sentDateTime": "2025-11-12T11:25:00Z",
+      "categories": ["Distribution Operations"],
+      "receivedDateTime": "2025-11-10T09:15:00Z",
+      "sentDateTime": "2025-11-10T09:00:00Z",
       "hasAttachments": true,
-      "internetMessageId": "<MSG003@centcom.mil>",
-      "subject": "SITREP: Middle East Operations Update - Week 46",
-      "bodyPreview": "CLASSIFICATION: SECRET//NOFORN. Sir, attached is the weekly situation report covering operations in your AOR. Key highlights include...",
-      "importance": "high",
+      "internetMessageId": "<sddc001@army.mil>",
+      "subject": "FYI: Global Prepositioning Stock Status - November 2025",
+      "bodyPreview": "Sir, Attached is the monthly status report for Army Prepositioned Stocks (APS) managed by SDDC. Overall readiness remains green at 94%...",
+      "importance": "normal",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAE=",
-      "conversationIndex": "AQHaC8c=",
+      "conversationIndex": "AQHaC8e=",
       "isDeliveryReceiptRequested": false,
-      "isReadReceiptRequested": true,
+      "isReadReceiptRequested": false,
       "isRead": false,
       "isDraft": false,
       "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAE=",
-      "inferenceClassification": "focused",
+      "inferenceClassification": "other",
       "from": {
         "emailAddress": {
-          "name": "BG Robert Chen",
-          "address": "robert.chen@centcom.mil"
+          "name": "COL Michael Chen",
+          "address": "michael.chen@sddc.army.mil"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "BG Robert Chen",
-          "address": "robert.chen@centcom.mil"
+          "name": "COL Michael Chen",
+          "address": "michael.chen@sddc.army.mil"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "J3 Operations",
-            "address": "j3.operations@centcom.mil"
-          }
-        }
-      ],
+      "ccRecipients": [],
       "bccRecipients": [],
       "replyTo": [],
       "body": {
-        "contentType": "html",
-        "content": "<html><body><p><b>CLASSIFICATION: SECRET//NOFORN</b></p><p>Sir,</p><p>Attached is the weekly situation report covering operations in your AOR.</p><p><b>Key highlights include:</b></p><ul><li>Successful completion of joint training exercise with partner nation forces</li><li>Increased ISR activity in southern sector - 3 high-value targets identified</li><li>Force protection posture elevated to FPCON Bravo due to recent intelligence</li><li>Equipment maintenance at 94% readiness - exceeds command standard</li></ul><p>Request your guidance on proposed adjustments to patrol schedules in grid square 38S MB.</p><p>Full report attached (classification: SECRET//NOFORN).</p><p>Respectfully,<br/>BG Robert Chen<br/>J3, CENTCOM</p><p><b>CLASSIFICATION: SECRET//NOFORN</b></p></body></html>"
+        "contentType": "text",
+        "content": "Sir,\n\nAttached is the monthly status report for Army Prepositioned Stocks (APS) managed by SDDC. Overall readiness remains green at 94%.\n\nKey highlights:\n- APS-2 (Europe): 96% ready, rotation cycle on track\n- APS-3 (CENTCOM AOR): 92% ready, container refresh in progress\n- APS-5 (Pacific): 95% ready, sustainment operations normal\n\nMinor challenges:\n- Delayed shipping for 12 HEMTT trucks to Pacific APS (est. delivery Dec 15)\n- Awaiting replacement water purification units for European stocks\n\nAll shortfalls are being actively managed and do not impact operational requirements.\n\nRespectfully,\nCOL Michael Chen\nChief, Distribution Operations\nSDDC"
       },
       "flag": {
-        "flagStatus": "flagged"
+        "flagStatus": "notFlagged"
       }
     },
     {
@@ -301,9 +301,9 @@
       "receivedDateTime": "2025-11-12T09:00:00Z",
       "sentDateTime": "2025-11-12T08:55:00Z",
       "hasAttachments": false,
-      "internetMessageId": "<SPAM003@phishing.xyz>",
-      "subject": "URGENT: Your Army Email Account Will Be Suspended",
-      "bodyPreview": "Dear Army.mil User, Our system has detected suspicious activity on your account. Your email will be suspended within 24 hours unless you verify your credentials...",
+      "internetMessageId": "<SPAM003@gcss-security.net>",
+      "subject": "URGENT: Critical GCSS-Army Security Patch Required - Action Within 24 Hours",
+      "bodyPreview": "ATTN: All GCSS-Army Users, A critical security vulnerability has been detected in GCSS-Army version 3.0. You must install this emergency patch immediately...",
       "importance": "high",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAF=",
@@ -316,21 +316,21 @@
       "inferenceClassification": "other",
       "from": {
         "emailAddress": {
-          "name": "Army IT Support",
-          "address": "support@army-it-help.xyz"
+          "name": "GCSS-Army Security Team",
+          "address": "security@gcss-security.net"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Army IT Support",
-          "address": "support@army-it-help.xyz"
+          "name": "GCSS-Army Security Team",
+          "address": "security@gcss-security.net"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
@@ -338,8 +338,8 @@
       "bccRecipients": [],
       "replyTo": [],
       "body": {
-        "contentType": "html",
-        "content": "<html><body><div style='border:2px solid red;padding:10px;background:#fff3cd;'><h2 style='color:red;'>⚠️ URGENT ACTION REQUIRED ⚠️</h2></div><p>Dear Army.mil User,</p><p>Our system has detected <b>suspicious activity</b> on your account. Your email will be <span style='color:red;font-weight:bold;'>SUSPENDED WITHIN 24 HOURS</span> unless you verify your credentials immediately.</p><p><a href='http://fake-army-portal.xyz/verify' style='background:red;color:white;padding:10px;text-decoration:none;'>CLICK HERE TO VERIFY YOUR ACCOUNT</a></p><p>Failure to verify will result in permanent loss of email access and all stored messages.</p><p>Army IT Support Team<br/>Do Not Reply</p></body></html>"
+        "contentType": "text",
+        "content": "ATTN: All GCSS-Army Users,\n\nA critical security vulnerability has been detected in GCSS-Army version 3.0. You must install this emergency patch immediately to prevent unauthorized access to logistics data.\n\nTO INSTALL PATCH:\n1. Click this link to download: [SUSPICIOUS LINK]\n2. Enter your CAC PIN when prompted\n3. Provide GCSS-Army username and password\n4. Allow installation to complete\n\nFAILURE TO COMPLY WITHIN 24 HOURS WILL RESULT IN:\n- Account suspension\n- Loss of GCSS-Army access\n- Security violation report to your chain of command\n\nThis is a mandatory update per Army Cyber Command directive.\n\nGCSS-Army Security Operations Center\nDo not reply to this email"
       },
       "flag": {
         "flagStatus": "notFlagged"
@@ -347,16 +347,16 @@
     },
     {
       "id": "AAMkAGI2THVSAAG=",
-      "createdDateTime": "2025-11-11T15:30:00Z",
-      "lastModifiedDateTime": "2025-11-11T15:30:00Z",
+      "createdDateTime": "2025-11-07T11:30:00Z",
+      "lastModifiedDateTime": "2025-11-07T11:30:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD1",
-      "categories": ["Training"],
-      "receivedDateTime": "2025-11-11T15:30:00Z",
-      "sentDateTime": "2025-11-11T15:25:00Z",
-      "hasAttachments": false,
-      "internetMessageId": "<MSG004@tradoc.army.mil>",
-      "subject": "FYI: New Cyber Warfare Training Module - Leadership Endorsement Needed",
-      "bodyPreview": "General, I wanted to bring to your attention a new cyber warfare training module being rolled out across the force in Q1 2026...",
+      "categories": ["Acquisition"],
+      "receivedDateTime": "2025-11-07T11:30:00Z",
+      "sentDateTime": "2025-11-07T11:15:00Z",
+      "hasAttachments": true,
+      "internetMessageId": "<tacom002@army.mil>",
+      "subject": "DECISION REQUIRED: JLTV Production Rate Increase - FY26",
+      "bodyPreview": "Sir, TACOM requests your concurrence on a proposal to increase Joint Light Tactical Vehicle (JLTV) production rate from 420 to 550 units per month starting Q2 FY26...",
       "importance": "normal",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAG=",
@@ -369,37 +369,30 @@
       "inferenceClassification": "focused",
       "from": {
         "emailAddress": {
-          "name": "Col. Patricia Wong",
-          "address": "patricia.wong@tradoc.army.mil"
+          "name": "COL Jennifer Hayes",
+          "address": "jennifer.hayes@tacom.army.mil"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Col. Patricia Wong",
-          "address": "patricia.wong@tradoc.army.mil"
+          "name": "COL Jennifer Hayes",
+          "address": "jennifer.hayes@tacom.army.mil"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "G3 Training",
-            "address": "g3.training@tradoc.army.mil"
-          }
-        }
-      ],
+      "ccRecipients": [],
       "bccRecipients": [],
       "replyTo": [],
       "body": {
-        "contentType": "html",
-        "content": "<html><body><p>General,</p><p>I wanted to bring to your attention a new cyber warfare training module being rolled out across the force in Q1 2026.</p><p>This mandatory training addresses emerging threats in the cyber domain and aligns with the Chief of Staff's modernization priorities.</p><p><b>Key Details:</b></p><ul><li>8-hour computer-based training (CBT) module</li><li>Required for all personnel O-6 and above</li><li>Completion deadline: 31 March 2026</li><li>Leadership endorsement video requested from General Officers</li></ul><p>Would you be available for a 10-minute recording session during the week of 2-6 December? Your endorsement would significantly boost engagement across the command.</p><p>Respectfully,<br/>COL Patricia Wong<br/>Director, Cyber Training Division<br/>TRADOC</p></body></html>"
+        "contentType": "text",
+        "content": "Sir,\n\nTACOM requests your concurrence on a proposal to increase Joint Light Tactical Vehicle (JLTV) production rate from 420 to 550 units per month starting Q2 FY26.\n\nRationale:\n- Accelerate HMMWV replacement timeline by 18 months\n- Meet increased demand from allied partner nations\n- Leverage economies of scale to reduce unit cost by 8%\n- Oshkosh Defense has confirmed production capacity\n\nCost Impact:\n- Requires $215M acceleration of FY27 funding into FY26\n- Saves $340M over program lifecycle due to efficiency gains\n- Net program savings: $125M\n\nRisks:\n- Supply chain stress on specific components (mitigated through vendor agreements)\n- Requires coordination with PEO Ground Combat Systems\n\nRequest decision NLT 25 November to maintain production schedule.\n\nRespectfully,\nCOL Jennifer Hayes\nProject Manager, JLTV\nTACOM"
       },
       "flag": {
         "flagStatus": "notFlagged"
@@ -407,80 +400,69 @@
     },
     {
       "id": "AAMkAGI2THVSAAH=",
-      "createdDateTime": "2025-11-11T13:15:00Z",
-      "lastModifiedDateTime": "2025-11-11T13:15:00Z",
+      "createdDateTime": "2025-11-06T08:00:00Z",
+      "lastModifiedDateTime": "2025-11-06T08:00:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD2",
-      "categories": ["Logistics"],
-      "receivedDateTime": "2025-11-11T13:15:00Z",
-      "sentDateTime": "2025-11-11T13:10:00Z",
-      "hasAttachments": true,
-      "internetMessageId": "<MSG005@amc.army.mil>",
-      "subject": "ACTION: Approve LOGCAP Contract Extension - $47M",
-      "bodyPreview": "Sir, the LOGCAP V contract for theater logistics support is set to expire on 31 December. We require your approval to execute a 6-month extension valued at $47M...",
-      "importance": "high",
+      "categories": ["Innovation"],
+      "receivedDateTime": "2025-11-06T08:00:00Z",
+      "sentDateTime": "2025-11-06T07:45:00Z",
+      "hasAttachments": false,
+      "internetMessageId": "<amcom001@army.mil>",
+      "subject": "SUCCESS: Predictive Maintenance AI Pilot Results - 40% Reduction in Unscheduled Downtime",
+      "bodyPreview": "Sir, I'm pleased to report outstanding results from our 6-month AI-powered predictive maintenance pilot program at Corpus Christi Army Depot...",
+      "importance": "normal",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAH=",
       "conversationIndex": "AQHaC8f=",
       "isDeliveryReceiptRequested": false,
-      "isReadReceiptRequested": true,
+      "isReadReceiptRequested": false,
       "isRead": false,
       "isDraft": false,
       "webLink": "https://outlook.office365.com/mail/AAMkAGI2THVSAAH=",
       "inferenceClassification": "focused",
       "from": {
         "emailAddress": {
-          "name": "BG Amanda Foster",
-          "address": "amanda.foster@amc.army.mil"
+          "name": "Dr. Lisa Morgan",
+          "address": "lisa.morgan@amcom.army.mil"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "BG Amanda Foster",
-          "address": "amanda.foster@amc.army.mil"
+          "name": "Dr. Lisa Morgan",
+          "address": "lisa.morgan@amcom.army.mil"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "Contracting Officer",
-            "address": "contracting@amc.army.mil"
-          }
-        }
-      ],
+      "ccRecipients": [],
       "bccRecipients": [],
       "replyTo": [],
       "body": {
-        "contentType": "html",
-        "content": "<html><body><p>Sir,</p><p>The LOGCAP V contract for theater logistics support is set to expire on 31 December. We require your approval to execute a 6-month extension valued at <b>$47 million</b>.</p><p><b>Justification:</b></p><ul><li>Critical support for ongoing operations in theater</li><li>No alternative vendors available in current environment</li><li>Extension allows time for proper competitive rebid process</li><li>Pricing remains consistent with current contract terms</li></ul><p><b>Timeline:</b></p><ul><li>Decision required NLT 20 NOV to process paperwork</li><li>Failure to extend will result in service disruption 1 JAN</li></ul><p>Attached documents:</p><ul><li>Contract extension justification memo</li><li>Price analysis</li><li>Legal review</li></ul><p>Request your approval to proceed.</p><p>Respectfully,<br/>BG Amanda Foster<br/>Deputy Commander for Contracting<br/>Army Materiel Command</p></body></html>"
+        "contentType": "text",
+        "content": "Sir,\n\nI'm pleased to report outstanding results from our 6-month AI-powered predictive maintenance pilot program at Corpus Christi Army Depot for UH-60 Black Hawk helicopters.\n\nKey Results:\n- 40% reduction in unscheduled maintenance events\n- 28% decrease in parts consumption (eliminated premature replacements)\n- 15% improvement in aircraft availability rates\n- $3.2M cost avoidance over 6-month pilot period\n\nThe AI system analyzed sensor data from 45 aircraft and successfully predicted component failures 14-21 days in advance with 89% accuracy.\n\nRecommendation:\nExpand program to additional aircraft types and Army depots. Estimated ROI of 450% over 3 years.\n\nRequest:\nBrief AMC leadership at December's Senior Leader Forum on scaling this capability across the enterprise.\n\nRespectfully,\nDr. Lisa Morgan\nChief Technology Officer\nAMCOM"
       },
       "flag": {
-        "flagStatus": "flagged",
-        "dueDateTime": {
-          "dateTime": "2025-11-20T17:00:00Z",
-          "timeZone": "UTC"
-        }
+        "flagStatus": "notFlagged"
       }
     },
     {
       "id": "AAMkAGI2THVSAAI=",
-      "createdDateTime": "2025-11-11T10:45:00Z",
-      "lastModifiedDateTime": "2025-11-11T10:45:00Z",
+      "createdDateTime": "2025-11-05T13:20:00Z",
+      "lastModifiedDateTime": "2025-11-05T13:20:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD3",
       "categories": [],
-      "receivedDateTime": "2025-11-11T10:45:00Z",
-      "sentDateTime": "2025-11-11T10:40:00Z",
+      "receivedDateTime": "2025-11-05T13:20:00Z",
+      "sentDateTime": "2025-11-05T13:15:00Z",
       "hasAttachments": false,
-      "internetMessageId": "<SPAM004@supplements.biz>",
-      "subject": "Boost Your Energy and Performance - Military Grade Supplements",
-      "bodyPreview": "Hello Warrior, Feeling tired? Low energy during PT? Our MILITARY GRADE supplements are specially formulated for active duty personnel...",
+      "internetMessageId": "<SPAM004@surplus-direct.biz>",
+      "subject": "CLASSIFIED EQUIPMENT LIQUIDATION - Military Surplus Direct Sale",
+      "bodyPreview": "Dear AMC Leadership, We have acquired a large quantity of military-grade equipment through government liquidation auctions and are offering exclusive first access to Army commands...",
       "importance": "normal",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAI=",
@@ -493,21 +475,21 @@
       "inferenceClassification": "other",
       "from": {
         "emailAddress": {
-          "name": "TacticalFit Nutrition",
-          "address": "sales@supplements.biz"
+          "name": "Military Surplus Direct",
+          "address": "sales@surplus-direct.biz"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "TacticalFit Nutrition",
-          "address": "sales@supplements.biz"
+          "name": "Military Surplus Direct",
+          "address": "sales@surplus-direct.biz"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
@@ -515,8 +497,8 @@
       "bccRecipients": [],
       "replyTo": [],
       "body": {
-        "contentType": "html",
-        "content": "<html><body><h1>🔥 MILITARY GRADE SUPPLEMENTS 🔥</h1><p>Hello Warrior,</p><p>Feeling tired? Low energy during PT?</p><p>Our <b>MILITARY GRADE</b> supplements are specially formulated for active duty personnel like you!</p><ul><li>✓ Increase energy by 300%</li><li>✓ Build muscle FAST</li><li>✓ Burn fat while you sleep</li><li>✓ Improve focus and concentration</li></ul><p><b>SPECIAL MILITARY DISCOUNT: 50% OFF</b></p><p><a href='http://shady-supplements.biz/buy'>ORDER NOW - FREE SHIPPING</a></p><p><small>*These statements have not been evaluated by the FDA. Not approved for military use.</small></p></body></html>"
+        "contentType": "text",
+        "content": "Dear AMC Leadership,\n\nWe have acquired a large quantity of military-grade equipment through government liquidation auctions and are offering exclusive first access to Army commands.\n\nAvailable items:\n- Night vision devices (Gen 3 and Gen 4)\n- Encrypted communication systems\n- Tactical vehicle parts\n- Body armor and protective equipment\n- Drone detection systems\n\nPrices are 60-70% below government contract rates. We can ship directly to your installation within 48 hours.\n\nThis is a limited-time offer. Items are going fast.\n\nTo place an order:\n1. Reply with equipment needs\n2. Provide wire transfer payment\n3. Receive shipment directly to your facility\n\nView full catalog: [SUSPICIOUS LINK]\n\nRandy Peterson\nMilitary Surplus Direct\n\"Your trusted source for defense equipment\""
       },
       "flag": {
         "flagStatus": "notFlagged"
@@ -524,21 +506,21 @@
     },
     {
       "id": "AAMkAGI2THVSAAJ=",
-      "createdDateTime": "2025-11-10T16:00:00Z",
-      "lastModifiedDateTime": "2025-11-10T16:00:00Z",
+      "createdDateTime": "2025-11-04T10:00:00Z",
+      "lastModifiedDateTime": "2025-11-04T10:00:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD4",
-      "categories": ["Congressional"],
-      "receivedDateTime": "2025-11-10T16:00:00Z",
-      "sentDateTime": "2025-11-10T15:55:00Z",
+      "categories": ["Ammunition Management"],
+      "receivedDateTime": "2025-11-04T10:00:00Z",
+      "sentDateTime": "2025-11-04T09:45:00Z",
       "hasAttachments": true,
-      "internetMessageId": "<MSG006@hqda.army.mil>",
-      "subject": "URGENT: Congressional Inquiry Response Due 18 NOV",
-      "bodyPreview": "General, we have received a congressional inquiry from Senator Williams' office regarding recruitment and retention statistics in your command. A response is required by 18 NOV...",
+      "internetMessageId": "<jmc001@army.mil>",
+      "subject": "WEEKLY REVIEW: Ammunition Stock Levels - 155mm Production Status",
+      "bodyPreview": "Sir, Per your request, here is the weekly ammunition stockpile status as of 1 November 2025. Overall munitions readiness remains green with continued production increases...",
       "importance": "high",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAJ=",
       "conversationIndex": "AQHaC8h=",
-      "isDeliveryReceiptRequested": false,
+      "isDeliveryReceiptRequested": true,
       "isReadReceiptRequested": true,
       "isRead": false,
       "isDraft": false,
@@ -546,58 +528,47 @@
       "inferenceClassification": "focused",
       "from": {
         "emailAddress": {
-          "name": "Ms. Jennifer Parker",
-          "address": "jennifer.parker@hqda.army.mil"
+          "name": "BG Thomas Rodriguez",
+          "address": "thomas.rodriguez@jmc.army.mil"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Ms. Jennifer Parker",
-          "address": "jennifer.parker@hqda.army.mil"
+          "name": "BG Thomas Rodriguez",
+          "address": "thomas.rodriguez@jmc.army.mil"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "Legislative Liaison",
-            "address": "legislative.liaison@hqda.army.mil"
-          }
-        }
-      ],
+      "ccRecipients": [],
       "bccRecipients": [],
       "replyTo": [],
       "body": {
-        "contentType": "html",
-        "content": "<html><body><p>General,</p><p>We have received a congressional inquiry from <b>Senator Williams' office</b> regarding recruitment and retention statistics in your command.</p><p><b>Information Requested:</b></p><ol><li>Recruitment numbers for FY2025 (by MOS)</li><li>Retention rates for first-term and career soldiers</li><li>Specific challenges affecting recruitment in your region</li><li>Programs/initiatives implemented to improve retention</li><li>Projected personnel needs for FY2026</li></ol><p><b>Timeline:</b></p><ul><li>Response required: <span style='color:red;font-weight:bold;'>18 NOV 2025, 1200 EST</span></li><li>Must be reviewed by HQDA G-1 before submission</li></ul><p>Please coordinate with your G-1 to compile the required data. A draft template is attached.</p><p>Let me know if you have any questions.</p><p>Respectfully,<br/>Jennifer Parker<br/>Congressional Affairs Specialist<br/>HQDA Legislative Liaison</p></body></html>"
+        "contentType": "text",
+        "content": "Sir,\n\nPer your request, here is the weekly ammunition stockpile status as of 1 November 2025. Overall munitions readiness remains green with continued production increases.\n\n155mm Artillery Status:\n- Current monthly production: 28,000 rounds (up from 14,000 in FY24)\n- Target production rate: 40,000 rounds/month by Q3 FY26\n- On track to meet expanded capacity goals\n\nSmall Arms Ammunition:\n- Production at steady state, meeting demand\n- No significant supply chain disruptions\n\nMissile Systems:\n- Javelin: Production rate stable, inventory healthy\n- Stinger: Modernization line operational at Raytheon\n\nAmmunition Plant Status:\n- All Army ammunition plants operational\n- Lake City: Expanding capacity per plan\n- Scranton: On schedule for modernization\n\nRecommendation: Continue monitoring 155mm production ramp. Request quarterly brief to leadership on sustainment of increased production rates.\n\nRespectfully,\nBG Thomas Rodriguez\nCommander, Joint Munitions Command"
       },
       "flag": {
-        "flagStatus": "flagged",
-        "dueDateTime": {
-          "dateTime": "2025-11-18T12:00:00Z",
-          "timeZone": "EST"
-        }
+        "flagStatus": "flagged"
       }
     },
     {
       "id": "AAMkAGI2THVSAAK=",
-      "createdDateTime": "2025-11-10T14:30:00Z",
-      "lastModifiedDateTime": "2025-11-10T14:30:00Z",
+      "createdDateTime": "2025-11-03T15:00:00Z",
+      "lastModifiedDateTime": "2025-11-03T15:00:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD5",
-      "categories": ["Awards"],
-      "receivedDateTime": "2025-11-10T14:30:00Z",
-      "sentDateTime": "2025-11-10T14:25:00Z",
+      "categories": ["Contracting"],
+      "receivedDateTime": "2025-11-03T15:00:00Z",
+      "sentDateTime": "2025-11-03T14:45:00Z",
       "hasAttachments": true,
-      "internetMessageId": "<MSG007@perscom.army.mil>",
-      "subject": "INFO: Legion of Merit Award Ceremony - 1 December",
-      "bodyPreview": "Sir, this is to inform you that the Legion of Merit award ceremony for CSM Rodriguez will take place on 1 December at 1400 in the headquarters auditorium...",
+      "internetMessageId": "<acc001@army.mil>",
+      "subject": "CONTRACTOR PERFORMANCE: AAR Red River Army Depot Maintenance Services",
+      "bodyPreview": "Sir, Per your request, here is the quarterly contractor performance assessment for the base operations support services contract at Red River Army Depot...",
       "importance": "normal",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAK=",
@@ -610,37 +581,30 @@
       "inferenceClassification": "focused",
       "from": {
         "emailAddress": {
-          "name": "Maj. Lisa Anderson",
-          "address": "lisa.anderson@perscom.army.mil"
+          "name": "Ms. Sharon Williams",
+          "address": "sharon.williams@acc.army.mil"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Maj. Lisa Anderson",
-          "address": "lisa.anderson@perscom.army.mil"
+          "name": "Ms. Sharon Williams",
+          "address": "sharon.williams@acc.army.mil"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "Command Sergeant Major Rodriguez",
-            "address": "csm.rodriguez@army.mil"
-          }
-        }
-      ],
+      "ccRecipients": [],
       "bccRecipients": [],
       "replyTo": [],
       "body": {
-        "contentType": "html",
-        "content": "<html><body><p>Sir,</p><p>This is to inform you that the <b>Legion of Merit award ceremony</b> for CSM Rodriguez will take place on <b>1 December at 1400</b> in the headquarters auditorium.</p><p>CSM Rodriguez is retiring after 32 years of distinguished service, and your presence as the presenting officer would be greatly appreciated.</p><p><b>Event Details:</b></p><ul><li>Date: 1 December 2025</li><li>Time: 1400-1500</li><li>Location: HQ Auditorium, Building 4</li><li>Attendees: ~150 (battalion staff, family, friends)</li><li>Dress: Class A uniform</li></ul><p>A draft award citation is attached for your review. Please let me know if any changes are needed.</p><p>Also, would you be able to provide a few remarks (3-5 minutes) during the ceremony?</p><p>Respectfully,<br/>MAJ Lisa Anderson<br/>Awards and Decorations<br/>G-1 Personnel</p></body></html>"
+        "contentType": "text",
+        "content": "Sir,\n\nPer your request, here is the quarterly contractor performance assessment for the base operations support services contract at Red River Army Depot (Contract W911SF-23-C-0054, $38M annual value).\n\nOverall Rating: SATISFACTORY (78/100)\n\nStrengths:\n- Facility maintenance: Excellent (92%) - all scheduled maintenance completed on time\n- Grounds keeping: Above average (85%) - grounds consistently well-maintained\n- Safety record: Outstanding - zero lost-time accidents in Q1 FY26\n- Cost control: Good - within 2% of projected costs\n\nAreas for Improvement:\n- Emergency response times averaging 47 minutes (contract requires <30 minutes)\n- Quality control issues on 8% of completed work orders\n- Insufficient staffing during peak maintenance periods\n\nRecommendations:\n1. Issue Cure Notice for emergency response deficiencies\n2. Require corrective action plan within 14 days\n3. Consider incentive fees for improved performance in Q2\n\nNext review scheduled for February 2026.\n\nRespectfully,\nSharon Williams\nSenior Contracting Officer\nArmy Contracting Command"
       },
       "flag": {
         "flagStatus": "notFlagged"
@@ -648,16 +612,16 @@
     },
     {
       "id": "AAMkAGI2THVSAAL=",
-      "createdDateTime": "2025-11-10T11:00:00Z",
-      "lastModifiedDateTime": "2025-11-10T11:00:00Z",
+      "createdDateTime": "2025-11-02T13:00:00Z",
+      "lastModifiedDateTime": "2025-11-02T13:00:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD6",
       "categories": [],
-      "receivedDateTime": "2025-11-10T11:00:00Z",
-      "sentDateTime": "2025-11-10T10:55:00Z",
+      "receivedDateTime": "2025-11-02T13:00:00Z",
+      "sentDateTime": "2025-11-02T12:55:00Z",
       "hasAttachments": false,
-      "internetMessageId": "<SPAM005@nigerian-prince.ng>",
-      "subject": "Urgent Assistance Required - Confidential Matter",
-      "bodyPreview": "Dear Esteemed General, I hope this message reaches you in good health. I am writing to you regarding a highly confidential and time-sensitive matter...",
+      "internetMessageId": "<SPAM005@supply-software.biz>",
+      "subject": "Transform Your Supply Chain with AI - Free Trial for Military",
+      "bodyPreview": "Dear Logistics Leader, We noticed AMC manages complex global supply chains. Our revolutionary AI-powered supply chain management software can reduce costs by 40%...",
       "importance": "high",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAL=",
@@ -670,21 +634,21 @@
       "inferenceClassification": "other",
       "from": {
         "emailAddress": {
-          "name": "Dr. Emmanuel Okonkwo",
-          "address": "e.okonkwo@nigerian-prince.ng"
+          "name": "SupplyChain AI Solutions",
+          "address": "sales@supply-software.biz"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Dr. Emmanuel Okonkwo",
-          "address": "e.okonkwo@nigerian-prince.ng"
+          "name": "SupplyChain AI Solutions",
+          "address": "sales@supply-software.biz"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
@@ -693,7 +657,7 @@
       "replyTo": [],
       "body": {
         "contentType": "text",
-        "content": "Dear Esteemed General,\n\nI hope this message reaches you in good health. I am writing to you regarding a highly confidential and time-sensitive matter.\n\nI am Dr. Emmanuel Okonkwo, a banker in Lagos, Nigeria. I have been managing the account of a deceased American military officer who served in Africa and left behind $25.5 million USD with no next of kin.\n\nGiven your distinguished military rank, I believe you are the perfect person to help me transfer these funds. As a fellow military professional, you will receive 40% of the total amount ($10.2 million) for your assistance.\n\nThis transaction is 100% legal and safe. I only require:\n1. Your full name and rank\n2. Your personal bank account details\n3. A copy of your military ID\n4. Your phone number for urgent communication\n\nTime is of the essence. Please respond within 48 hours to secure this opportunity.\n\nYours faithfully,\nDr. Emmanuel Okonkwo\nFirst Bank of Nigeria"
+        "content": "Dear Logistics Leader,\n\nWe noticed AMC manages complex global supply chains. Our revolutionary AI-powered supply chain management software can reduce costs by 40% and improve delivery times by 60%!\n\nLIMITED TIME: Free 90-day trial for military organizations!\n\nFeatures:\n- Real-time inventory tracking across all installations\n- Predictive analytics for supply shortages\n- Automated ordering and restocking\n- Integration with GCSS-Army (just provide your login credentials!)\n- Military-grade security (trust us!)\n\nSetup is easy:\n1. Download our software: [SUSPICIOUS LINK]\n2. Provide system administrator credentials\n3. Grant network access permissions\n4. Start saving money immediately!\n\nOver 500 military installations worldwide use our software* (*not verified)\n\nClick here to start your free trial today!\n\nBest regards,\nJake Morrison\nSupplyChain AI Solutions\n\"Revolutionizing military logistics since 2024\""
       },
       "flag": {
         "flagStatus": "notFlagged"
@@ -701,16 +665,16 @@
     },
     {
       "id": "AAMkAGI2THVSAAM=",
-      "createdDateTime": "2025-11-09T15:20:00Z",
-      "lastModifiedDateTime": "2025-11-09T15:20:00Z",
+      "createdDateTime": "2025-11-01T10:00:00Z",
+      "lastModifiedDateTime": "2025-11-01T10:00:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD7",
-      "categories": ["Medical"],
-      "receivedDateTime": "2025-11-09T15:20:00Z",
-      "sentDateTime": "2025-11-09T15:15:00Z",
-      "hasAttachments": false,
-      "internetMessageId": "<MSG008@medcom.army.mil>",
-      "subject": "ACTION: Annual Medical Readiness Review - Physical Exam Overdue",
-      "bodyPreview": "Sir, our records indicate that your annual physical examination is overdue. IAW AR 40-501, all general officers must complete annual medical readiness requirements...",
+      "categories": ["Workforce Management"],
+      "receivedDateTime": "2025-11-01T10:00:00Z",
+      "sentDateTime": "2025-11-01T09:45:00Z",
+      "hasAttachments": true,
+      "internetMessageId": "<hr001@army.mil>",
+      "subject": "FY26 Civilian Workforce Hiring Plan - Input Required",
+      "bodyPreview": "Sir, As we prepare the FY26 civilian workforce hiring plan for AMC, we need your input on priority skill sets and organizational structure changes...",
       "importance": "normal",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAM=",
@@ -723,21 +687,21 @@
       "inferenceClassification": "focused",
       "from": {
         "emailAddress": {
-          "name": "Col. David Harper, MD",
-          "address": "david.harper@medcom.army.mil"
+          "name": "Mr. Robert Jackson",
+          "address": "robert.jackson@amc.army.mil"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Col. David Harper, MD",
-          "address": "david.harper@medcom.army.mil"
+          "name": "Mr. Robert Jackson",
+          "address": "robert.jackson@amc.army.mil"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
@@ -745,8 +709,8 @@
       "bccRecipients": [],
       "replyTo": [],
       "body": {
-        "contentType": "html",
-        "content": "<html><body><p>Sir,</p><p>Our records indicate that your annual physical examination is overdue.</p><p>IAW AR 40-501, all general officers must complete annual medical readiness requirements, including:</p><ul><li>Complete physical examination</li><li>Laboratory work (blood panel, urinalysis)</li><li>Dental examination</li><li>Vision screening</li><li>Immunization review</li></ul><p>Your last physical was completed on <b>15 September 2024</b>, making you overdue for your 2025 annual exam.</p><p>Please contact my office at your earliest convenience to schedule an appointment. We have availability during the following weeks:</p><ul><li>Week of 2 December</li><li>Week of 9 December</li><li>Week of 16 December</li></ul><p>The exam typically takes 2-3 hours. We can accommodate early morning appointments if preferred.</p><p>Please reply with your preferred date and time.</p><p>Respectfully,<br/>COL David Harper, MD<br/>Chief, General Officer Medical Services<br/>MEDCOM</p></body></html>"
+        "contentType": "text",
+        "content": "Sir,\n\nAs we prepare the FY26 civilian workforce hiring plan for AMC, we need your input on priority skill sets and organizational structure changes.\n\nCurrent Workforce Status (as of Oct 2025):\n- Total civilian employees: 67,842\n- Vacancy rate: 8.2% (5,564 open positions)\n- Average time to hire: 89 days\n- Retirement eligibility (next 2 years): 14,200 employees (21%)\n\nProposed FY26 Hiring Plan:\n- Fill critical vacancies: 3,800 positions\n- New positions (mission growth): 450\n- Focus areas: Data scientists, cybersecurity specialists, advanced manufacturing technicians, logistics analysts\n\nChallenges:\n- Competition with private sector for technical talent\n- Geographic limitations (depots in rural areas)\n- Salary constraints for specialized positions\n\nMitigation Strategies:\n- Expand remote work options for tech positions\n- Partner with local colleges for workforce development\n- Utilize Direct Hire Authority for critical skills\n- Implement retention bonuses for key positions\n\nRequest: Review attached hiring plan and provide feedback NLT 15 November.\n\nRespectfully,\nRobert Jackson\nChief, Civilian Personnel\nAMC G-1"
       },
       "flag": {
         "flagStatus": "flagged"
@@ -754,16 +718,16 @@
     },
     {
       "id": "AAMkAGI2THVSAAN=",
-      "createdDateTime": "2025-11-09T12:45:00Z",
-      "lastModifiedDateTime": "2025-11-09T12:45:00Z",
+      "createdDateTime": "2025-10-31T14:30:00Z",
+      "lastModifiedDateTime": "2025-10-31T14:30:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD8",
-      "categories": ["Family Programs"],
-      "receivedDateTime": "2025-11-09T12:45:00Z",
-      "sentDateTime": "2025-11-09T12:40:00Z",
+      "categories": ["Digital Transformation"],
+      "receivedDateTime": "2025-10-31T14:30:00Z",
+      "sentDateTime": "2025-10-31T14:15:00Z",
       "hasAttachments": false,
-      "internetMessageId": "<MSG009@fmwr.army.mil>",
-      "subject": "INFO: Holiday Party for Command Families - 15 December",
-      "bodyPreview": "Sir, the annual holiday party for command families is scheduled for 15 December from 1700-2000 at the Officers' Club. We hope you and Mrs. Officer can attend...",
+      "internetMessageId": "<cio001@army.mil>",
+      "subject": "READY FOR DEPLOYMENT: AMC Equipment Readiness Dashboard - Power BI",
+      "bodyPreview": "Sir, The AMC Equipment Readiness Dashboard is ready for enterprise deployment. This Power BI solution provides real-time visibility into equipment status across all AMC commands...",
       "importance": "normal",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAN=",
@@ -776,21 +740,21 @@
       "inferenceClassification": "focused",
       "from": {
         "emailAddress": {
-          "name": "Mrs. Carol Stevens",
-          "address": "carol.stevens@fmwr.army.mil"
+          "name": "Mr. Kevin Martinez",
+          "address": "kevin.martinez@amc.army.mil"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Mrs. Carol Stevens",
-          "address": "carol.stevens@fmwr.army.mil"
+          "name": "Kevin Martinez",
+          "address": "kevin.martinez@amc.army.mil"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
@@ -798,8 +762,8 @@
       "bccRecipients": [],
       "replyTo": [],
       "body": {
-        "contentType": "html",
-        "content": "<html><body><p>Sir,</p><p>The annual holiday party for command families is scheduled for <b>15 December from 1700-2000</b> at the Officers' Club.</p><p>We hope you and Mrs. Officer can attend! This is always a highlight of the holiday season for our military families.</p><p><b>Event Details:</b></p><ul><li>Date: 15 December 2025</li><li>Time: 1700-2000</li><li>Location: Officers' Club, Building 1</li><li>Dress: Business casual / festive attire</li><li>Dinner buffet will be served</li><li>Visit from Santa for the children (1800-1900)</li><li>Live music and dancing</li></ul><p>We're expecting approximately 200 attendees (command staff and families). Your presence would mean a lot to everyone.</p><p>Please RSVP by 1 December so we can finalize catering numbers.</p><p>If you're able to say a few words to kick off the evening, that would be wonderful!</p><p>Warmest regards,<br/>Carol Stevens<br/>Family Programs Director<br/>FMWR</p></body></html>"
+        "contentType": "text",
+        "content": "Sir,\n\nThe AMC Equipment Readiness Dashboard is ready for enterprise deployment. This Power BI solution provides real-time visibility into equipment status across all AMC commands.\n\nCapabilities:\n- Real-time equipment readiness rates by command, installation, and equipment type\n- Maintenance backlog tracking and trend analysis\n- Parts availability and supply chain status\n- Predictive analytics for equipment failures\n- Integration with GCSS-Army and depot management systems\n\nPilot Results (90-day test at Anniston Army Depot):\n- Reduced time to identify readiness issues from days to minutes\n- Improved decision-making for resource allocation\n- 100% user adoption rate\n- Positive feedback from all levels of leadership\n\nProposed Rollout:\n- Phase 1 (Dec 2025): All Army depots\n- Phase 2 (Feb 2026): Life Cycle Management Commands\n- Phase 3 (Apr 2026): Enterprise-wide AMC deployment\n\nRequest: Approve dashboard for enterprise deployment and schedule demonstration for Senior Leader Forum.\n\nDashboard link: [Secure SharePoint site]\n\nRespectfully,\nKevin Martinez\nChief Information Officer\nAMC G-6"
       },
       "flag": {
         "flagStatus": "notFlagged"
@@ -807,16 +771,16 @@
     },
     {
       "id": "AAMkAGI2THVSAAO=",
-      "createdDateTime": "2025-11-09T09:30:00Z",
-      "lastModifiedDateTime": "2025-11-09T09:30:00Z",
+      "createdDateTime": "2025-10-30T09:00:00Z",
+      "lastModifiedDateTime": "2025-10-30T09:00:00Z",
       "changeKey": "CQAAABYAAAAs1vXvOTH7RZVPKz4VAO3PAAAAABD9",
-      "categories": ["Intelligence"],
-      "receivedDateTime": "2025-11-09T09:30:00Z",
-      "sentDateTime": "2025-11-09T09:25:00Z",
+      "categories": ["Strategic Planning"],
+      "receivedDateTime": "2025-10-30T09:00:00Z",
+      "sentDateTime": "2025-10-30T08:45:00Z",
       "hasAttachments": true,
-      "internetMessageId": "<MSG010@inscom.army.mil>",
-      "subject": "CRITICAL: Threat Assessment Update - Cyber Intrusion Attempt",
-      "bodyPreview": "CLASSIFICATION: SECRET//NOFORN. Sir, we have detected a sophisticated cyber intrusion attempt targeting command networks within the past 48 hours...",
+      "internetMessageId": "<strategy001@army.mil>",
+      "subject": "REVIEW REQUIRED: AMC Campaign Plan FY26-30 - Draft for Comment",
+      "bodyPreview": "Sir, Attached is the draft AMC Campaign Plan for FY26-30. This strategic document outlines our command priorities for precision sustainment and materiel readiness...",
       "importance": "high",
       "parentFolderId": "AAMkAGI2THVSAAA=",
       "conversationId": "AAQkAGI2THVSAAO=",
@@ -829,50 +793,33 @@
       "inferenceClassification": "focused",
       "from": {
         "emailAddress": {
-          "name": "Col. Rebecca Stone",
-          "address": "rebecca.stone@inscom.army.mil"
+          "name": "MG Sarah Henderson",
+          "address": "sarah.henderson@amc.army.mil"
         }
       },
       "sender": {
         "emailAddress": {
-          "name": "Col. Rebecca Stone",
-          "address": "rebecca.stone@inscom.army.mil"
+          "name": "MG Sarah Henderson",
+          "address": "sarah.henderson@amc.army.mil"
         }
       },
       "toRecipients": [
         {
           "emailAddress": {
-            "name": "Gen. Officer",
-            "address": "general.officer@army.mil"
+            "name": "LTG Edward Daly",
+            "address": "amc.commander@army.mil"
           }
         }
       ],
-      "ccRecipients": [
-        {
-          "emailAddress": {
-            "name": "J2 Intelligence",
-            "address": "j2.intel@inscom.army.mil"
-          }
-        },
-        {
-          "emailAddress": {
-            "name": "Cybersecurity",
-            "address": "cyber.ops@arcyber.army.mil"
-          }
-        }
-      ],
+      "ccRecipients": [],
       "bccRecipients": [],
       "replyTo": [],
       "body": {
-        "contentType": "html",
-        "content": "<html><body><p><b>CLASSIFICATION: SECRET//NOFORN</b></p><p>Sir,</p><p>We have detected a <b>sophisticated cyber intrusion attempt</b> targeting command networks within the past 48 hours.</p><p><b>Key Details:</b></p><ul><li>Attack Vector: Spear-phishing emails targeting senior leadership</li><li>Attribution: High confidence - Advanced Persistent Threat (APT) associated with nation-state actor</li><li>Target: Email accounts and classified network access credentials</li><li>Status: Attack successfully blocked by defensive measures</li></ul><p><b>Immediate Actions Required:</b></p><ol><li>All personnel should be briefed on increased threat level</li><li>Mandatory password resets for all SIPR accounts by COB 10 NOV</li><li>Review and update email security protocols</li><li>Limit external email access for 72 hours (critical only)</li></ol><p>A detailed threat assessment briefing is scheduled for <b>10 NOV at 0800</b> in the SCIF.</p><p>Detailed technical analysis attached (classification: SECRET//NOFORN).</p><p>Respectfully,<br/>COL Rebecca Stone<br/>Deputy Commander, Cyber Operations<br/>INSCOM</p><p><b>CLASSIFICATION: SECRET//NOFORN</b></p></body></html>"
+        "contentType": "text",
+        "content": "Sir,\n\nAttached is the draft AMC Campaign Plan for FY26-30. This strategic document outlines our command priorities for precision sustainment and materiel readiness over the next five years.\n\nFour Strategic Lines of Effort:\n\n1. Modernize Sustainment Infrastructure\n   - Depot modernization ($2.1B investment)\n   - Digital transformation initiatives\n   - Supply chain optimization\n\n2. Build Technical Excellence\n   - Workforce development and retention\n   - Advanced manufacturing capabilities\n   - Partnership with industry and academia\n\n3. Strengthen Global Partnerships\n   - Foreign Military Sales support\n   - Allied nation depot partnerships\n   - Security Cooperation programs\n\n4. Drive Innovation and Agility\n   - Predictive maintenance and AI\n   - Additive manufacturing expansion\n   - Rapid prototyping capabilities\n\nKey Metrics for Success:\n- Equipment readiness: Maintain >90%\n- Depot throughput: Increase 25%\n- Supply chain efficiency: Reduce lead times 30%\n- Workforce readiness: Fill 95% of critical positions\n\nRequest your review and feedback by 20 November. Plan to brief at December Senior Leader Forum for final approval.\n\nRespectfully,\nMG Sarah Henderson\nChief of Staff\nArmy Materiel Command"
       },
       "flag": {
-        "flagStatus": "flagged",
-        "dueDateTime": {
-          "dateTime": "2025-11-10T17:00:00Z",
-          "timeZone": "UTC"
-        }
+        "flagStatus": "flagged"
       }
     }
   ]
