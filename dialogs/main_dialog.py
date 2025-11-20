@@ -21,7 +21,7 @@ from dialogs import LogoutDialog
 from helpers.agent_service import AgentService
 from helpers.thread_store import AgentThreadStore
 from helpers.tools import create_tools_with_token
-from helpers.card_helper import create_simple_card
+from helpers.card_helper import create_simple_card, create_draft_input_card
 from simple_graph_client import SimpleGraphClient
 
 import logging
@@ -231,10 +231,17 @@ class MainDialog(LogoutDialog):
         token_response,
     ) -> None:
         """Process a user command with the given token."""
-        logger.info(f"\tProcessing command: '{command}'")
+        logger.info(
+            f"\tProcessing command: '{command[:200]}'"
+        )  # Truncate long commands in log
 
-        parts = command.split(" ")
-        command_key = parts[0].lower()
+        # Check if this is a pipe-delimited command (from adaptive card)
+        if "|" in command:
+            parts = command.split("|")
+            command_key = parts[0].lower().strip()
+        else:
+            parts = command.split(" ")
+            command_key = parts[0].lower()
 
         try:
             client = SimpleGraphClient(token_response.token)
@@ -263,6 +270,16 @@ class MainDialog(LogoutDialog):
                             type=ActionTypes.message_back,
                             title="Analyze Email",
                             text="start_analyze_email",
+                        ),
+                        CardAction(
+                            type=ActionTypes.message_back,
+                            title="Draft Document",
+                            text="start_draft_document",
+                        ),
+                        CardAction(
+                            type=ActionTypes.message_back,
+                            title="Curate Updates",
+                            text="start_curate_updates",
                         ),
                     ],
                 )
@@ -316,6 +333,340 @@ BAD EXAMPLE (too vague):
 """,
                     token_response.token,
                 )
+            elif command_key == "start_draft_document" or command_key == "draft":
+                # Show the adaptive card to collect draft requirements
+                draft_card = create_draft_input_card()
+                await step_context.context.send_activity(draft_card)
+            elif (
+                command_key == "start_curate_updates"
+                or command_key == "curate_updates"
+                or command_key == "curate"
+            ):
+                await step_context.context.send_activity(
+                    "Curating personalized updates from your emails..."
+                )
+                await self._run_agent_response(
+                    step_context,
+                    """Review my emails and curate personalized updates on the following topics:
+
+REQUIRED TOPICS TO COVER:
+1. **Sustainment KPIs** - Key performance indicators related to logistics, supply chain, readiness metrics
+2. **JFLCC Posture** - Joint Force Land Component Commander operational status, force positioning, readiness
+3. **DIB Developments** - Defense Industrial Base updates, acquisitions, industry partnerships, manufacturing
+
+REQUIREMENTS:
+- Report the total number of emails reviewed
+- Extract and summarize ONLY information relevant to the three topics above
+- Organize findings by topic with clear headers
+- Include specific details: numbers, percentages, dates, and key decision points
+- Reference source emails with sender name, date, and subject
+- Highlight urgent items or emerging trends
+- If no relevant information found for a topic, state "No updates found"
+
+OUTPUT FORMAT:
+- Use clean markdown formatting
+- Start with email count and date range
+- Organize by the three topics
+- Make each update specific and actionable
+- No preamble or filler text
+
+EXAMPLE OUTPUT:
+**Reviewed 150 emails (March 1-15, 2024)**
+
+## Sustainment KPIs
+
+### Readiness Metrics
+- **Class III (Fuel) Status**: 87% of operational requirements met (up 3% from last week)
+  *Source: LTC Johnson, March 12 - Weekly Sustainment Report*
+  → Trend positive, continue monitoring
+
+- **Maintenance Backlog**: 23 vehicles in depot-level maintenance (down from 31)
+  *Source: MAJ Davis, March 14 - Maintenance Update*
+  → 8 vehicles returned to service this week
+
+### Supply Chain
+- **Critical Parts Shortages**: Hydraulic components delayed 2-3 weeks
+  *Source: Logistics Command, March 10 - Supply Chain Alert*
+  ⚠️ **ACTION REQUIRED**: Coordinate alternative sourcing by March 20
+
+## JFLCC Posture
+
+### Force Positioning
+- **3rd Brigade Deployment**: On schedule for April 1 deployment to AO Phoenix
+  *Source: BG Williams, March 13 - OPORD Brief*
+  → 94% personnel in theater, 89% equipment positioned
+
+### Operational Readiness
+- **C-Rating Improvement**: Battalion increased from C3 to C2 status
+  *Source: COL Martinez, March 11 - Readiness Assessment*
+  → Training completion and equipment availability met thresholds
+
+## DIB Developments
+
+### Acquisitions
+- **New Comms System Contract**: $45M awarded to TechDef Solutions
+  *Source: Defense News Digest, March 9*
+  → Delivery timeline: 18 months, initial fielding Q4 2025
+
+### Industry Partnerships
+- **Advanced Manufacturing Initiative**: Partnership with 3 commercial manufacturers
+  *Source: Under Secretary memo, March 8 - Industrial Base Modernization*
+  → Focus on additive manufacturing for rapid prototyping
+  → Pilot program launches May 2024
+
+### Supply Chain Resilience
+- **Critical Minerals Sourcing**: New domestic supplier identified for rare earth elements
+  *Source: Defense Logistics Agency, March 15*
+  ⚠️ **WATCHLIST**: Monitoring for price stability and delivery reliability
+""",
+                    token_response.token,
+                )
+            elif command_key == "process_draft_request":
+                # Process the draft request from adaptive card submission
+                parts = command.split("|")
+                if len(parts) >= 3:
+                    document_type = parts[1].strip()
+                    draft_content = parts[2].strip()
+
+                    if not draft_content:
+                        await step_context.context.send_activity(
+                            "Please provide the requirements and context for the document."
+                        )
+                    else:
+                        await step_context.context.send_activity(
+                            f"Drafting your {document_type}..."
+                        )
+
+                        # Create a detailed prompt for the agent based on document type
+                        if document_type == "FRAGO":
+                            prompt = f"""You must draft a properly formatted FRAGO (Fragmentary Order) document based on these user requirements:
+
+{draft_content}
+
+CRITICAL INSTRUCTIONS:
+1. If the user mentions emails, USE YOUR EMAIL SEARCH TOOLS to retrieve the actual email content first
+2. Extract operational details from emails to populate the FRAGO sections
+3. OUTPUT ONLY A PROPERLY FORMATTED FRAGO - Do NOT summarize emails or provide commentary
+4. Fill ALL sections below with specific information - NO placeholders or "[TBD]" text allowed
+5. If specific details aren't available, make reasonable military assumptions or state "No change from original OPORD"
+
+YOUR OUTPUT MUST FOLLOW THIS EXACT FORMAT:
+
+====================
+FRAGMENTARY ORDER [Insert Number]
+====================
+(CLASSIFICATION)
+
+**REFERENCES:** 
+- Reference: OPORD [Number], dated [Date]
+- Maps: [Chart series, sheet numbers, edition]
+- Other: [Additional documents]
+
+**TIME ZONE USED THROUGHOUT THE ORDER:** [ZULU/Local/Other]
+
+**TASK ORGANIZATION:**
+[List specific changes to subordinate units OR state "No changes to task organization from OPORD [Number]"]
+
+---
+
+**1. SITUATION:**
+
+**a. Enemy Forces:**
+[Describe current enemy disposition, strength, capabilities, and most likely course of action OR state "No significant changes to enemy situation"]
+
+**b. Friendly Forces:**
+[Describe adjacent unit operations, higher headquarters' intent updates, or supporting unit changes OR state "No changes to friendly forces"]
+
+**c. Terrain and Weather:**
+[Note environmental factors affecting operations OR state "No significant changes"]
+
+---
+
+**2. MISSION:**
+
+[Insert complete mission statement using WHO, WHAT, WHEN, WHERE, WHY format]
+Example: "Task Force Bravo conducts relief in place with 3rd Brigade NLT 151200NOV25 at OBJ HAWK in order to enable division consolidation operations."
+
+---
+
+**3. EXECUTION:**
+
+**a. Concept of Operations:**
+[3-5 sentences describing the overall approach, phasing, main effort, and supporting efforts with specific details]
+
+**b. Tasks to Subordinate Units:**
+
+**1st Battalion:**
+- [Specific task with timeline and purpose]
+
+**2nd Battalion:**
+- [Specific task with timeline and purpose]
+
+**Support Company:**
+- [Specific task with timeline and purpose]
+
+[Add additional units as needed]
+
+**c. Coordinating Instructions:**
+
+**1. Timeline:**
+   - H-Hour: [DDTTTTZMONYY format, e.g., 151400ZNOV25]
+   - LD/SP Time: [If applicable]
+   - TOT: [If applicable]
+
+**2. Movement:**
+   - Routes: [Primary and alternate]
+   - Formation: [Specify]
+   - Order of March: [Specify]
+
+**3. Fire Support:**
+   - Priority of Fires: [Unit/phase]
+   - Restrictive Fire Lines: [Grid coordinates]
+   - Priority Targets: [List with coordinates]
+
+**4. Control Measures:**
+   - Phase Lines: [PL NAME - 8-digit grid]
+   - Checkpoints: [CP## - 8-digit grid]
+   - Boundaries: [Description with grids]
+
+**5. Communications:**
+   - Radio Windows: [Times and frequencies]
+   - Reports: [Types, times, and recipients]
+
+**6. Rules of Engagement:**
+   - [Specific ROE guidance or state "No change to ROE"]
+
+---
+
+**4. SUSTAINMENT:**
+
+**a. Supply:**
+   - **Ammunition:** [Resupply point location, time, and procedures]
+   - **Fuel:** [FARP/refuel point location and schedule]
+   - **Water:** [Distribution point and quantities]
+
+**b. Transportation:**
+   - [Vehicle allocations, convoy details, or state "No change"]
+
+**c. Maintenance:**
+   - Collection Point: [Location - 8-digit grid]
+   - Recovery: [Procedures and contact]
+
+**d. Medical:**
+   - **CASEVAC:** 9-Line frequency [####.#]
+   - **Aid Station:** [Location - 8-digit grid]
+
+---
+
+**5. COMMAND AND SIGNAL:**
+
+**a. Command:**
+   - **Commander's Location:** [Specific location or grid]
+   - **Succession of Command:** [List 1st through 3rd]
+   - **Command Posts:** [TAC/MAIN/REAR locations]
+
+**b. Signal:**
+
+**PACE Communications:**
+   - **Primary:** [System] - Freq [####.#] / Net [Name] / Call Sign [Alpha-6]
+   - **Alternate:** [System] - Freq [####.#] / Net [Name] / Call Sign [Alpha-6A]
+   - **Contingency:** [System/method]
+   - **Emergency:** [System/method]
+
+**Reports Required:**
+   - [Report type, frequency, and recipient]
+   - [Additional reports as needed]
+
+---
+
+**ACKNOWLEDGE:** All subordinate commanders acknowledge receipt via [method] NLT [time].
+
+(CLASSIFICATION)
+
+====================
+
+REMEMBER: Output ONLY the formatted FRAGO above. Do NOT provide email summaries, commentary, or explanations outside the FRAGO format."""
+                        elif document_type == "EXORD":
+                            prompt = f"""Draft an EXORD (Execute Order) based on the following requirements and context:
+
+{draft_content}
+
+INSTRUCTIONS:
+- Follow standard military EXORD format
+- Include situation, mission, execution, sustainment, and command and signal sections
+- Specify execution time and deployment timeline
+- Include force protection measures
+- Provide clear rules of engagement (ROE) guidance
+- Use appropriate classification markings
+- Ensure all instructions are actionable and time-sensitive
+
+OUTPUT FORMAT:
+- Use clean markdown formatting
+- Include proper military headers and sections
+- Specify all critical timelines and coordination measures"""
+                        elif document_type == "Decision Memo":
+                            prompt = f"""Draft a Decision Memo based on the following requirements and context:
+
+{draft_content}
+
+INSTRUCTIONS:
+- Start with executive summary/purpose
+- Provide background and context
+- Present the issue/decision required clearly
+- Outline options/alternatives with pros and cons
+- Include risk assessment
+- Provide clear recommendation
+- Conclude with implementation plan if decision is approved
+- Use professional tone suitable for senior leadership
+
+OUTPUT FORMAT:
+- Use clean markdown formatting
+- Include clear section headers (Purpose, Background, Issue, Options, Recommendation, etc.)
+- Keep concise and focused on decision-making"""
+                        elif document_type == "Talking Points":
+                            prompt = f"""Draft Talking Points based on the following requirements and context:
+
+{draft_content}
+
+INSTRUCTIONS:
+- Create clear, concise bullet points for oral presentation
+- Start with key message/bottom line up front
+- Organize by topic or priority
+- Include supporting facts, statistics, or examples
+- Anticipate questions and include potential responses
+- Use conversational but professional language
+- Keep each point to 1-2 sentences maximum
+
+OUTPUT FORMAT:
+- Use clean markdown formatting with bullet points
+- Bold key phrases or topics
+- Include section headers if multiple topics
+- Ensure easy readability for quick reference"""
+                        else:
+                            prompt = f"""Draft a {document_type} based on the following requirements and context:
+
+{draft_content}
+
+INSTRUCTIONS:
+- Follow standard military format and structure for {document_type}
+- Include all required sections and fields
+- Use appropriate military terminology and classification markings (if applicable)
+- Ensure clarity, precision, and actionable language
+- Format the output professionally with proper headers and sections
+
+OUTPUT FORMAT:
+- Use clean markdown formatting
+- Include clear section headers
+- Make all instructions and requirements explicit
+- Ensure the document is ready for review and refinement"""
+
+                        await self._run_agent_response(
+                            step_context, prompt, token_response.token
+                        )
+                else:
+                    await step_context.context.send_activity(
+                        "Invalid draft request format. Please use the Draft Document button."
+                    )
             else:
                 await self._run_agent_response(
                     step_context, command, token_response.token

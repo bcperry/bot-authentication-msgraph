@@ -31,7 +31,7 @@ class AuthBot(DialogBot):
             # To learn more about Adaptive Cards, see https://aka.ms/msbot-adaptivecards for more details.
             if member.id != turn_context.activity.recipient.id:
                 await turn_context.send_activity(
-                    "Welcome to Authentication Bot on MSGraph. Type anything to get logged in. Type 'logout' to "
+                    "Welcome to the AMC Bot App Demo on Microsoft Teams. Type anything to get logged in. Type 'logout' to "
                     "sign-out. "
                 )
 

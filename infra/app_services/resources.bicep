@@ -1,9 +1,6 @@
 @description('Location for all resources')
 param location string
 
-@description('Base name for resources')
-param resourceBaseName string
-
 @description('App Service Plan name')
 param appServicePlanName string
 
@@ -38,6 +35,12 @@ param azureOpenAiEndpoint string
 @description('Azure OpenAI Model Deployment Name')
 param azureOpenAiModel string
 
+@description('When false, this module retrieves the Azure OpenAI key from the AI Foundry account instead of using the provided value')
+param useExistingOpenAIResources bool = true
+
+@description('Name of the AI Foundry account that hosts the model (used only when provisioning new resources)')
+param aiFoundryAccountName string = ''
+
 @description('Cosmos DB Endpoint')
 param cosmosEndpoint string = ''
 
@@ -61,6 +64,8 @@ var premiumV2PlanSkus = [
   'P2V2'
   'P3V2'
 ]
+
+var resolvedAzureOpenAiApiKey = useExistingOpenAIResources ? azureOpenAiApiKey : listKeys(resourceId('Microsoft.CognitiveServices/accounts', aiFoundryAccountName), '2024-10-01').key1
 
 @allowed(['AzureCloud', 'AzureUSGovernment'])
 @description('Cloud Deployment Location')
@@ -173,7 +178,7 @@ resource appService 'Microsoft.Web/sites@2022-03-01' = {
         }
         {
           name: 'AZURE_OPENAI_API_KEY'
-          value: azureOpenAiApiKey
+          value: resolvedAzureOpenAiApiKey
         }
         {
           name: 'AZURE_OPENAI_ENDPOINT'

@@ -51,15 +51,40 @@ class DialogBot(TeamsActivityHandler):
     async def on_message_activity(self, turn_context: TurnContext):
         logger.info(f"Message activity received: {turn_context.activity.from_property}")
         # TurnContext.remove_recipient_mention(turn_context.activity)
-        text = turn_context.activity.text.strip().lower()
 
-        logger.info(
-            "Received message: '%s' from user: %s",
-            text,
-            turn_context.activity.from_property.name
-            if turn_context.activity.from_property
-            else "Unknown",
-        )
+        # Handle adaptive card submission
+        if turn_context.activity.value:
+            value = turn_context.activity.value
+            if (
+                isinstance(value, dict)
+                and value.get("action") == "submit_draft_request"
+            ):
+                document_type = value.get("documentType", "")
+                draft_content = value.get("draftContent", "")
+
+                # Create a text command from the adaptive card input
+                # Keep the document type case-sensitive for matching
+                turn_context.activity.text = (
+                    f"process_draft_request|{document_type}|{draft_content}"
+                )
+                logger.info(
+                    f"Adaptive card submission - Type: {document_type}, Content length: {len(draft_content)}"
+                )
+
+        # Only lowercase for logging, not for processing
+        if turn_context.activity.text:
+            text = turn_context.activity.text.strip()
+            logger.info(
+                "Received message: '%s' from user: %s",
+                text[:100] + "..."
+                if len(text) > 100
+                else text,  # Truncate long messages in log
+                turn_context.activity.from_property.name
+                if turn_context.activity.from_property
+                else "Unknown",
+            )
+        else:
+            logger.warning("No text in activity")
 
         await DialogHelper.run_dialog(
             self.dialog,

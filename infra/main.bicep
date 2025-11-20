@@ -37,7 +37,7 @@ param appServicePlanSku string = 'B1'
 param useExistingOpenAIResources bool = false
 
 @description('Openai Tokens per minute limit (only used when creating new OpenAI resources)')
-param openAiTokensPerMinute int = 10
+param openAiTokensPerMinute int = 60
 
 @secure()
 @description('Azure OpenAI API Key (required only if using existing resources)')
@@ -61,6 +61,10 @@ var appServiceName = 'app-${environmentName}-${randomSuffix}'
 var botServiceName = '${environmentName}-${randomSuffix}'
 var appServiceDomainSuffix = environment().suffixes.storage == 'core.usgovcloudapi.net' ? 'azurewebsites.us' : 'azurewebsites.net'
 var botAppDomain = '${appServiceName}.${appServiceDomainSuffix}'
+var aiFoundryAccountName = '${environmentName}-foundry-${randomSuffix}'
+var aiFoundryProjectName = '${environmentName}-proj'
+var azureOpenAiEndpointValue = useExistingOpenAIResources ? azureOpenAiEndpoint : aiFoundry!.outputs.azureOpenAiEndpoint
+var azureOpenAiModelValue = useExistingOpenAIResources ? azureOpenAiModel : aiFoundry!.outputs.azureOpenAiModel
 
 // Resource Group
 resource resourceGroup 'Microsoft.Resources/resourceGroups@2022-09-01' = {
@@ -71,19 +75,18 @@ resource resourceGroup 'Microsoft.Resources/resourceGroups@2022-09-01' = {
   }
 }
 
-// Deploy new AI services only if NOT using existing resources
-module aiServices 'ai_services/resources.bicep' = if (!useExistingOpenAIResources) {
-  name: 'ai-services-deployment'
+// Deploy AI Foundry resources only when new infrastructure is requested
+module aiFoundry 'ai_foundry/resources.bicep' = if (!useExistingOpenAIResources) {
+  name: 'ai-foundry-deployment'
   scope: resourceGroup
   params: {
     location: location
-    resourceToken: toLower(uniqueString(resourceGroup.id))
-    resourcePrefix: environmentName
+    aiFoundryAccountName: aiFoundryAccountName
+    aiProjectName: aiFoundryProjectName
     tags: {
       'azd-env-name': environmentName
     }
     openAIModelName: !empty(azureOpenAiModel) ? azureOpenAiModel : 'gpt-4o'
-    openAIAPIVersion: '2024-10-01'
     openAITPMCapacity: openAiTokensPerMinute
   }
 }
@@ -107,13 +110,14 @@ module app_services 'app_services/resources.bicep' = {
   scope: resourceGroup
   params: {
     location: location
-    resourceBaseName: environmentName
     appServicePlanName: appServicePlanName
     appServicePlanSku: appServicePlanSku
     appServiceName: appServiceName
-    azureOpenAiApiKey: useExistingOpenAIResources ? azureOpenAiApiKey : aiServices!.outputs.azureOpenAiApiKey
-    azureOpenAiEndpoint: useExistingOpenAIResources ? azureOpenAiEndpoint : aiServices!.outputs.azureOpenAiEndpoint
-    azureOpenAiModel: useExistingOpenAIResources ? azureOpenAiModel : aiServices!.outputs.azureOpenAiModel
+    azureOpenAiApiKey: azureOpenAiApiKey
+    azureOpenAiEndpoint: azureOpenAiEndpointValue
+    azureOpenAiModel: azureOpenAiModelValue
+    useExistingOpenAIResources: useExistingOpenAIResources
+    aiFoundryAccountName: aiFoundryAccountName
     botAadAppClientId: botAadAppClientId
     botAadAppTenantId: botAadAppTenantId
     botAadAppClientSecret: botAadAppClientSecret
@@ -166,7 +170,9 @@ output ConnectionName string = resources.outputs.oauthConnectionName
 output COSMOS_ENDPOINT string = cosmosDb.outputs.cosmosEndpoint
 output COSMOS_DATABASE_NAME string = cosmosDb.outputs.cosmosDatabaseName
 output COSMOS_ACCOUNT_NAME string = cosmosDb.outputs.cosmosAccountName
-output AZURE_OPENAI_CHAT_DEPLOYMENT_NAME string = useExistingOpenAIResources ? azureOpenAiModel : aiServices!.outputs.azureOpenAiModel
-output AZURE_OPENAI_ENDPOINT string = useExistingOpenAIResources ? azureOpenAiEndpoint : aiServices!.outputs.azureOpenAiEndpoint
-output AZURE_OPENAI_API_KEY string = useExistingOpenAIResources ? azureOpenAiApiKey : aiServices!.outputs.azureOpenAiApiKey
-output AZURE_OPENAI_MODEL string = useExistingOpenAIResources ? azureOpenAiModel : aiServices!.outputs.azureOpenAiModel
+output AZURE_OPENAI_CHAT_DEPLOYMENT_NAME string = azureOpenAiModelValue
+output AZURE_OPENAI_ENDPOINT string = azureOpenAiEndpointValue
+@secure()
+output AZURE_OPENAI_MODEL string = azureOpenAiModelValue
+output AZURE_AI_FOUNDRY_ACCOUNT string = useExistingOpenAIResources ? '' : aiFoundryAccountName
+output AZURE_AI_FOUNDRY_PROJECT string = useExistingOpenAIResources ? '' : aiFoundryProjectName

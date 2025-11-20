@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 from typing import List, Optional
-from botbuilder.schema import HeroCard, CardAction, ActionTypes
+from botbuilder.schema import HeroCard, CardAction, ActionTypes, Attachment
 from botbuilder.core import MessageFactory, CardFactory
 from datetime import datetime
 
@@ -41,6 +41,16 @@ def create_greeting_card(user_name: str):
             title="Analyze Email",
             text="start_analyze_email",
         ),
+        CardAction(
+            type=ActionTypes.message_back,
+            title="Draft Document",
+            text="start_draft_document",
+        ),
+        CardAction(
+            type=ActionTypes.message_back,
+            title="Curate Updates",
+            text="start_curate_updates",
+        ),
     ]
 
     # Determine greeting based on current time
@@ -59,3 +69,66 @@ def create_greeting_card(user_name: str):
     )
 
     return MessageFactory.attachment(CardFactory.hero_card(card))
+
+
+def create_draft_input_card():
+    """
+    Create an Adaptive Card to collect draft document requirements.
+
+    Returns:
+        Activity with the adaptive card attachment
+    """
+    card = {
+        "type": "AdaptiveCard",
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "version": "1.4",
+        "body": [
+            {
+                "type": "TextBlock",
+                "text": "Draft Military Document",
+                "weight": "Bolder",
+                "size": "Large",
+            },
+            {
+                "type": "TextBlock",
+                "text": "Select document type and provide details:",
+                "wrap": True,
+                "spacing": "Medium",
+            },
+            {
+                "type": "Input.ChoiceSet",
+                "id": "documentType",
+                "label": "Document Type",
+                "choices": [
+                    {"title": "FRAGO (Fragmentary Order)", "value": "FRAGO"},
+                    {"title": "EXORD (Execute Order)", "value": "EXORD"},
+                    {"title": "Decision Memo", "value": "Decision Memo"},
+                    {"title": "Talking Points", "value": "Talking Points"},
+                ],
+                "placeholder": "Select document type",
+                "value": "FRAGO",
+            },
+            {
+                "type": "Input.Text",
+                "id": "draftContent",
+                "label": "Requirements and Context",
+                "placeholder": "Provide details, context, and requirements for the document...",
+                "isMultiline": True,
+                "maxLength": 2000,
+            },
+        ],
+        "actions": [
+            {
+                "type": "Action.Submit",
+                "title": "Generate Draft",
+                "data": {"action": "submit_draft_request"},
+            }
+        ],
+    }
+
+    attachment = Attachment(
+        content_type="application/vnd.microsoft.card.adaptive",
+        content=card,
+    )
+
+    return MessageFactory.attachment(attachment)
